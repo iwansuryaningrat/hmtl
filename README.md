@@ -1,6 +1,6 @@
 # Project Website HMTL UNDIP
 
-HMTL Diponegoro University Official Website project. Contains information about organizations, news, and social media. This program was created using **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **PHP (Hypertext Preprocessor)**, JavaScript, Bootstrap v.5, FontAwesome, CodeIgniter v4.1.3, etc.
+HMTL Diponegoro University Official Website project. Contains information about organizations, news, and social media. This program was created using **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **PHP (Hypertext Preprocessor)**, **JavaScript**, **Bootstrap v.5**, **FontAwesome**, **CodeIgniter v4.1.3**, etc.
 
 ## Badges
 
