@@ -11,6 +11,35 @@ HMTL Diponegoro University Official Website project. Contains information about 
 ![Bootsrtap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![CodeIgniter](https://img.shields.io/badge/Codeigniter-E34F26?style=for-the-badge&logo=codeigniter&logoColor=white)
 
+Folder Structure:
+
+```
+📦hmtl-main
+ ┣ 📂assets
+ ┃ ┣ 📂css
+ ┃ ┃ ┣ 📂css-images
+ ┃ ┃ ┣ 📜bootstraps.css
+ ┃ ┃ ┣ 📜bootstraps.css.map
+ ┃ ┃ ┗ 📜styles.css
+ ┃ ┣ 📂images
+ ┃ ┣ 📂js
+ ┃ ┃ ┣ 📜bootstraps.bundle.js
+ ┃ ┃ ┣ 📜bootstraps.bundle.js.map
+ ┃ ┃ ┗ 📜scripts.js
+ ┃ ┗ 📂vendor
+ ┃ ┃ ┣ 📂fontawesome-free-5.15.3-web
+ ┃ ┃ ┣ 📂icofont
+ ┃ ┃ ┣ 📂uicons-regular-straight
+ ┣ 📜index.html
+ ┣ 📜index-arsip.html
+ ┣ 📜index-berita.html
+ ┣ 📜index-kalender.html
+ ┣ 📜index-kontak.html
+ ┣ 📜index-profil.html
+ ┗ 📜README.md
+```
+
+
 ## Features
 
 - Responsives all devices
