@@ -30,12 +30,13 @@ Folder Structure:
  ┃ ┃ ┣ 📂fontawesome-free-5.15.3-web
  ┃ ┃ ┣ 📂icofont
  ┃ ┃ ┣ 📂uicons-regular-straight
- ┣ 📜index.html
- ┣ 📜index-arsip.html
- ┣ 📜index-berita.html
- ┣ 📜index-kalender.html
- ┣ 📜index-kontak.html
- ┣ 📜index-profil.html
+ ┃ ┃ ┗ 📂uicons-bold-rounded
+ ┣ 📜arsip.html
+ ┣ 📜berita.html
+ ┣ 📜dashboard.html
+ ┣ 📜kalender.html
+ ┣ 📜kontak.html
+ ┣ 📜profil.html
  ┗ 📜README.md
 ```
 
