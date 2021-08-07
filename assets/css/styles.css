@@ -1,0 +1,1230 @@
+/************************************************/
+/*               TABLE OF CONTENT               */
+/************************************************/
+/*
+    1. Google Font
+    2. Variable
+    3. General styles
+    4. Dashboard Page
+    5. Profil Page
+    6. Berita Page
+    7. Kalender Page
+    8. Arsip Page
+    9. Kontak Page
+    10. Responsive / Media queries
+*/
+
+
+/*******************************************/
+/*               GOOGLE FONT               */
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Oswald&display=swap');
+
+
+/****************************************/
+/*               VARIABLE               */
+/****************************************/
+:root {
+    /*height and width*/
+
+    /*color*/
+    --light-color: rgba(245, 243, 238, 1);
+    --dark-color: rgba(16, 44, 47, 1);
+    --middle-color: rgba(161, 178, 165, 1);
+    --orange-color: rgba(239, 132, 81, 1);
+
+
+    /*v2*/
+    --color1: rgba(50, 165, 99, 1);
+    --color2: rgba(1, 37, 36, 1);
+    --color3: rgba(137, 176, 146, 1);
+
+    /*font and typography*/
+    --reg-size: 16px;
+    --medium-size: 18px;
+    --big-size: 24px;
+
+    /*padding and margin*/
+    --section-tb: 72px 0;
+}
+
+
+/*********************************************/
+/*               GENERAL STYLE               */
+/*********************************************/
+* {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1.0);
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 72px !important;
+    line-height: 72px !important;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px !important;
+    line-height: 48px !important;
+}
+
+h3 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+}
+
+h4 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+}
+
+h5 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+h6 {
+    font-size: 18px !important;
+}
+
+/*title section*/
+.title__section {
+    padding-bottom: 24px;
+}
+
+.title__section h2 {
+    margin-bottom: 16px;
+}
+
+
+/**********************/
+/*     Navigation     */
+/**********************/
+/*navigations*/
+.navbar {
+    padding-right: 56px;
+    padding-left: 56px;
+
+    transition: all .6s ease-in-out;
+}
+
+.navbar.nav__pt__pb {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar.bg-nav {
+    background-color: rgba(255, 255, 255, 1.0);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+}
+
+/*right navigation mobile view*/
+.right__navbar__toggler {
+    display: flex;
+}
+
+.btn__search.mobile__view {
+    display: none;
+
+    margin-right: 30px;
+}
+
+.navbar-toggler {
+    padding: 0 !important;
+
+    border: none !important;
+}
+
+.fi-rs-menu-burger {
+    font-size: 28px;
+
+    display: flex;
+
+    color: rgba(0, 0, 0, 1.0);
+}
+
+/*navbar list*/
+.nav-link.nav__font {
+    padding: 30px 15px !important;
+
+    transition: color .3s ease-in-out !important;
+}
+
+.nav-item .nav-link span {
+    font-weight: 500;
+}
+
+.nav-item.dropdown .nav-link span {
+    display: inline-block;
+}
+
+.navbar-light .navbar-nav .drop__menu .dropdown-item:hover,
+.navbar-light .navbar-nav .drop__menu .dropdown-item.active {
+    color: var(--color1) !important;
+}
+
+.nav-link span::after {
+    display: block;
+
+    width: 0;
+    height: 2px;
+
+    content: '';
+    transition: width .3s ease-in-out;
+
+    background: var(--color1);
+}
+
+.nav-link span:hover::after,
+.navbar-light .navbar-nav .nav-link.active span::after {
+    width: 100%;
+
+    transition: width .4s;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.icofont-simple-down {
+    font-size: 16px;
+
+    display: inline-block;
+
+    transition: all .4s ease;
+}
+
+.drop__menu.dropdown-menu {
+    top: 65px;
+
+    margin-top: 0;
+
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1.0);
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, .1);
+}
+
+.drop__menu.dropdown-menu.down {
+    top: 90px;
+}
+
+.drop__item.dropdown-item {
+    font-weight: 500;
+
+    padding: 6px 24px;
+
+    transition: color .3s ease-in-out;
+
+    color: #515151;
+    background-color: transparent !important;
+}
+
+.btn__search {
+    display: flex;
+
+    margin-left: 15px;
+    padding: 10px 18px;
+
+    cursor: pointer;
+    transition: all .3s;
+
+    border-radius: 3px;
+    background-color: var(--orange-color);
+
+    align-items: center;
+}
+
+.btn__search:hover {
+    background-color: rgba(234, 106, 46, 1);
+}
+
+.btn__caption {
+    font-weight: 500;
+    line-height: 16px;
+
+    color: white;
+}
+
+.icofont-search-1 {
+    margin-right: 9px;
+
+    color: white;
+}
+
+
+/*****************/
+/*    Footer     */
+/*****************/
+footer {
+    /*background-color: var(--light-color);*/
+}
+
+footer .container {
+    display: flex;
+
+    padding: 144px 0 72px;
+
+    justify-content: space-between;
+}
+
+/*left footer*/
+.left__footer {
+    display: flex;
+
+    flex: 45%;
+}
+
+.left__img img {
+    height: 120px;
+    margin-right: 24px;
+}
+
+.left__content {
+    padding-right: 48px;
+}
+
+.left__content p {
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+.left__content a {
+    font-size: 18px;
+    font-weight: 700;
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 1.0);
+}
+
+/*right footer*/
+.right__footer {
+    display: flex;
+
+    justify-content: flex-end;
+    flex: 55%;
+}
+
+.quick__links,
+.contact__us {
+    padding-right: 48px;
+}
+
+.right__footer h5 {
+    margin-bottom: 24px;
+}
+
+.right__footer ul {
+    padding-left: 0;
+}
+
+.right__footer ul li {
+    font-size: 14px;
+
+    padding-bottom: 6px;
+}
+
+.quick__links a {
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.social__connect {
+    width: 150px;
+}
+
+.social__connect ul li {
+    float: left;
+
+    margin-right: 12px;
+    margin-bottom: 6px;
+}
+
+.social__connect ul li a {
+    text-decoration: none;
+}
+
+.social__connect ul li a i {
+    font-size: 36px;
+}
+
+footer a:hover,
+footer a:hover i {
+    transition: all .3s ease;
+
+    color: var(--color1);
+}
+
+/*bottom footer*/
+.bottom__footer p {
+    font-size: 14px;
+
+    margin-bottom: 0;
+    padding-bottom: 24px;
+}
+
+/*more button*/
+.btn__section {
+    display: flex;
+
+    padding-top: 72px;
+
+    justify-content: flex-end;
+}
+
+.more__btn {
+    font-weight: 500;
+
+    padding: 12px 18px;
+
+    transition: all .3s ease;
+    text-decoration: none;
+
+    color: white;
+    border-radius: 3px;
+    background-color: var(--orange-color);
+}
+
+.more__btn:hover {
+    color: white;
+    background-color: rgba(234, 106, 46, 1);
+}
+
+
+/**********************************************/
+/*               DASHBOARD PAGE               */
+/**********************************************/
+
+/*****************/
+/*    Header     */
+/*****************/
+header {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header__dashboard {
+    height: 100vh;
+    max-height: 900px;
+    background: url(css-images/bg-hero.png);
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 86px;
+}
+
+.body__section {
+    margin: 0 36px;
+}
+
+.body__section h1 {
+    margin-bottom: 12px;
+}
+
+.body__section h3,
+.body__section h6 {
+    margin-bottom: 15px;
+}
+
+.hero__contact span {
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 9px;
+}
+
+.hero__contact i {
+    font-size: 20px;
+}
+
+
+/************************/
+/*    quote section     */
+/************************/
+.quote__section {
+    background-color: var(--color3);
+}
+
+.quote__body {
+    text-align: center;
+    padding: 72px;
+}
+
+.quote__body h4:nth-child(1) {
+    margin-bottom: 16px;
+}
+
+/***********************/
+/*    news section     */
+/***********************/
+.news__section {
+    /*background-color: var(--light-color);*/
+}
+
+.news__section .container .body__section {
+    padding: var(--section-tb);
+}
+
+.news__body {
+    padding-top: 24px;
+}
+
+
+/*************************/
+/*    proker section     */
+/*************************/
+.proker__section {
+    /*background-color: var(--light-color);*/
+}
+.proker__section .container .body__section {
+    padding: var(--section-tb);
+}
+
+.proker__header {
+    text-align: center;
+}
+
+/**************************/
+/*    contact section     */
+/**************************/
+.contact__section {
+    background-color: var(--dark-color);
+}
+
+.contact__section .container .body__section {
+    display: flex;
+
+    padding: var(--section-tb);
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__header {
+    padding-right: 24px;
+
+    flex: 40%;
+}
+
+.contact__section h1 {
+    color: white;
+}
+
+.contact__section p {
+    font-size: 20px;
+
+    color: white;
+}
+
+.contact__form {
+    padding-left: 120px;
+
+    flex: 60%;
+}
+
+.contact__form .col,
+.contact__form textarea {
+    margin-bottom: 48px;
+}
+
+.contact__form label {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 6px;
+
+    color: white;
+}
+
+.form-control.form__control {
+    padding: 8px 0;
+
+    color: white !important;
+    border: none;
+    /*border-bottom: 1px solid var(--light-color);*/
+    border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.form-select.form__select {
+    padding: 8px 30px 8px 6px;
+
+    color: var(--orange-color);
+    border: none;
+    /*border-bottom: 1px solid var(--light-color);*/
+    border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url(css-images/down-chevron-icon.svg);
+    background-position: right 1px center;
+    background-size: 12px 9px;
+}
+
+.form-control.form__control:focus,
+.form-select.form__select:focus {
+    border-bottom: 1px solid var(--orange-color);
+    background-color: transparent;
+}
+
+.form-control.form__control::placeholder {
+    color: rgba(255, 255, 255, .1);
+}
+
+.submit-message {
+    font-weight: 600;
+
+    width: 100%;
+    padding: 9px;
+
+    transition: all .3s ease-in-out;
+
+    color: rgba(0, 0, 0, 1.0);
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color3);
+}
+
+.submit-message:hover {
+    font-weight: 500;
+
+    color: white;
+    background-color: var(--orange-color);
+}
+
+
+/*********************/
+/*    Search bar     */
+/*********************/
+.search__section.offcanvas-top {
+    height: 30vh;
+    max-height: 190px;
+
+    transition: transform .6s ease;
+
+    border: none;
+}
+
+.search__body.offcanvas-body {
+    overflow-y: hidden;
+
+    padding: 56px 44px 28px;
+}
+
+.search__font {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+
+    margin-bottom: 28px;
+
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.search__form {
+    display: flex;
+
+    align-items: center;
+}
+
+.search__field {
+    line-height: 22px;
+
+    width: 100%;
+    padding: 12px 20px;
+
+    border: 2px solid rgba(16, 44, 47, .3);
+    border-radius: 3px;
+    outline: none;
+}
+
+.search__submit {
+    line-height: 22px;
+
+    margin-left: 12px;
+    padding: 14px 30px;
+
+    transition: all .3s;
+
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--orange-color);
+}
+
+.search__submit:hover {
+    background-color: rgba(234, 106, 46, 1);
+}
+
+
+/*******************************************/
+/*               PROFIL PAGE               */
+/*******************************************/
+
+
+/*******************************************/
+/*               BERITA PAGE               */
+/*******************************************/
+
+
+/*********************************************/
+/*               KALENDER PAGE               */
+/*********************************************/
+
+
+/******************************************/
+/*               ARSIP PAGE               */
+/******************************************/
+
+
+/*******************************************/
+/*               KONTAK PAGE               */
+/*******************************************/
+
+/*****************/
+/*    Header     */
+/*****************/
+.headers {
+    height: 65vh;
+
+    background-color: var(--color3);
+    background-image: url(css-images/pexels-victoria-borodinova-1094246.jpg);
+    background-attachment: fixed;
+
+    background-blend-mode: screen;
+}
+
+.headers .container {
+    justify-content: center;
+}
+
+/***********************/
+/*    Help Section     */
+/***********************/
+.help__section {
+    padding: var(--section-tb);
+}
+
+.help__section .body__section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body__card {
+    flex: calc(100%/3);
+    margin: 15px;
+    padding: 30px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 10%),
+                0 6px 15px rgb(0 0 0 / 8%);
+    /*text-align: center;*/
+}
+
+.body__card h5 {
+    color: var(--color2);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.body__card span {
+    font-size: 36px;
+    color: var(--color2);
+}
+
+/**********************/
+/*    Map Section     */
+/*********************/
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+/*************************/
+/*    Socmed section     */
+/*************************/
+
+.socmed__section {
+
+}
+
+.socmed__section .body__section {
+    display: flex;
+    align-items: center;
+}
+
+.socmed__head {
+    flex: 30%;
+}
+
+.socmed__content {
+    flex: 70%;
+    width: 100%;
+    height: 180px;
+    background-color: var(--light-color);
+}
+
+/*******************************************/
+/*               RESPONEIVES               */
+/*******************************************/
+@media (min-width: 1400px) {
+    .body__section {
+        margin: 0 80px;
+    }
+}
+/*=============== tablet view ===============*/
+@media screen and (max-width: 991px) {
+    /****************************************/
+    /*               VARIABLE               */
+    /****************************************/
+    h1 {
+        font-size: 60px !important;
+        line-height: 60px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+        line-height: 32px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+    h4 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    h6 {
+        font-size: 16px !important;
+    }
+
+
+    /*********************************************/
+    /*               GENERAL STYLE               */
+    /*********************************************/
+    /**********************/
+    /*     Navigation     */
+    /**********************/
+    .navbar {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .navbar.nav__pt__pb {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .navbar.mobile-nav {
+        background-color: rgba(255, 255, 255, 1.0);
+    }
+
+    .nav-link.nav__font {
+        padding: 8px 0 !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn__search {
+        padding: 8px 16px;
+    }
+
+    .btn__search.mobile__view {
+        display: flex;
+    }
+
+    .navbar-collapse {
+        padding: 0 49px;
+    }
+
+    .navbar-nav {
+        padding: 40px 0;
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 12px 0;
+
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    .drop__menu.dropdown-menu {
+        padding: 9px 0 0;
+
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .drop__item.dropdown-item {
+        line-height: 17px;
+
+        margin-bottom: 4px;
+        padding: 8px 20px 8px 0;
+    }
+
+    .btn__search {
+        display: none;
+    }
+
+
+    /**********************************************/
+    /*               DASHBOARD PAGE               */
+    /**********************************************/
+    /*****************/
+    /*    Header     */
+    /*****************/
+    header .container {
+        padding-top: 70px;
+    }
+
+    .body__section {
+        margin: 0;
+    }
+
+    .hero__contact span {
+        font-size: 16px;
+    }
+
+    .hero__contact i {
+        font-size: 18px;
+    }
+
+    /************************/
+    /*    quote section     */
+    /************************/
+    .quote__body {
+        padding: 48px;
+    }
+
+    /**************************/
+    /*    contact section     */
+    /**************************/
+    .contact__form {
+        padding-left: 90px;
+    }
+
+    .contact__form .row {
+        flex-direction: column;
+    }
+
+    .contact__form .col,
+    .contact__form textarea {
+        margin-bottom: 36px;
+    }
+
+    /*****************/
+    /*    Footer     */
+    /*****************/
+    footer .container {
+        display: flex;
+
+        padding: 144px 0 72px;
+
+        flex-direction: column;
+    }
+
+    /*left footer*/
+    .left__footer {
+        justify-content: center;
+        padding-bottom: 48px;
+    }
+
+    .left__content {
+        padding-right: 0;
+    }
+
+    /*right footer*/
+    .right__footer {
+        justify-content: center;
+    }
+
+
+    /*********************/
+    /*    Search bar     */
+    /*********************/
+    .search__section.offcanvas-top {
+        height: 25vh;
+    }
+
+    .search__body.offcanvas-body {
+        padding: 36px 24px 18px;
+    }
+
+    .search__font {
+        font-size: 18px;
+        line-height: 18px;
+
+        margin-bottom: 20px;
+    }
+
+    .search__field {
+        padding: 6px 16px;
+    }
+
+    .search__submit {
+        margin-left: 12px;
+        padding: 8px 18px;
+    }
+
+
+    /*******************************************/
+    /*               PROFIL PAGE               */
+    /*******************************************/
+
+
+    /*******************************************/
+    /*               BERITA PAGE               */
+    /*******************************************/
+
+
+    /*********************************************/
+    /*               KALENDER PAGE               */
+    /*********************************************/
+
+
+    /******************************************/
+    /*               ARSIP PAGE               */
+    /******************************************/
+
+
+    /*******************************************/
+    /*               KONTAK PAGE               */
+    /*******************************************/
+
+    /***********************/
+    /*    Help Section     */
+    /***********************/
+    .help__section .body__section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .body__card {
+        flex: 100%;
+        margin: 30px;
+        /*text-align: center;*/
+    }
+}
+
+
+/*=============== mobile view ===============*/
+@media screen and (max-width: 576px) {
+    /*******************/
+    /*    Variable     */
+    /*******************/
+    h1 {
+        font-size: 42px !important;
+        line-height: 42px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+
+    /**************************/
+    /*     General Styles     */
+    /**************************/
+
+
+    /**********************/
+    /*     Navigation     */
+    /**********************/
+    .navbar-brand img {
+        height: 28px;
+    }
+
+    .fi-rs-menu-burger {
+        font-size: 22px;
+    }
+
+    .btn__search.mobile__view {
+        margin: 0 15px 0 0;
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+    .icofont-search-1 {
+        color: rgba(0, 0, 0, 1.0);
+    }
+
+    .btn__search.mobile__view:hover {
+        background-color: transparent;
+    }
+
+    .mobile__view .btn__caption {
+        display: none;
+    }
+
+    .navbar-collapse {
+        overflow-x: hidden !important;
+
+        padding: 0;
+    }
+
+    .drop__item.dropdown-item {
+        overflow: hidden;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    /*****************/
+    /*    Header     */
+    /*****************/
+    header .container {
+        justify-content: center;
+    }
+
+    header .body__section {
+        text-align: center;
+    }
+
+    /************************/
+    /*    quote section     */
+    /************************/
+    .quote__body {
+        padding: 48px 0;
+    }
+
+    /**************************/
+    /*    contact section     */
+    /**************************/
+    .contact__section .container .body__section {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .contact__header {
+        margin-bottom: 24px;
+        padding-right: 0;
+
+        text-align: center;
+
+        flex: 100%;
+    }
+
+    .contact__section p {
+        font-size: 18px;
+    }
+
+    .contact__form {
+        padding-left: 0;
+
+        flex: 100%;
+    }
+
+    /*****************/
+    /*    Footer     */
+    /*****************/
+    footer .container {
+        padding-top: 72px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    /*left footer*/
+    .left__footer {
+        flex-direction: column;
+
+        padding-bottom: 24px;
+
+        justify-content: center;
+    }
+
+    .left__img img {
+        display: block;
+
+        width: 60%;
+        height: auto;
+        margin: 0 auto 24px;
+    }
+
+    /*right footer*/
+    .right__footer {
+        flex-direction: column;
+    }
+
+    .quick__links,
+    .contact__us {
+        padding-right: 0;
+        padding-bottom: 24px;
+    }
+
+    .social__connect {
+        width: 100%;
+    }
+
+    /*bottom footer*/
+    .bottom__footer {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    /*******************************************/
+    /*               PROFIL PAGE               */
+    /*******************************************/
+
+
+    /*******************************************/
+    /*               BERITA PAGE               */
+    /*******************************************/
+
+
+    /*********************************************/
+    /*               KALENDER PAGE               */
+    /*********************************************/
+
+
+    /******************************************/
+    /*               ARSIP PAGE               */
+    /******************************************/
+
+
+    /*******************************************/
+    /*               KONTAK PAGE               */
+    /*******************************************/
+
+    /***********************/
+    /*    Help Section     */
+    /***********************/
+    .body__card {
+        margin: 15px;
+        padding: 24px;
+        /*text-align: center;*/
+    }
+}
