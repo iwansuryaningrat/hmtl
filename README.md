@@ -33,7 +33,7 @@ Folder Structure:
  ┃ ┃ ┗ 📂uicons-bold-rounded
  ┣ 📜arsip.html
  ┣ 📜berita.html
- ┣ 📜dashboard.html
+ ┣ 📜index.html
  ┣ 📜kalender.html
  ┣ 📜kontak.html
  ┣ 📜profil.html
