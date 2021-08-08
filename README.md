@@ -37,9 +37,11 @@ Folder Structure:
  ┣ 📜kalender.html
  ┣ 📜kontak.html
  ┣ 📜profil.html
+ ┣ 📜profil-HMTL.html
+ ┣ 📜profil-Biro.html
+ ┣ 📜profil-UKM.html
  ┗ 📜README.md
 ```
-
 
 ## Features
 
@@ -59,4 +61,5 @@ https://www.figma.com/file/4WTx2c8GIjcirXbxgXEnvh/HMTI-Web-Layout?node-id=0%3A1
 ## Used By
 
 This project is used by the following companies:
+
 - [Himpunan Mahasiswa Teknik Lingkungan Diponegoro University](https://www.instagram.com/hmtlundip/)
