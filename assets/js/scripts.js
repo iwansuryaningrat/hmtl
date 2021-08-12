@@ -84,3 +84,27 @@ navToggler.addEventListener('click', function(){
 		navBar.classList.toggle('mobile-nav');
 	}
 });
+
+// ========== owl carousel ==========
+// contact - social media section
+$(document).ready(function() {
+	$('.owl-carousel#socmed__content').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:false,
+		dots:false,
+		autoplay:true,
+		autoplayTimeout:3000,
+		responsive:{
+			0:{
+				items:4
+			},
+			600:{
+	            items:3
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
+	});
+});
