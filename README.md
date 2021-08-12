@@ -20,22 +20,28 @@ Folder Structure:
  ┃ ┃ ┣ 📂css-images
  ┃ ┃ ┣ 📜bootstraps.css
  ┃ ┃ ┣ 📜bootstraps.css.map
+ ┃ ┃ ┣ 📜owl.carousel.min.css
+ ┃ ┃ ┣ 📜owl.theme.default.min.css
  ┃ ┃ ┗ 📜styles.css
  ┃ ┣ 📂images
+ ┃ ┃ ┣ 📜items(13).png
+ ┃ ┃ ┣ 📜items(7).svg
+ ┃ ┃ ┗ 📜items(3).jpg
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📜bootstraps.bundle.js
  ┃ ┃ ┣ 📜bootstraps.bundle.js.map
+ ┃ ┃ ┣ 📜owl.carousel.min.js
  ┃ ┃ ┗ 📜scripts.js
  ┃ ┗ 📂vendor
- ┃ ┃ ┣ 📂fontawesome-free-5.15.3-web
- ┃ ┃ ┣ 📂icofont
- ┃ ┃ ┣ 📂uicons-regular-straight
- ┃ ┃ ┗ 📂uicons-bold-rounded
+ ┃   ┣ 📂fontawesome-free-5.15.3-web
+ ┃   ┣ 📂icofont
+ ┃   ┣ 📂uicons-regular-straight
+ ┃   ┗ 📂uicons-bold-rounded
  ┣ 📜arsip.html
  ┣ 📜berita.html
  ┣ 📜index.html
  ┣ 📜kalender.html
- ┣ 📜kontak.html <span>&#10003;</span>
+ ┣ 📜kontak.html [Finish]
  ┣ 📜profil.html
  ┣ 📜profil-HMTL.html
  ┣ 📜profil-Biro.html
