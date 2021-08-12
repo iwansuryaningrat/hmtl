@@ -35,7 +35,7 @@ Folder Structure:
  ┣ 📜berita.html
  ┣ 📜index.html
  ┣ 📜kalender.html
- ┣ 📜kontak.html
+ ┣ 📜kontak.html <span>&#10003;</span>
  ┣ 📜profil.html
  ┣ 📜profil-HMTL.html
  ┣ 📜profil-Biro.html
