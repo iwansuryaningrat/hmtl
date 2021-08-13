@@ -26,6 +26,7 @@ Folder Structure:
  ┃ ┣ 📂images
  ┃ ┃ ┣ 📜items(13).png
  ┃ ┃ ┣ 📜items(7).svg
+ ┃ ┃ ┣ 📜items(1).ico
  ┃ ┃ ┗ 📜items(3).jpg
  ┃ ┣ 📂js
  ┃ ┃ ┣ 📜bootstraps.bundle.js
