@@ -43,9 +43,9 @@ Folder Structure:
  ┣ 📜kalender.html
  ┣ 📜kontak.html [Finish]
  ┣ 📜profil.html
- ┣ 📜profil-HMTL.html
- ┣ 📜profil-Biro.html
- ┣ 📜profil-UKM.html
+ ┣ 📜profil-hmtl.html
+ ┣ 📜profil-biro.html
+ ┣ 📜profil-ukm.html
  ┗ 📜README.md
 ```
 
