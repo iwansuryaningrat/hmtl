@@ -22,28 +22,28 @@
     <title>Himpunan Mahasiswa Teknik Lingkungan - HMTL | Universitas Diponegoro</title>
 
     <!-- apple touch icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/mainpage/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/mainpage/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/mainpage/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/mainpage/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/mainpage/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/mainpage/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/mainpage/images/apple-touch-icon-180x180.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"> <!-- bootstrap styles -->
-    <link rel="stylesheet" href="assets/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
-    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
-    <link rel="stylesheet" href="assets/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
-    <link rel="stylesheet" href="assets/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
+    <link rel="stylesheet" href="/mainpage/css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- animate animation styles -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> <!-- owl carousel min -->
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
+    <link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
+    <link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
 
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- custom styles -->
+    <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- custom styles -->
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/images/favicon-hmtl.ico">
+    <link rel="icon" href="/mainpage/images/favicon-hmtl.ico">
 </head>
 <body>
 	<!-- navigations --> <!-- FINISH -->
@@ -51,7 +51,7 @@
 	    <div class="container-fluid">
 	    	<!-- logo navigation-->
 	        <a class="navbar-brand" href="index.html">
-	        	<img src="assets/images/logo-title-hmtl.svg" alt="alterlogo" height="36px">
+	        	<img src="/mainpage/images/logo-title-hmtl.svg" alt="alterlogo" height="36px">
 	        </a> <!-- end logo navigation -->
 
 	        <!-- right navigation mobile view -->
@@ -135,7 +135,7 @@
 			<div class="left__footer">
 				<!-- lef footer image -->
 				<div class="left__img">
-					<img src="assets/images/Logo-hmtl-full.png" alt="alter-logo-hmtl-full">
+					<img src="/mainpage/images/Logo-hmtl-full.png" alt="alter-logo-hmtl-full">
 				</div> <!-- end lef footer image -->
 				<!-- left footer content -->
 				<div class="left__content">
@@ -205,10 +205,10 @@
 
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jquery 3.5.1 Gcdn scripts -->
-    <script src="assets/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
-    <script src="assets/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
+    <script src="/mainpage/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
+    <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
-    <script src="assets/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>

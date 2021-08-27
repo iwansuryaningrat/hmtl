@@ -13,14 +13,14 @@
 	<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
 	<meta property="og:site_name" content="HMTL UNDIP" /> <!-- website name -->
 	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content="Kontak Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
+	<meta property="og:title" content="Arsip-Mata Kuliah Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
 	<meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
 	<!-- Webpage Title -->
-	<title>Kontak - HMTL | Universitas Diponegoro</title>
+	<title>Arsip Mata Kuliah - HMTL | Universitas Diponegoro</title>
 
 	<!-- apple touch icon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/mainpage/images/apple-touch-icon-57x57.png">
@@ -100,12 +100,12 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav__font" href="arsip.html">
+						<a class="nav-link nav__font active" href="arsip.html">
 							<span>Arsip</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link nav__font active" href="kontak.html">
+						<a class="nav-link nav__font" href="kontak.html">
 							<span>Kontak</span>
 						</a>
 					</li>
@@ -122,152 +122,89 @@
 
 	<!-- header -->
 	<!-- FINISH -->
-	<header class="headers">
+	<header class="headers" style="background-image: url(/mainpage/images/jumbotron-arsip.jpg);">
 		<div class="container">
 			<div class="body__section text-center">
-				<h2>KONTAK</h2>
+				<h2>ARSIP</h2>
 			</div> <!-- end body section -->
 		</div> <!-- end container -->
 	</header> <!-- end header -->
 
-
-	<!-- help section -->
-	<!-- FINISH -->
-	<div class="help__section">
+	<!-- elibrary section -->
+	<div class="elibrary__section">
 		<div class="container">
 			<div class="body__section">
-				<!-- head card -->
-				<div class="head__card text-center">
-					<p class="title__card">How can we help you?</p>
-					<p>Pilih cara di bawah ini untuk menghubungi kami dan dapatkan apa yang anda butuhkan</p>
-				</div> <!-- end head card -->
-
-				<!-- content card -->
-				<div class="content__card">
-					<!-- body card -->
-					<div class="body__card">
-						<span class="fi-br-marker"></span>
-						<h5>Visit Our Location</h5>
-						<p>Gedung Kuliah Bersama (GKB) Lantai 3, Fakultas Teknik - Universitas Diponegoro</p>
-					</div> <!-- end body card -->
-					<!-- body card -->
-					<div class="body__card">
-						<span class="fi-br-microphone"></span>
-						<h5>Call Us</h5>
-						<p>+62 812-2918-4480 (Faiza)<br>+62 823-1497-2274 (Humas)</p>
-					</div> <!-- end body card -->
-					<!-- body card -->
-					<div class="body__card">
-						<span class="fi-br-envelope"></span>
-						<h5>Email Us</h5>
-						<p>hmtlundip@student.undip.ac.id<br>himpunanundip@gmail.com</p>
-					</div> <!-- end body card -->
-				</div> <!-- end content card -->
-			</div> <!-- end body section -->
-		</div> <!-- end container -->
-	</div> <!-- end help section -->
-
-
-	<!-- map section -->
-	<!-- FINISH -->
-	<div class="map__section">
-		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.648678608155!2d110.43812051450128!3d-7.050504471046384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708c1b635ab097%3A0xb37e54359fac9317!2sDepartemen%20Teknik%20Lingkungan%20Universitas%20Diponegoro!5e0!3m2!1sid!2sid!4v1628341019027!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-	</div>
-
-
-	<!-- socmed section -->
-	<!-- FINISH -->
-	<div class="socmed__section">
-		<div class="container">
-			<div class="body__section">
-				<div class="row">
-					<!-- socmed head -->
-					<div class="col-lg-4 col-md-5 d-flex flex-column align-self-center pe-lg-5 pe-md-5 socmed__head">
-						<p class="title__socmed">Get in touch with us</p>
-						<p>Tetap terhubung dengan akun sosial media kami.</p>
-					</div> <!-- end socmed head -->
-
-					<!-- socmed content -->
-					<div class="col-lg-8 col-md-7 ps-lg-5 ps-md-3 d-flex align-items-center">
-						<div id="socmed__content" class="owl-carousel owl-theme">
-							<div class="item">
-								<a class="owl__ilink" href="https://www.instagram.com/hmtlundip/" target="_blank"><img src="/mainpage/images/instagram-color2.svg" alt="alter-igcolor1"></a>
-							</div>
-							<div class="item">
-								<a class="owl__ilink" href="#linkedin"><img src="/mainpage/images/linkedin-color1.svg" alt="alter-linkedincolor1"></a>
-							</div>
-							<div class="item">
-								<a class="owl__ilink" href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><img src="/mainpage/images/youtube-color1.svg" alt="alter-youtubecolor1"></a>
-							</div>
-							<div class="item">
-								<a class="owl__ilink" href="#line"><img src="/mainpage/images/line-color.svg" alt="alter-linecolor"></a>
-							</div>
-							<div class="item">
-								<a class="owl__ilink" href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><img src="/mainpage/images/spotify-color.svg" alt="alter-spotifycolor"></a>
-							</div>
+				<!-- elibrary body -->
+				<div class="row elibrary__body">
+					<!-- elibrary main -->
+					<div class="elibrary__main col-lg-9 col-md-9 ps-lg-0 pe-lg-5 pe-md-4">
+						<div class="elibrary__root">
+							<a href="arsip.html">eLibrary</a>
+							<i class="icofont-simple-right"></i>
+							<a href="arsip-matkul.html">Mata Kuliah</a>
 						</div>
-					</div> <!-- end socmed content -->
+
+						<div class="head__eBook">
+							<h3>Pengantar Ilmu dan Rekayasa Lingkungan</h3>
+						</div>
+
+						<div class="elibrary__content">
+							<a class="elibrary__link" data-bs-toggle="collapse" href="#collapse-smt1" role="button" aria-expanded="false" aria-controls="collapseExample">
+								<div class="smt__title">Semester 1</div>
+								<i class="icofont-simple-down icon-down"></i>
+							</a> <!-- end elibrary link -->
+
+							<div class="elibrary__cc row collapse" id="collapse-smt1">
+								<div class="elibrary__course col-lg-4 col-md-6 mb-4">
+									<div class="course__card">
+										<a href="#" class="elibrary__card">
+											<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+											<div class="course__content">
+												<div class="cc__left">
+													<p>UNW00001</p>
+													<h6>Pendidikan Agama</h6>
+												</div>
+												<div class="cc__rigt">
+													<div class="cc__sks">2 SKS</div>
+												</div>
+											</div> <!-- end course content -->
+										</a> <!-- end elibrary card -->
+									</div> <!-- end course card -->
+								</div> <!-- end elibrary course -->
+
+							</div> <!-- end elibrary cc -->
+						</div> <!-- end elibrary content -->
+
+					</div> <!-- end elibrary main -->
+
+					<!-- elibrary aside -->
+					<div class="elibrary__aside col-lg-3 col-md-3 pe-lg-0 ps-lg-4">
+						<div class="position-sticky aside__sticky">
+							<div class="date__elibrary">
+								<i class="fas fa-calendar-alt"></i>
+								<p>18 Agustus 2021</p>
+							</div>
+							<div class="search__elibrary">
+								<form action="" class="d-flex align-items-center from__elibrary">
+									<input type="text" class="sb__elibrary" placeholder="Search eBook" required>
+									<i class="icofont-simple-right"></i>
+									<input type="submit" value class="submit__elibrary">
+								</form>
+							</div>
+							<p>Mohon maaf jika ada keterlambatan atas ketersediaan beberapa database e-Library, baik berupa eBook dan Bank Soal</p>
+							<hr>
+							<p>Masukkan kritik dan saran tentang e-Library</p>
+							<a href="kontak.html#contact-section" class="link__ks">Kritik &amp; saran</a>
+						</div> <!-- end aside sticky -->
+					</div> <!-- end elibrary aside -->
 				</div> <!-- end row -->
 			</div> <!-- end body section -->
 		</div> <!-- end container -->
-	</div> <!-- end socmed section -->
-
-	<!-- contact section -->
-	<!-- FINISH -->
-	<div class="contact__section">
-		<div class="container">
-			<div class="body__section">
-				<!-- contact header -->
-				<div class="contact__header">
-					<h1>Kontak Kami</h1>
-					<p>Jangan ragu untuk menghubungi kami kapanpun. Kami akan menghubungi anda kembali sesegera mungkin.</p>
-				</div> <!-- end contact header -->
-				<!-- contact form -->
-				<div class="contact__form">
-					<form action="">
-						<!-- name & email -->
-						<div class="row">
-							<div class="col">
-								<label for="name" class="form-label">Name</label>
-								<input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" required>
-							</div>
-							<div class="col">
-								<label for="email" class="form-label">Email</label>
-								<input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@email.com" required>
-							</div>
-						</div> <!-- end name & email -->
-						<!-- phone & subject -->
-						<div class="row">
-							<div class="col">
-								<label for="phone" class="form-label">Phone</label>
-								<input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" required>
-							</div>
-							<div class="col">
-								<label for="subject" class="form-label">Subject</label>
-								<select id="input-subject" class="form-select form__select shadow-none">
-									<option selected value="saran">Saran untuk Website HMTL</option>
-									<option value="pertanyaan">Pertanyaan</option>
-									<option value="partnership">Partnership</option>
-									<option value="lainnya">Lainnya</option>
-								</select>
-							</div>
-						</div> <!-- end phone & subject -->
-						<!-- textarea -->
-						<label for="message" class="form-label">Message</label>
-						<textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" required></textarea> <!-- end textarea -->
-						<!-- submit message -->
-						<div class="send__input">
-							<input type="submit" value="Send Message" class="submit-message">
-						</div> <!-- end submit message -->
-					</form> <!-- end form -->
-				</div> <!-- end contact form -->
-			</div> <!-- end body section -->
-		</div> <!-- end container -->
-	</div> <!-- end contact section -->
+	</div> <!-- end elibrary section -->
 
 
 	<!-- footer -->
-	<!-- FINSIH -->
+	<!-- FINISH -->
 	<footer>
 		<div class="container">
 			<!-- left footer -->
@@ -326,6 +263,7 @@
 			<p>Copyright &copy; 2021 | Himpunan Mahasiswa Teknik Lingkungan Universitas Diponegoro</p>
 		</div> <!-- end bottom footer -->
 	</footer> <!-- end footer -->
+
 
 	<!-- search section offcanvas -->
 	<!-- FINISH -->

@@ -5,7 +5,7 @@
     1. Google Font
     2. Variable
     3. General styles
-    4. Dashboard Page
+    4. Index Page
     5. Profil Page
     6. Berita Page
     7. Kalender Page
@@ -45,6 +45,8 @@
     --reg-size: 16px;
     --medium-size: 18px;
     --big-size: 24px;
+    --body-font: 'Maven Pro', sans-serif;
+    --head-font: 'Oswald', sans-serif;
 
     /*padding and margin*/
     --section-tb: 72px 0;
@@ -55,7 +57,7 @@
 /*               GENERAL STYLE               */
 /*********************************************/
 * {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: var(--body-font);
     font-weight: 400;
 
     box-sizing: border-box;
@@ -70,26 +72,29 @@ ul {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif !important;
+    font-family: var(--head-font) !important;
     font-size: 72px !important;
     line-height: 72px !important;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--head-font);
     font-size: 48px !important;
     line-height: 48px !important;
 }
 
 h3 {
-    font-size: 30px !important;
+    font-size: 40px !important;
     font-weight: 700 !important;
-    line-height: 30px !important;
+    line-height: 44px !important;
+
+    margin-bottom: 18px !important;
 }
 
 h4 {
-    font-size: 24px !important;
-    line-height: 24px !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
 }
 
 h5 {
@@ -98,16 +103,18 @@ h5 {
 }
 
 h6 {
-    font-size: 18px !important;
+    font-size: 18px;
 }
 
 /*title section*/
 .title__section {
-    padding-bottom: 24px;
+    max-width: 660px;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
-.title__section h2 {
-    margin-bottom: 16px;
+.title__section h3 {
+    color: var(--color2);
 }
 
 /**********************/
@@ -417,16 +424,35 @@ footer .container {
     background-color: rgba(234, 106, 46, 1);
 }
 
+/*****************/
+/*    Header     */
+/*****************/
+.headers {
+    height: 65vh;
+    max-height: 580px;
+
+    background-color: var(--color3);
+    background-attachment: fixed;
+    background-position: center;
+
+    object-fit: cover;
+    background-blend-mode: screen;
+}
+
+.headers .container {
+    justify-content: center;
+}
+
 
 /**********************************************/
-/*               DASHBOARD PAGE               */
+/*               INDEX PAGE                   */
 /**********************************************/
 /*****************/
 /*    Header     */
 /*****************/
 header {
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -693,10 +719,12 @@ header .container {
 /*Himpunan Mahasiswa Teknik Lingkungan*/
 .headers .sub__title {
     font-size: 20px;
-    line-height: 20px;
     font-weight: 500;
+    line-height: 20px;
+
     margin-top: 24px;
 }
+
 /*Biro Teknik Lingkungan*/
 /*Unit Kegiatan Mahasiswa*/
 /*******************************************/
@@ -708,42 +736,245 @@ header .container {
 /******************************************/
 /*               ARSIP PAGE               */
 /******************************************/
+/***************************/
+/*    elibrary section     */
+/***************************/
+.elibrary__section .body__section {
+    padding: var(--section-tb);
+}
+
+/*elibrary body*/
+/*elibrary main*/
+.elibrary__link {
+    display: flex;
+
+    margin-bottom: 24px;
+    padding: 12px 18px;
+
+    text-decoration: none;
+
+    color: var(--black);
+    background-color: var(--light-color);
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elibrary__link i {
+    transition: all .4s ease;
+}
+
+.elibrary__link[aria-expanded='true'] .icon-down {
+    transform: rotate(180deg);
+}
+
+.smt__title {
+    font-weight: 600;
+}
+
+.elibrary__cc {
+    transition: all .6s ease;
+    transition-delay: .2s;
+}
+
+.elibrary__course {
+    transition: all .4s ease-in-out;
+}
+
+.elibrary__course:hover {
+    transform: translateY(-6px);
+}
+
+.course__card {
+    transition: all .3s ease;
+
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 10%),
+        0 6px 15px rgb(0 0 0 / 8%);
+}
+
+.course__card:hover {
+    transition: all .3s ease;
+
+    box-shadow: 0 0 1px rgb(0 0 0 / 10%),
+        0 6px 15px rgb(0 0 0 / 10%);
+}
+
+.elibrary__card {
+    text-decoration: none;
+}
+
+.course__photo {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 3px 3px 0 0;
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.course__content {
+    display: flex;
+
+    padding: 0 24px 3px;
+
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.course__content p {
+    font-size: 12px;
+
+    margin: 9px 0 6px;
+}
+
+.course__content h6 {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+    -ms-hyphens: auto;
+}
+
+.cc__sks {
+    font-size: 12px;
+
+    margin-bottom: 15px;
+    margin-left: 12px;
+    padding: 3px 9px;
+
+    color: var(--white);
+    border-radius: 25px;
+    background-color: var(--color1);
+}
+
+.cc__left,
+.cc__right {
+    flex: 50%;
+}
+
+/*elibrary aside*/
+.elibrary__aside hr {
+    margin: 24px 0;
+}
+
+.aside__sticky {
+    top: 30px;
+}
+
+.date__elibrary {
+    display: flex;
+
+    align-items: center;
+}
+
+.date__elibrary i {
+    margin-right: 12px;
+    margin-left: 3px;
+
+    color: var(--color1);
+}
+
+.date__elibrary p {
+    font-weight: 600;
+
+    margin-bottom: 0;
+
+    color: var(--color1);
+}
+
+.from__elibrary {
+    margin: 24px 0 36px;
+    padding: 0 12px;
+
+    border: 1px solid rgba(227, 227, 226, 1.0);
+}
+
+.from__elibrary i {
+    color: var(--color1);
+}
+
+.sb__elibrary {
+    width: 100%;
+    padding: 8px 12px 8px 0;
+
+    border: none;
+    outline: none;
+}
+
+.submit__elibrary {
+    border: 0;
+    background-color: transparent;
+}
+
+.link__ks {
+    font-weight: 600;
+
+    padding: 0 0 8px;
+
+    transition: all .3s ease;
+    text-decoration: none;
+
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+}
+
+.link__ks:hover {
+    color: var(--color2);
+    border-bottom: 2px solid var(--color2);
+}
+
+/**********************************/
+/*    arsip-matkul child page     */
+/**********************************/
+.elibrary__root {
+    display: flex;
+
+    margin-bottom: 20px;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.elibrary__root a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+
+    margin-right: 4px;
+
+    transition: all .3s ease;
+    text-decoration: none;
+
+    color: var(--color1);
+}
+
+.elibrary__root a:hover {
+    color: rgba(50, 165, 99, .7);
+}
+
+.elibrary__root i {
+    font-size: 14px;
+
+    margin-right: 4px;
+
+    transform: translateY(2px);
+
+    color: var(--color1);
+}
+
+
 /*******************************************/
 /*               KONTAK PAGE               */
 /*******************************************/
-/*****************/
-/*    Header     */
-/*****************/
-.headers {
-    height: 65vh;
-    max-height: 580px;
-
-    background-color: var(--color3);
-    background-image: url(css-images/jumbotron-contact.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-
-    object-fit: cover;
-    background-blend-mode: screen;
-}
-
-.headers .container {
-    justify-content: center;
-}
-
 /***********************/
 /*    Help Section     */
 /***********************/
 .help__section {
     padding: var(--section-tb);
-}
-
-/*head card*/
-.help__section .head__card .title__card {
-    font-size: 36px;
-    font-weight: 700;
-
-    color: var(--color2);
 }
 
 /*content card*/
@@ -788,7 +1019,7 @@ header .container {
 /*********************/
 .map__section {
     width: 100%;
-    height: 420px;
+    height: 480px;
 }
 
 #map {
@@ -860,17 +1091,22 @@ header .container {
     }
 
     h3 {
+        font-size: 30px !important;
+        line-height: 34px !important;
+    }
+
+    h4 {
         font-size: 24px !important;
         line-height: 24px !important;
     }
 
-    h4 {
-        font-size: 20px !important;
-        line-height: 20px !important;
+    h6 {
+        font-size: 16px;
     }
 
-    h6 {
-        font-size: 16px !important;
+    /*title section*/
+    .title__section {
+        max-width: 540px;
     }
 
     /*********************************************/
@@ -948,7 +1184,7 @@ header .container {
     }
 
     /**********************************************/
-    /*               DASHBOARD PAGE               */
+    /*               INDEX PAGE               */
     /**********************************************/
     /*****************/
     /*    Header     */
@@ -1063,11 +1299,6 @@ header .container {
     /***********************/
     /*    Help Section     */
     /***********************/
-    /*head card*/
-    .help__section .head__card .title__card {
-        font-size: 30px;
-    }
-
     /*content card*/
     .help__section .content__card {
         flex-direction: column;
@@ -1115,8 +1346,8 @@ header .container {
     }
 
     h3 {
-        font-size: 20px !important;
-        line-height: 20px !important;
+        /*font-size: 20px !important;
+        line-height: 20px !important;*/
     }
 
     /**************************/
@@ -1242,6 +1473,10 @@ header .container {
         flex-direction: column;
     }
 
+    .right__footer ul {
+        margin-bottom: 0;
+    }
+
     .quick__links,
     .contact__us {
         padding-right: 0;
@@ -1271,12 +1506,35 @@ header .container {
     /******************************************/
     /*               ARSIP PAGE               */
     /******************************************/
+    /***************************/
+    /*    eLibrary Section     */
+    /***************************/
+    /*elibrary main*/
+    .elibrary__main {
+        padding-bottom: 36px;
+    }
+
+    .course__photo {
+        height: 100px;
+    }
+
+    /*elibrary aside*/
+    .date__elibrary,
+    .search__elibrary {
+        display: none;
+    }
+
     /*******************************************/
     /*               KONTAK PAGE               */
     /*******************************************/
     /***********************/
     /*    Help Section     */
     /***********************/
+    /*title section*/
+    .title__section {
+        padding-bottom: 24px;
+    }
+
     /*content card*/
     .help__section .content__card .body__card {
         margin: 15px;
