@@ -13,6 +13,15 @@ class Home extends BaseController
 		return view('mainpage/index', $data);
 	}
 
+	public function arsip()
+	{
+		$data = [
+			'title' => 'Arsip - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/arsip', $data);
+	}
+
 	public function arsipmatkul()
 	{
 		$data = [
