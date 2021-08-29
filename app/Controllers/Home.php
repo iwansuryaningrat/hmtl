@@ -75,4 +75,13 @@ class Home extends BaseController
 
 		return view('mainpage/profil-biro', $data);
 	}
+
+	public function hmtl()
+	{
+		$data = [
+			'title' => 'Himpunan Mahasiswa Teknik Lingkungan - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/profil-hmtl', $data);
+	}
 }
