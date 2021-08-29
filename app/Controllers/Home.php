@@ -22,6 +22,15 @@ class Home extends BaseController
 		return view('mainpage/berita' . $data);
 	}
 
+	public function kalender()
+	{
+		$data = [
+			'title' => 'Kalender - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/kalender', $data);
+	}
+
 	public function arsip()
 	{
 		$data = [
