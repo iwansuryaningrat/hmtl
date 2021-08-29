@@ -76,13 +76,13 @@
 							<a class="owl__ilink" href="https://www.instagram.com/hmtlundip/" target="_blank"><img src="/mainpage/images/instagram-color2.svg" alt="alter-igcolor1"></a>
 						</div>
 						<div class="item">
-							<a class="owl__ilink" href="http://bit.ly/LinkedinHMTLUNDIP"><img src="/mainpage/images/linkedin-color1.svg" alt="alter-linkedincolor1"></a>
+							<a class="owl__ilink" href="http://bit.ly/LinkedinHMTLUNDIP" target="_blank"><img src="/mainpage/images/linkedin-color1.svg" alt="alter-linkedincolor1"></a>
 						</div>
 						<div class="item">
 							<a class="owl__ilink" href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><img src="/mainpage/images/youtube-color1.svg" alt="alter-youtubecolor1"></a>
 						</div>
 						<div class="item">
-							<a class="owl__ilink" href="https://lin.ee/1I0669e"><img src="/mainpage/images/line-color.svg" alt="alter-linecolor"></a>
+							<a class="owl__ilink" href="https://lin.ee/1I0669e" target="_blank"><img src="/mainpage/images/line-color.svg" alt="alter-linecolor"></a>
 						</div>
 						<div class="item">
 							<a class="owl__ilink" href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><img src="/mainpage/images/spotify-color.svg" alt="alter-spotifycolor"></a>
