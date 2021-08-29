@@ -57,4 +57,13 @@ class Home extends BaseController
 
 		return view('mainpage/kontak', $data);
 	}
+
+	public function profil()
+	{
+		$data = [
+			'title' => 'Profil - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/profil', $data);
+	}
 }
