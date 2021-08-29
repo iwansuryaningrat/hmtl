@@ -59,7 +59,7 @@
 
 				<!-- button selengkapnya -->
 				<div class="btn__section">
-					<a href="berita.html" class="more__btn">Lebih Banyak</a>
+					<a href="/home/berita" class="more__btn">Lebih Banyak</a>
 				</div> <!-- end button selengkapnya -->
 			</div> <!-- end news body -->
 		</div> <!-- end body section -->
@@ -86,7 +86,7 @@
 
 				<!-- button selengkapnya -->
 				<div class="btn__section">
-					<a href="profil.html" class="more__btn">Lebih Banyak</a>
+					<a href="/home/hmtl" class="more__btn">Lebih Banyak</a>
 				</div> <!-- end button selengkapnya -->
 			</div> <!-- proker body -->
 		</div> <!-- end body section -->

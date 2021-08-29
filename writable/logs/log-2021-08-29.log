@@ -330,3 +330,13 @@ Stack trace:
   thrown
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2021-08-29 07:44:02 --> Uncaught ErrorException: Undefined variable: viewFile in C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 278, Array)
+#1 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
