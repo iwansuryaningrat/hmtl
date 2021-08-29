@@ -1,6 +1,6 @@
 <?= $this->extend('mainpage/layout/template'); ?>
 
-
+<?= $this->section('mainpage'); ?>
 <!-- header -->
 <!-- FINISH -->
 <header class="headers" style="background-image: url(/mainpage/images/jumbotron-arsip.jpg);">

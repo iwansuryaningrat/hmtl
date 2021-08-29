@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Arsip Mata Kuliah - HMTL | Universitas Diponegoro</title>
+    <title><?= $title; ?></title>
 
     <!-- apple touch icon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/mainpage/images/apple-touch-icon-57x57.png">
@@ -123,6 +123,60 @@
     <?= $this->renderSection('mainpage'); ?>
 
 
+    <!-- contact section -->
+    <!-- FINISH -->
+    <div class="contact__section">
+        <div class="container">
+            <div class="body__section">
+                <!-- contact header -->
+                <div class="contact__header">
+                    <h1>Kontak Kami</h1>
+                    <p>Jangan ragu untuk menghubungi kami kapanpun. Kami akan menghubungi anda kembali sesegera mungkin.</p>
+                </div> <!-- end contact header -->
+                <!-- contact form -->
+                <div class="contact__form">
+                    <form action="">
+                        <!-- name & email -->
+                        <div class="row">
+                            <div class="col">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" required>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@mail.com" required>
+                            </div>
+                        </div> <!-- end name & email -->
+                        <!-- phone & subject -->
+                        <div class="row">
+                            <div class="col">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" required>
+                            </div>
+                            <div class="col">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select id="input-subject" class="form-select form__select shadow-none">
+                                    <option selected value="saran">Saran untuk Website HMTL</option>
+                                    <option value="pertanyaan">Pertanyaan</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                        </div> <!-- end phone & subject -->
+                        <!-- textarea -->
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" required></textarea> <!-- end textarea -->
+                        <!-- submit message -->
+                        <div class="send__input">
+                            <input type="submit" value="Send Message" class="submit-message">
+                        </div> <!-- end submit message -->
+                    </form> <!-- end form -->
+                </div> <!-- end contact form -->
+            </div> <!-- end body section -->
+        </div> <!-- end container -->
+    </div> <!-- end contact section -->
+
+
     <!-- footer -->
     <!-- FINISH -->
     <footer>
@@ -168,8 +222,8 @@
                 <div class="social__connect">
                     <h5>Social Connect</h5>
                     <ul>
-                        <li><a href="https://lin.ee/1I0669e" target="_blank"><i class="icofont-line"></i></a></li>
-                        <li><a href="http://bit.ly/LinkedinHMTLUNDIP" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icofont-line"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><i class="icofont-youtube-play"></i></a></li>
                         <li><a href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><i class="icofont-spotify"></i></a></li>
                         <li><a href="https://www.instagram.com/hmtlundip/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
