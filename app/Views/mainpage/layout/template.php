@@ -53,7 +53,7 @@
     <nav class="navbar nav__pt__pb navbar-expand-lg fixed-top navbar-light">
         <div class="container-fluid">
             <!-- logo navigation-->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img src="/mainpage/images/logo-title-hmtl.svg" alt="alterlogo" height="36px">
             </a> <!-- end logo navigation -->
 
@@ -74,38 +74,38 @@
             <div class="collapse navbar-collapse" id="navbarWithDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav__font" aria-current="page" href="index.html">
+                        <a class="nav-link nav__font" aria-current="page" href="/">
                             <span>Beranda</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="profil.html" class="nav-link nav__font dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="/home/profil" class="nav-link nav__font dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span>Profil</span>
                             <i class="icofont-simple-down"></i>
                         </a>
                         <ul class="drop__menu dropdown-menu animate__animated animate__fadeIn animate__faster" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="drop__item dropdown-item" href="profil-hmtl.html">Himpunan Mahasiswa Teknik Lingkungan</a></li>
-                            <li><a class="drop__item dropdown-item" href="profil-biro.html">Biro Teknik Lingkungan</a></li>
-                            <li><a class="drop__item dropdown-item" href="profil-ukm.html">Unit Kegiatan Mahasiswa</a></li>
+                            <li><a class="drop__item dropdown-item" href="/home/hmtl">Himpunan Mahasiswa Teknik Lingkungan</a></li>
+                            <li><a class="drop__item dropdown-item" href="/home/biro">Biro Teknik Lingkungan</a></li>
+                            <li><a class="drop__item dropdown-item" href="/home/ukm">Unit Kegiatan Mahasiswa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="berita.html">
+                        <a class="nav-link nav__font" href="/home/berita">
                             <span>Berita</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="kalender.html">
+                        <a class="nav-link nav__font" href="/home/kalender">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font active" href="arsip.html">
+                        <a class="nav-link nav__font active" href="/home/arsip">
                             <span>Arsip</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="kontak.html">
+                        <a class="nav-link nav__font" href="/home/kontak">
                             <span>Kontak</span>
                         </a>
                     </li>
@@ -189,7 +189,7 @@
                 </div> <!-- end lef footer image -->
                 <!-- left footer content -->
                 <div class="left__content">
-                    <a href="index.html">Himpunan Mahasiswa<br>Teknik Lingkungan UNDIP</a>
+                    <a href="/">Himpunan Mahasiswa<br>Teknik Lingkungan UNDIP</a>
                     <p>Kabinet Askara Cita</p>
                     <p>Gedung Kuliah Bersama Lantai 3<br>Jl. Prof Soedarto, S.H Tembalang Semarang 50275</p>
                 </div> <!-- end left footer content -->
@@ -201,12 +201,12 @@
                 <div class="quick__links">
                     <h5>Quick Links</h5>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="profil.html">Profil</a></li>
-                        <li><a href="berita.html">Berita</a></li>
-                        <li><a href="kalender.html">Kalender</a></li>
-                        <li><a href="arsip.html">Arsip</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
+                        <li><a href="/">Beranda</a></li>
+                        <li><a href="/home/profil">Profil</a></li>
+                        <li><a href="/home/berita">Berita</a></li>
+                        <li><a href="/home/kalender">Kalender</a></li>
+                        <li><a href="/home/arsip">Arsip</a></li>
+                        <li><a href="/home/kontak">Kontak</a></li>
                     </ul>
                 </div> <!-- end quick link -->
                 <!-- contact us -->
@@ -222,8 +222,8 @@
                 <div class="social__connect">
                     <h5>Social Connect</h5>
                     <ul>
-                        <li><a href="#" target="_blank"><i class="icofont-line"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="https://lin.ee/1I0669e" target="_blank"><i class="icofont-line"></i></a></li>
+                        <li><a href="http://bit.ly/LinkedinHMTLUNDIP" target="_blank"><i class="icofont-linkedin"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><i class="icofont-youtube-play"></i></a></li>
                         <li><a href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><i class="icofont-spotify"></i></a></li>
                         <li><a href="https://www.instagram.com/hmtlundip/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
