@@ -70,7 +70,7 @@ class Home extends BaseController
 	public function biro()
 	{
 		$data = [
-			'title' => 'Profil Biro - HMTL | Universitas Diponegoro'
+			'title' => 'Biro - HMTL | Universitas Diponegoro'
 		];
 
 		return view('mainpage/profil-biro', $data);
@@ -83,5 +83,14 @@ class Home extends BaseController
 		];
 
 		return view('mainpage/profil-hmtl', $data);
+	}
+
+	public function ukm()
+	{
+		$data = [
+			'title' => 'Unit Kegiatan Mahasiswa - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/profil-ukm', $data);
 	}
 }
