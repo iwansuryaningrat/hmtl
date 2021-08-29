@@ -48,4 +48,13 @@ class Home extends BaseController
 
 		return view('mainpage/arsip-matkul', $data);
 	}
+
+	public function kontak()
+	{
+		$data = [
+			'title' => 'Kontak - HMTL | Universitas Diponegoro'
+		];
+
+		return view('mainpage/kontak', $data);
+	}
 }
