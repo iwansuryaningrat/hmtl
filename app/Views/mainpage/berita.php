@@ -20,7 +20,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
 	<!-- Webpage Title -->
-	<title>Berita - HMTL | Universitas Diponegoro</title>
+	<title>$title</title>
 
 	<!-- apple touch icon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/mainpage/images/apple-touch-icon-57x57.png">
