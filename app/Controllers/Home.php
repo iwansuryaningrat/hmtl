@@ -7,7 +7,8 @@ class Home extends BaseController
 	public function index()
 	{
 		$data = [
-			'title' => 'HMTL | Universitas Diponegoro'
+			'title' => 'HMTL | Universitas Diponegoro',
+			'tab' => 'index'
 		];
 
 		return view('mainpage/index', $data);
@@ -16,16 +17,18 @@ class Home extends BaseController
 	public function berita()
 	{
 		$data = [
-			'title' => 'Berita - HMTL | Universitas Diponegoro'
+			'title' => 'Berita - HMTL | Universitas Diponegoro',
+			'tab' => 'berita'
 		];
 
-		return view('mainpage/berita' . $data);
+		return view('mainpage/berita', $data);
 	}
 
 	public function kalender()
 	{
 		$data = [
-			'title' => 'Kalender - HMTL | Universitas Diponegoro'
+			'title' => 'Kalender - HMTL | Universitas Diponegoro',
+			'tab' => 'kalender'
 		];
 
 		return view('mainpage/kalender', $data);
@@ -34,7 +37,8 @@ class Home extends BaseController
 	public function arsip()
 	{
 		$data = [
-			'title' => 'Arsip - HMTL | Universitas Diponegoro'
+			'title' => 'Arsip - HMTL | Universitas Diponegoro',
+			'tab' => 'arsip'
 		];
 
 		return view('mainpage/arsip', $data);
@@ -43,7 +47,8 @@ class Home extends BaseController
 	public function arsipmatkul()
 	{
 		$data = [
-			'title' => 'Arsip Mata Kuliah - HMTL | Universitas Diponegoro'
+			'title' => 'Arsip Mata Kuliah - HMTL | Universitas Diponegoro',
+			'tab' => 'arsip'
 		];
 
 		return view('mainpage/arsip-matkul', $data);
@@ -52,7 +57,8 @@ class Home extends BaseController
 	public function kontak()
 	{
 		$data = [
-			'title' => 'Kontak - HMTL | Universitas Diponegoro'
+			'title' => 'Kontak - HMTL | Universitas Diponegoro',
+			'tab' => 'kontak'
 		];
 
 		return view('mainpage/kontak', $data);
@@ -61,7 +67,8 @@ class Home extends BaseController
 	public function profil()
 	{
 		$data = [
-			'title' => 'Profil - HMTL | Universitas Diponegoro'
+			'title' => 'Profil - HMTL | Universitas Diponegoro',
+			'tab' => 'profil'
 		];
 
 		return view('mainpage/profil', $data);
@@ -70,7 +77,8 @@ class Home extends BaseController
 	public function biro()
 	{
 		$data = [
-			'title' => 'Biro - HMTL | Universitas Diponegoro'
+			'title' => 'Biro - HMTL | Universitas Diponegoro',
+			'tab' => 'profil'
 		];
 
 		return view('mainpage/profil-biro', $data);
@@ -79,7 +87,8 @@ class Home extends BaseController
 	public function hmtl()
 	{
 		$data = [
-			'title' => 'Himpunan Mahasiswa Teknik Lingkungan - HMTL | Universitas Diponegoro'
+			'title' => 'Himpunan Mahasiswa Teknik Lingkungan - HMTL | Universitas Diponegoro',
+			'tab' => 'profil'
 		];
 
 		return view('mainpage/profil-hmtl', $data);
@@ -88,7 +97,8 @@ class Home extends BaseController
 	public function ukm()
 	{
 		$data = [
-			'title' => 'Unit Kegiatan Mahasiswa - HMTL | Universitas Diponegoro'
+			'title' => 'Unit Kegiatan Mahasiswa - HMTL | Universitas Diponegoro',
+			'tab' => 'profil'
 		];
 
 		return view('mainpage/profil-ukm', $data);

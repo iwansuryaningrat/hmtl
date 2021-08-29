@@ -74,12 +74,12 @@
             <div class="collapse navbar-collapse" id="navbarWithDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav__font" aria-current="page" href="/">
+                        <a class="nav-link nav__font <?php if ($tab == 'index') echo 'active'; ?> " aria-current="page" href="/">
                             <span>Beranda</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="/home/profil" class="nav-link nav__font dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="/home/profil" class="nav-link nav__font dropdown-toggle <?php if ($tab == 'profil') echo 'active'; ?> " id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span>Profil</span>
                             <i class="icofont-simple-down"></i>
                         </a>
@@ -90,22 +90,22 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/berita">
+                        <a class="nav-link nav__font <?php if ($tab == 'berita') echo 'active'; ?> " href="/home/berita">
                             <span>Berita</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/kalender">
+                        <a class="nav-link nav__font <?php if ($tab == 'kalender') echo 'active'; ?> " href="/home/kalender">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font active" href="/home/arsip">
+                        <a class="nav-link nav__font <?php if ($tab == 'arsip') echo 'active'; ?> " href="/home/arsip">
                             <span>Arsip</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/kontak">
+                        <a class="nav-link nav__font <?php if ($tab == 'kontak') echo 'active'; ?> " href="/home/kontak">
                             <span>Kontak</span>
                         </a>
                     </li>
