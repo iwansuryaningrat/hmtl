@@ -13,38 +13,38 @@
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
     <meta property="og:site_name" content="HMTL UNDIP" /> <!-- website name -->
     <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="Berita Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
+    <meta property="og:title" content="Arsip-Mata Kuliah Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
     <meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." /> <!-- description shown in the actual shared post -->
     <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Berita - HMTL | Universitas Diponegoro</title>
+    <title>Arsip Mata Kuliah - HMTL | Universitas Diponegoro</title>
 
     <!-- apple touch icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/mainpage/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/mainpage/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/mainpage/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/mainpage/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/mainpage/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/mainpage/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/mainpage/images/apple-touch-icon-180x180.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"> <!-- bootstrap styles -->
-    <link rel="stylesheet" href="assets/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
-    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
-    <link rel="stylesheet" href="assets/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
-    <link rel="stylesheet" href="assets/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
+    <link rel="stylesheet" href="/mainpage/css/bootstrap.css"> <!-- bootstrap styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- animate animation styles -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> <!-- owl carousel min -->
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
+    <link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
+    <link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
 
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- custom styles -->
+    <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- custom styles -->
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/images/favicon-hmtl.ico">
+    <link rel="icon" href="/mainpage/images/favicon-hmtl.ico">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <!-- logo navigation-->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo-title-hmtl.svg" alt="alterlogo" height="36px">
+                <img src="/mainpage/images/logo-title-hmtl.svg" alt="alterlogo" height="36px">
             </a> <!-- end logo navigation -->
 
             <!-- right navigation mobile view -->
@@ -90,7 +90,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font active" href="berita.html">
+                        <a class="nav-link nav__font" href="berita.html">
                             <span>Berita</span>
                         </a>
                     </li>
@@ -100,7 +100,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="arsip.html">
+                        <a class="nav-link nav__font active" href="arsip.html">
                             <span>Arsip</span>
                         </a>
                     </li>
@@ -120,7 +120,7 @@
     </nav> <!-- end navigations -->
 
 
-    <!-- Template Link -->
+    <?= $this->renderSection('mainpage'); ?>
 
 
     <!-- footer -->
@@ -131,7 +131,7 @@
             <div class="left__footer">
                 <!-- lef footer image -->
                 <div class="left__img">
-                    <img src="assets/images/Logo-hmtl-full.png" alt="alter-logo-hmtl-full">
+                    <img src="/mainpage/images/Logo-hmtl-full.png" alt="alter-logo-hmtl-full">
                 </div> <!-- end lef footer image -->
                 <!-- left footer content -->
                 <div class="left__content">
@@ -168,8 +168,8 @@
                 <div class="social__connect">
                     <h5>Social Connect</h5>
                     <ul>
-                        <li><a href="#" target="_blank"><i class="icofont-line"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                        <li><a href="https://lin.ee/1I0669e" target="_blank"><i class="icofont-line"></i></a></li>
+                        <li><a href="http://bit.ly/LinkedinHMTLUNDIP" target="_blank"><i class="icofont-linkedin"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><i class="icofont-youtube-play"></i></a></li>
                         <li><a href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><i class="icofont-spotify"></i></a></li>
                         <li><a href="https://www.instagram.com/hmtlundip/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
@@ -203,10 +203,10 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jquery 3.5.1 Gcdn scripts -->
-    <script src="assets/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
-    <script src="assets/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
+    <script src="/mainpage/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
+    <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
 
-    <script src="assets/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>
