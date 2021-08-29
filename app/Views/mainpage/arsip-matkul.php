@@ -20,9 +20,9 @@
 				<!-- elibrary main -->
 				<div class="elibrary__main col-lg-9 col-md-9 ps-lg-0 pe-lg-5 pe-md-4">
 					<div class="elibrary__root">
-						<a href="arsip.html">eLibrary</a>
+						<a href="/home/arsip">eLibrary</a>
 						<i class="icofont-simple-right"></i>
-						<a href="arsip-matkul.html">Mata Kuliah</a>
+						<a href="/home/arsipmatkul">Mata Kuliah</a>
 					</div>
 
 					<div class="head__eBook">
