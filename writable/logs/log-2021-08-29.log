@@ -18,3 +18,27 @@ Stack trace:
   thrown
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2021-08-29 05:11:24 --> Array to string conversion
+#0 C:\xampp\htdocs\hmtl\app\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Home->berita()
+#2 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\hmtl\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-08-29 05:11:24 --> Uncaught ErrorException: Undefined variable $viewFile in C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 278)
+#1 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(278): include()
+#2 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+
+Next ValueError: Path cannot be empty in C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php:278
+Stack trace:
+#0 C:\xampp\htdocs\hmtl\vendor\codeigniter4\framework\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#1 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
