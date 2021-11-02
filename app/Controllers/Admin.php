@@ -14,7 +14,6 @@ use App\Models\PesanModel;
 use App\Models\ProkerModel;
 use App\Models\UkmModel;
 
-
 use function PHPUnit\Framework\throwException;
 
 class Admin extends BaseController
@@ -118,9 +117,11 @@ class Admin extends BaseController
 
     public function ukm()
     {
+        $ukm = $this->ukmModel->findAll();
         $data = [
             'title' => 'Profile UKM - HMTL | Universitas Diponegoro',
-            'tab' => 'ukm'
+            'tab' => 'ukm',
+            'ukm' => $ukm
         ];
 
         return view('admin/ukm', $data);
