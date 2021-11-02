@@ -107,9 +107,11 @@ class Admin extends BaseController
 
     public function biro()
     {
+        $biro = $this->biroModel->findAll();
         $data = [
             'title' => 'Profile Biro - HMTL | Universitas Diponegoro',
-            'tab' => 'biro'
+            'tab' => 'biro',
+            'biro' => $biro
         ];
 
         return view('admin/biro', $data);
