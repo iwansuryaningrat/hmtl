@@ -248,6 +248,55 @@ class Admin extends BaseController
         return view('admin/news', $data);
     }
 
+    // Add News Controller
+    public function addnews()
+    {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $data = [
+            'title' => 'Tambah Berita - HMTL | Universitas Diponegoro',
+            'tab' => 'berita',
+            'jumlahpesan' => $jumlahpesan
+        ];
+        // dd($data['pesan']['nama']);
+
+        return view('admin/addberita', $data);
+    }
+
+    // Edit News Controller
+    public function editnews($id_news)
+    {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $databerita = $this->newsModel->getNews($id_news);
+        dd($databerita);
+
+        $data = [
+            'title' => 'Tambah Berita - HMTL | Universitas Diponegoro',
+            'tab' => 'berita',
+            'berita' => $databerita,
+            'jumlahpesan' => $jumlahpesan
+        ];
+
+        // return view('admin/editberita', $data);
+    }
+
     // Kalender Controller
     public function kalender()
     {

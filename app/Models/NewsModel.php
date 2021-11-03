@@ -10,4 +10,9 @@ class NewsModel extends Model
     protected $primarykey = 'id_news';
     protected $useTimestamps = true;
     protected $allowedFields = ['judul', 'highlight', 'preview', 'isi', 'kategori', 'tag', 'foto', 'created_at'];
+
+    public function getNews($id_news)
+    {
+        return $this->where(['id_news' => $id_news])->first();
+    }
 }

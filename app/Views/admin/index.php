@@ -369,7 +369,7 @@
             <!-- Dashboard -->
             <li class="nav-item <?php if ($tab == 'dashboard') : echo 'active';
                                 endif; ?>">
-              <a data-toggle="collapse" href="/admin/index" class="collapsed" aria-expanded="false">
+              <a data-toggle="collapse" href="/admin/index">
                 <i class="fas fa-home"></i>
                 <p>Dashboard</p>
               </a>
@@ -491,7 +491,6 @@
               <div>
                 <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
                 <h5 class="text-white op-7 mb-2">
-                  Premium Bootstrap 4 Admin Dashboard
                 </h5>
               </div>
               <div class="ml-md-auto py-2 py-md-0">

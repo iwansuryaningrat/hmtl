@@ -364,7 +364,7 @@
                         <!-- Dashboard -->
                         <li class="nav-item <?php if ($tab == 'dashboard') : echo 'active';
                                             endif; ?>">
-                            <a data-toggle="collapse" href="/admin/index" class="collapsed" aria-expanded="false">
+                            <a data-toggle="collapse" href="/admin/index">
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>

@@ -30,7 +30,8 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="/admin/assets/css/demo.css">
 
-
+    <!-- custom -->
+    <link rel="stylesheet" href="/admin/assets/css/sumber-jaya-styles.css">
 </head>
 
 <body>
@@ -474,12 +475,12 @@
         </div>
         <!-- End Sidebar (Done) -->
 
-        <!-- Main Panel -->
+        <!-- Formulir disini -->
         <div class="main-panel">
             <div class="container">
                 <div class="page-inner">
                     <div class="page-header">
-                        <h4 class="page-title">Daftar Pesan</h4>
+                        <h4 class="page-title">Formulir Tambah Berita</h4>
                         <ul class="breadcrumbs">
                             <li class="nav-home">
                                 <a href="/admin/index">
@@ -490,80 +491,95 @@
                                 <i class="flaticon-right-arrow"></i>
                             </li>
                             <li class="nav-item">
-                                <a href="/admin/pesan">Pesan dari <?= $pesan['nama']; ?></a>
+                                <a href="/admin/news">Data Berita</a>
+                            </li>
+                            <li class="separator">
+                                <i class="flaticon-right-arrow"></i>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/addnews">Formulir Tambah Berita</a>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- Detail Pesan -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Pesan Masuk dari <?= $pesan['nama']; ?></h4>
+                                    <div class="card-title">Tambah Berita</div>
+                                    <div class="card-category">Masukkan data barang dengan sebenar-benarnya</div>
                                 </div>
-                                <form action="/edit/updatepesan/<?= $pesan['id_pesan']; ?>" method="post">
+                                <form action="/add/addnews" method="POST" enctype="multipart/form-data">
+                                    <?= csrf_field(); ?>
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">
-                                                        Nama
-                                                    </label>
-                                                    <p class="form-control-static"><?= $pesan['nama']; ?></p>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label class="control-label">
-                                                        Subject
-                                                    </label>
-                                                    <p class="form-control-static"><?= $pesan['subject']; ?></p>
-                                                </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="judul" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Judul <span class="required-label">*</span></label>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Berita..." required autofocus>
+                                                <!--  -->
                                             </div>
-                                            <div class="col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">
-                                                        Email
-                                                    </label>
-                                                    <p class="form-control-static"><?= $pesan['email']; ?></p>
-                                                </div>
+                                        </div> <!-- end judul -->
 
-                                                <div class="form-group">
-                                                    <label class="control-label">
-                                                        Telepon
-                                                    </label>
-                                                    <p class="form-control-static"><?= $pesan['telp']; ?></p>
-                                                </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="highlight" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Highlight <span class="required-label">*</span></label>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <select id="highlight" required class="form-control" name="highlight" required>
+                                                    <option hidden> -- Pilih Highlight --</option>
+                                                    <option value="yes">Yes</option>
+                                                    <option value="no">No</option>
+                                                </select>
                                             </div>
-                                            <div class="col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">
-                                                        Pesan
-                                                    </label>
-                                                    <p class="form-control-static" name="pesan" id="pesan" value='<?= $pesan['pesan']; ?>'><?= $pesan['pesan']; ?></p>
+                                        </div> <!-- end highlight -->
 
-                                                </div>
+                                        <div class="form-group form-show-validation row">
+                                            <label for="kategori" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Kategori <span class="required-label">*</span></label>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <select id="kategori" required class="form-control" name="kategori" required>
+                                                    <option hidden> -- Pilih Kategori --</option>
+                                                    <option value="berita terkini">Berita Terkini</option>
+                                                    <option value="info akademik">Info Akademik</option>
+                                                    <option value="info beasiswa">Info Beasiswa</option>
+                                                    <option value="press release">Press Release</option>
+                                                </select>
                                             </div>
-                                            <div class="col-md-12 col-lg-12">
-                                                <div class="form-check">
-                                                    <label>Apakah Anda Ingin Membalas Pesan Ini?</label><br />
-                                                    <label class="form-radio-label">
-                                                        <input class="form-radio-input" type="radio" name="reply" id="reply" value="yes" checked="">
-                                                        <span class="form-radio-sign">Yes</span>
-                                                    </label>
-                                                    <label class="form-radio-label ml-3">
-                                                        <input class="form-radio-input" type="radio" name="reply" id="reply" value="no">
-                                                        <span class="form-radio-sign">No</span>
-                                                    </label>
+                                        </div> <!-- end kategori -->
+
+                                        <div class="form-group form-show-validation row">
+                                            <label for="preview" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Preview <span class="required-label">*</span></label>
+                                            <br>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <textarea class="form-control" name="preview" id="preview" cols="30" rows="10">
+												</textarea>
+                                            </div>
+                                        </div> <!-- end preview -->
+
+                                        <div class="form-group form-show-validation row">
+                                            <label for="isi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Isi <span class="required-label">*</span></label>
+                                            <br>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <textarea class="form-control" name="isi" id="isi" cols="30" rows="10">
+												</textarea>
+                                            </div>
+                                        </div> <!-- end isi -->
+
+                                        <div class="form-group form-show-validation row">
+                                            <label class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Upload Gambar <span class="required-label">*</span></label>
+                                            <div class="col-lg-7 col-md-9 col-sm-8">
+                                                <div class="input-file input-file-image">
+                                                    <img class="img-upload-preview" width="100" height="100" src="http://placehold.it/100x100" alt="preview">
+                                                    <input type="file" class="form-control form-control-file" id="image" name="image" accept="image/*" required>
+
+                                                    <label for="image" class="btn btn-primary btn-round btn-lg"><i class="fa fa-file-image"></i> Upload gambar</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="card-action">
                                         <div class="row">
                                             <div class="col-md-12 d-flex justify-content-end">
-                                                <input class="btn btn-primary ml-4" type="submit" value="Ok" style="border-radius: 100px;">
+                                                <a href="/admin/berita" class="btn btn-danger" style="border-radius: 100px;">
+                                                    Batal
+                                                </a>
+                                                <input class="btn btn-primary ml-4" type="submit" value="Tambah" style="border-radius: 100px;">
                                             </div>
                                         </div>
                                     </div>
@@ -573,78 +589,79 @@
                     </div>
                 </div>
             </div>
+
             <footer class="footer text-center">
                 <p>Copyright &copy; 2021 | Himpunan Mahasiswa Teknik Lingkungan Universitas Diponegoro</p>
             </footer>
         </div>
-
-
-    </div>
-    <!--   Core JS Files   -->
-    <script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
-    <script src="/admin/assets/js/core/popper.min.js"></script>
-    <script src="/admin/assets/js/core/bootstrap.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="/admin/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script src="/admin/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-    <!-- Bootstrap Toggle -->
-    <script src="/admin/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-    <!-- jQuery Scrollbar -->
-    <script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    <!-- Datatables -->
-    <script src="/admin/assets/js/plugin/datatables/datatables.min.js"></script>
-    <!-- Atlantis JS -->
-    <script src="/admin/assets/js/atlantis.min.js"></script>
-    <!-- Atlantis DEMO methods, don't include it in your project! -->
-    <script src="/admin/assets/js/setting-demo2.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('#basic-datatables').DataTable({});
-
-            $('#multi-filter-select').DataTable({
-                "pageLength": 5,
-                initComplete: function() {
-                    this.api().columns().every(function() {
-                        var column = this;
-                        var select = $('<select class="form-control"><option value=""></option></select>')
-                            .appendTo($(column.footer()).empty())
-                            .on('change', function() {
-                                var val = $.fn.dataTable.util.escapeRegex(
-                                    $(this).val()
-                                );
-
-                                column
-                                    .search(val ? '^' + val + '$' : '', true, false)
-                                    .draw();
-                            });
-
-                        column.data().unique().sort().each(function(d, j) {
-                            select.append('<option value="' + d + '">' + d + '</option>')
-                        });
-                    });
-                }
+        <!--   Core JS Files   -->
+        <script src="/admin/assets/js/core/jquery.3.2.1.min.js"></script>
+        <script src="/admin/assets/js/core/popper.min.js"></script>
+        <script src="/admin/assets/js/core/bootstrap.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="/admin/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="/admin/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+        <!-- Moment JS -->
+        <script src="/admin/assets/js/plugin/moment/moment.min.js"></script>
+        <!-- Bootstrap Toggle -->
+        <script src="/admin/assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+        <!-- jQuery Scrollbar -->
+        <script src="/admin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <!-- DateTimePicker -->
+        <script src="/admin/assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+        <!-- Select2 -->
+        <script src="/admin/assets/js/plugin/select2/select2.full.min.js"></script>
+        <!-- jQuery Validation -->
+        <script src="/admin/assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+        <!-- Atlantis JS -->
+        <script src="/admin/assets/js/atlantis.min.js"></script>
+        <!-- Atlantis DEMO methods, don't include it in your project! -->
+        <script src="/admin/assets/js/setting-demo2.js"></script>
+        <script>
+            $('#birth').datetimepicker({
+                format: 'MM/DD/YYYY'
             });
 
-            // Add Row
-            $('#add-row').DataTable({
-                "pageLength": 5,
+            $('#state').select2({
+                theme: "bootstrap"
             });
 
-            var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+            /* validate */
 
-            $('#addRowButton').click(function() {
-                $('#add-row').dataTable().fnAddData([
-                    $("#addName").val(),
-                    $("#addPosition").val(),
-                    $("#addOffice").val(),
-                    action
-                ]);
-                $('#addRowModal').modal('hide');
+            // validation when select change
+            $("#state").change(function() {
+                $(this).valid();
+            })
 
+            // validation when inputfile change
+            $("#uploadImg").on("change", function() {
+                $(this).parent('form').validate();
+            })
+
+            $("#exampleValidation").validate({
+                validClass: "success",
+                rules: {
+                    gender: {
+                        required: true
+                    },
+                    confirmpassword: {
+                        equalTo: "#password"
+                    },
+                    birth: {
+                        date: true
+                    },
+                    uploadImg: {
+                        required: true,
+                    },
+                },
+                highlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                },
+                success: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+                },
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>

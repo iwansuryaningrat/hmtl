@@ -46,17 +46,32 @@ class Add extends BaseController
 		$this->ukmModel = new UkmModel();
 	}
 
-	public function news()
-	{
-		$data = [
-			'title' => 'Tambah Berita - HMTL | Universitas Diponegoro'
-		];
-
-		return view('admin/formadd-news', $data);
-	}
-
+	// Add News Controller
 	public function addnews()
 	{
-		# code...
+		$image = $this->request->getFile('image');
+		if ($image->getError() == 4) {
+			$namaImage = 'news-1.jpg';
+		} else {
+			$namaImage = $image->getName();
+			$image->move('/admin/assets/img');
+		}
+
+		$this->newsModel->save([
+			'judul' => $this->request->getVar('judul'),
+			'highlight' => $this->request->getVar('highlight'),
+			'preview' => $this->request->getVar('preview'),
+			'kategori' => $this->request->getVar('kategori'),
+			'isi' => $this->request->getVar('berat'),
+			'tag' => '',
+			'foto' => $namaImage
+
+		]);
+
+		$session = \Config\Services::session();
+		// $session->setFlashdata('success', 'Book Added');
+
+		// session()->setFlashdata('add-msg-barang', 'Data Barang berhasil ditambahkan.');
+		return redirect()->to('/admin/news');
 	}
 }

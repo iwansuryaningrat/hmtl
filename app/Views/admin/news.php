@@ -364,7 +364,7 @@
                         <!-- Dashboard -->
                         <li class="nav-item <?php if ($tab == 'dashboard') : echo 'active';
                                             endif; ?>">
-                            <a data-toggle="collapse" href="/admin/index" class="collapsed" aria-expanded="false">
+                            <a data-toggle="collapse" href="/admin/index">
                                 <i class="fas fa-home"></i>
                                 <p>Dashboard</p>
                             </a>
@@ -494,123 +494,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- Preview -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">News Preview</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="nav nav-pills nav-secondary nav-pills-no-bd" id="pills-tab-without-border" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="pills-berita-tab-nobd" data-toggle="pill" href="#pills-berita-nobd" role="tab" aria-controls="pills-berita-nobd" aria-selected="true">Berita Terkini</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="pills-akademik-tab-nobd" data-toggle="pill" href="#pills-akademik-nobd" role="tab" aria-controls="pills-akademik-nobd" aria-selected="false">Info Akademik</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="pills-beasiswa-tab-nobd" data-toggle="pill" href="#pills-beasiswa-nobd" role="tab" aria-controls="pills-beasiswa-nobd" aria-selected="false">Info Beasiswa</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="pills-pressrelease-tab-nobd" data-toggle="pill" href="#pills-pressrelease-nobd" role="tab" aria-controls="pills-pressrelease-nobd" aria-selected="false">Press Release</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content mt-2 mb-3" id="pills-without-border-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-berita-nobd" role="tabpanel" aria-labelledby="pills-berita-tab-nobd">
-                                            <div class="news__body">
-                                                <!-- news content -->
-                                                <div class="news__content">
-                                                    <div id="news-content" class="owl-carousel owl-theme">
-                                                        <div class="mt-2 mb-4">
-                                                            <div class="news__card mx-2 mx-md-3">
-                                                                <div class="news__card__img">
-                                                                    <div class="img__sec" style="background-image: url(/admin/assets/img/news-1.jpg);"></div> <!-- end img sec -->
-                                                                </div> <!-- end news card img -->
-                                                                <div class="news__card__body">
-                                                                    <div class="news__date">
-                                                                        <i class="far fa-calendar-alt"></i>15/07/2021
-                                                                    </div> <!-- end news date -->
-                                                                    <div class="news__title">
-                                                                        Rekor Positif Covid-19 Meroket, Tembus 54.517 Kasus
-                                                                    </div> <!-- end news title -->
-                                                                    <div class="news__desc">
-                                                                        Positif Covid-19 kembali memecahkan rekor dengan tambahan sebesar 54.517 kasus.
-                                                                    </div> <!-- news desc -->
-                                                                    <a href="#" class="news__link">
-                                                                        <i class="ai-circle-chevron-right"></i>Selengkapnya
-                                                                    </a> <!-- end news link -->
-                                                                </div> <!-- end news card body -->
-                                                            </div> <!-- end news card -->
-                                                        </div> <!-- end m -->
-
-                                                        <div class="mt-2 mb-4">
-                                                            <div class="news__card mx-2 mx-md-3">
-                                                                <div class="news__card__img">
-                                                                    <div class="img__sec" style="background-image: url(/admin/assets/img/news-2.jpg);"></div> <!-- end img sec -->
-                                                                </div> <!-- end news card img -->
-                                                                <div class="news__card__body">
-                                                                    <div class="news__date">
-                                                                        <i class="far fa-calendar-alt"></i>20/07/2021
-                                                                    </div> <!-- end news date -->
-                                                                    <div class="news__title">
-                                                                        Fitur Pengukur Suhu Tubuh iPhone Terbaru Bakal Hadir
-                                                                    </div> <!-- end news title -->
-                                                                    <div class="news__desc">
-                                                                        Bahkan Apple telah membuat paten kamera serta pemrosesan data citra. Hal ini demi pengukuran suhu.
-                                                                    </div> <!-- news desc -->
-                                                                    <a href="#" class="news__link">
-                                                                        <i class="ai-circle-chevron-right"></i>Selengkapnya
-                                                                    </a> <!-- end news link -->
-                                                                </div> <!-- end news card body -->
-                                                            </div> <!-- end news card -->
-                                                        </div> <!-- end m -->
-
-                                                        <div class="mt-2 mb-4">
-                                                            <div class="news__card mx-2 mx-md-3">
-                                                                <div class="news__card__img">
-                                                                    <div class="img__sec" style="background-image: url(/admin/assets/img/news-3.jpg);"></div> <!-- end img sec -->
-                                                                </div> <!-- end news card img -->
-                                                                <div class="news__card__body">
-                                                                    <div class="news__date">
-                                                                        <i class="far fa-calendar-alt"></i>01/08/2021
-                                                                    </div> <!-- end news date -->
-                                                                    <div class="news__title">
-                                                                        Prediksi Terbaru Menkes Kapan RI Capai Puncak Corona
-                                                                    </div> <!-- end news title -->
-                                                                    <div class="news__desc">
-                                                                        Menteri Kesehatan Budi Gunadi Sadikin menyebut kemungkinan puncak lonjakan kasus COVID-19.
-                                                                    </div> <!-- news desc -->
-                                                                    <a href="#" class="news__link">
-                                                                        <i class="ai-circle-chevron-right"></i>Selengkapnya
-                                                                    </a> <!-- end news link -->
-                                                                </div> <!-- end news card body -->
-                                                            </div> <!-- end news card -->
-                                                        </div> <!-- end m -->
-                                                    </div> <!-- end news content owl carousel -->
-                                                </div> <!-- end news content -->
-                                            </div> <!-- end news body -->
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-akademik-nobd" role="tabpanel" aria-labelledby="pills-akademik-tab-nobd">
-                                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
-                                            </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-beasiswa-nobd" role="tabpanel" aria-labelledby="pills-beasiswa-tab-nobd">
-                                            <p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-
-                                            <p> But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-pressrelease-nobd" role="tabpanel" aria-labelledby="pills-pressrelease-tab-nobd">
-                                            <p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-
-                                            <p> But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- News Table -->
                     <div class="row">
@@ -619,7 +502,7 @@
                                 <div class="card-header">
                                     <div class="d-flex align-items-center">
                                         <h4 class="card-title"> </h4>
-                                        <a href="" class="ml-auto">
+                                        <a href="/admin/addnews" class="ml-auto">
                                             <button class="btn btn-primary btn-round ml-auto">
                                                 <i class="fa fa-plus"></i>
                                                 Tambah Berita
@@ -657,7 +540,7 @@
                                                         <td><?= $news['preview']; ?></td>
                                                         <td>
                                                             <div class="form-button-action">
-                                                                <a href="#">
+                                                                <a href="/admin/editnews/<?= $news['id_news']; ?>">
                                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                                         <i class="fa fa-edit"></i>
                                                                     </button>
