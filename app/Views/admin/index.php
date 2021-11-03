@@ -467,7 +467,9 @@
               <a href="/admin/pesan">
                 <i class="fas fa-envelope"></i>
                 <p>Pesan</p>
-                <span class="badge badge-info">4</span>
+                <?php if ($jumlahpesan > 0) : ?>
+                  <span class="badge badge-info"><?= $jumlahpesan; ?></span>
+                <?php endif; ?>
               </a>
             </li>
             <!-- Pesan Done -->

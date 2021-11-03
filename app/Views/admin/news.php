@@ -462,7 +462,9 @@
                             <a href="/admin/pesan">
                                 <i class="fas fa-envelope"></i>
                                 <p>Pesan</p>
-                                <span class="badge badge-info">4</span>
+                                <?php if ($jumlahpesan > 0) : ?>
+                                    <span class="badge badge-info"><?= $jumlahpesan; ?></span>
+                                <?php endif; ?>
                             </a>
                         </li>
                         <!-- Pesan Done -->
@@ -647,12 +649,12 @@
                                                 </tr>
                                             </tfoot>
                                             <tbody>
-                                                <?php foreach ($pesan as $pesan) : ?>
+                                                <?php foreach ($news as $news) : ?>
                                                     <tr>
-                                                        <td><?= $pesan['judul']; ?></td>
-                                                        <td><?= $pesan['kategori']; ?></td>
-                                                        <td><?= $pesan['highlight']; ?></td>
-                                                        <td><?= $pesan['preview']; ?></td>
+                                                        <td><?= $news['judul']; ?></td>
+                                                        <td><?= $news['kategori']; ?></td>
+                                                        <td><?= $news['highlight']; ?></td>
+                                                        <td><?= $news['preview']; ?></td>
                                                         <td>
                                                             <div class="form-button-action">
                                                                 <a href="#">
