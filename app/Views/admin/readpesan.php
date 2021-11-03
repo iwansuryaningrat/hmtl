@@ -504,46 +504,59 @@
                                 </div>
                                 <form action="/edit/updatepesan/<?= $pesan['id_pesan']; ?>" method="post">
                                     <div class="card-body">
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Nama
-                                            </label>
-                                            <p class="form-control-static"><?= $pesan['nama']; ?></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Email
-                                            </label>
-                                            <p class="form-control-static"><?= $pesan['email']; ?></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Telepon
-                                            </label>
-                                            <p class="form-control-static"><?= $pesan['telp']; ?></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Subject
-                                            </label>
-                                            <p class="form-control-static"><?= $pesan['subject']; ?></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label">
-                                                Pesan
-                                            </label>
-                                            <p class="form-control-static"><?= $pesan['isi']; ?></p>
-                                        </div>
-                                        <div class="form-check">
-                                            <label>Apakah Anda Ingin Membalas Pesan Ini?</label><br />
-                                            <label class="form-radio-label">
-                                                <input class="form-radio-input" type="radio" name="reply" id="reply" value="yes" checked="">
-                                                <span class="form-radio-sign">Yes</span>
-                                            </label>
-                                            <label class="form-radio-label ml-3">
-                                                <input class="form-radio-input" type="radio" name="reply" id="reply" value="no">
-                                                <span class="form-radio-sign">No</span>
-                                            </label>
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Nama
+                                                    </label>
+                                                    <p class="form-control-static"><?= $pesan['nama']; ?></p>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Subject
+                                                    </label>
+                                                    <p class="form-control-static"><?= $pesan['subject']; ?></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Email
+                                                    </label>
+                                                    <p class="form-control-static"><?= $pesan['email']; ?></p>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Telepon
+                                                    </label>
+                                                    <p class="form-control-static"><?= $pesan['telp']; ?></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Pesan
+                                                    </label>
+                                                    <p class="form-control-static" name="pesan" id="pesan" value='<?= $pesan['pesan']; ?>'><?= $pesan['pesan']; ?></p>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="form-check">
+                                                    <label>Apakah Anda Ingin Membalas Pesan Ini?</label><br />
+                                                    <label class="form-radio-label">
+                                                        <input class="form-radio-input" type="radio" name="reply" id="reply" value="yes" checked="">
+                                                        <span class="form-radio-sign">Yes</span>
+                                                    </label>
+                                                    <label class="form-radio-label ml-3">
+                                                        <input class="form-radio-input" type="radio" name="reply" id="reply" value="no">
+                                                        <span class="form-radio-sign">No</span>
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 

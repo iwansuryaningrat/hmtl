@@ -74,7 +74,7 @@ class Edit extends BaseController
         }
 
         $datapesan = $this->pesanModel->getPesan($id_pesan);
-        dd($datapesan['id_pesan']);
+        // dd($datapesan['id_pesan']);
 
         $data = [
             'title' => 'Pesan - HMTL | Universitas Diponegoro',
@@ -82,18 +82,41 @@ class Edit extends BaseController
             'pesan' => $datapesan,
             'jumlahpesan' => $jumlahpesan
         ];
+        // dd($data['pesan']['nama']);
 
-        // return view('admin/readpesan', $data);
+        return view('admin/readpesan', $data);
     }
 
+    // Update Pesan Controller (Masih Error)
     public function updatepesan($id_pesan)
     {
         $reply = $this->request->getVar('reply');
-
         $datapesan = $this->pesanModel->getPesan($id_pesan);
-        $editPesan = [
-            'status' => 'Readed'
+        $nama = $datapesan['nama'];
+        $email = $datapesan['email'];
+        $telp = $datapesan['telp'];
+        $subject = $datapesan['subject'];
+        $pesan = $datapesan['pesan'];
+
+
+        if ($reply == 'yes') {
+            $status = 'Replied';
+        } else {
+            $status = 'Readed';
+        }
+
+        $data = [
+            'id_pesan' => $id_pesan,
+            'nama' => $nama,
+            'email' => $email,
+            'telp' => $telp,
+            'subject' => $subject,
+            'pesan' => $pesan,
+            'status' => $status
         ];
-        $this->pesanModel->update($id_pesan, $editPesan);
+
+        $this->pesanModel->update($id_pesan, $data);
+
+        // return redirect()->to('/admin/pesan');
     }
 }
