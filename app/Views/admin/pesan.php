@@ -542,14 +542,9 @@
                                                                                 ?>"><?= $pesan['status']; ?></span></td>
                                                         <td>
                                                             <div class="form-button-action">
-                                                                <a href="#">
+                                                                <a href="/edit/readpesan/<?= $pesan['id_pesan']; ?>">
                                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Read">
-                                                                        <i class="fa fa-readme"></i>
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
-                                                                        <i class="fa fa-times"></i>
+                                                                        <i class="fa fa-edit"></i>
                                                                     </button>
                                                                 </a>
                                                             </div>

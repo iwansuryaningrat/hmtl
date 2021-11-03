@@ -299,8 +299,8 @@ class Admin extends BaseController
         $pesan = $this->pesanModel->findAll();
 
         $jumlahpesan = 0;
-        foreach ($pesan as $pesan) {
-            if ($pesan['status'] == 'Unread') {
+        foreach ($pesan as $detailpesan) {
+            if ($detailpesan['status'] == 'Unread') {
                 $jumlahpesan++;
             }
         }
@@ -311,30 +311,8 @@ class Admin extends BaseController
             'pesan' => $pesan,
             'jumlahpesan' => $jumlahpesan
         ];
+        // dd($pesan);
 
         return view('admin/pesan', $data);
-    }
-
-    // Read Pesan Controller
-    public function readpesan()
-    {
-        // Menampilkan Jumlah pesan yang belum terbaca
-        $pesan = $this->pesanModel->findAll();
-
-        $jumlahpesan = 0;
-        foreach ($pesan as $pesan) {
-            if ($pesan['status'] == 'Unread') {
-                $jumlahpesan++;
-            }
-        }
-
-        $data = [
-            'title' => 'Pesan - HMTL | Universitas Diponegoro',
-            'tab' => 'pesan',
-            'pesan' => $pesan,
-            'jumlahpesan' => $jumlahpesan
-        ];
-
-        return view('admin/readpesan', $data);
     }
 }

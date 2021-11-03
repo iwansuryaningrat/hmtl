@@ -59,4 +59,41 @@ class Edit extends BaseController
     {
         # code...
     }
+
+    // Read Pesan Controller
+    public function readpesan($id_pesan)
+    {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $datapesan = $this->pesanModel->getPesan($id_pesan);
+        dd($datapesan['id_pesan']);
+
+        $data = [
+            'title' => 'Pesan - HMTL | Universitas Diponegoro',
+            'tab' => 'pesan',
+            'pesan' => $datapesan,
+            'jumlahpesan' => $jumlahpesan
+        ];
+
+        // return view('admin/readpesan', $data);
+    }
+
+    public function updatepesan($id_pesan)
+    {
+        $reply = $this->request->getVar('reply');
+
+        $datapesan = $this->pesanModel->getPesan($id_pesan);
+        $editPesan = [
+            'status' => 'Readed'
+        ];
+        $this->pesanModel->update($id_pesan, $editPesan);
+    }
 }

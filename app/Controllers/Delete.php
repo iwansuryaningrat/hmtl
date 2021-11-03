@@ -55,4 +55,15 @@ class Delete extends BaseController
 
         return view('admin/index', $data);
     }
+
+    // Delete Pesan Controller
+    public function deletepesan($idbarang)
+    {
+
+        $this->barangModel->delete($idbarang);
+
+        session()->setFlashdata('delete-msg-barang', 'Data Barang berhasil dihapus.');
+
+        return redirect()->to('/admin/barang');
+    }
 }
