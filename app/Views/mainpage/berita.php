@@ -124,7 +124,7 @@
 							<div class="info__akademik__content row">
 								<div class="berita__info__akademik col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__akademik__photo img__sec" style="background-image: url(/mainpage/images/news-3.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -142,7 +142,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__akademik col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__akademik__photo img__sec" style="background-image: url(/mainpage/images/news-2.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -160,7 +160,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__akademik col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__akademik__photo img__sec" style="background-image: url(/mainpage/images/news-1.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -178,7 +178,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__akademik col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__akademik__photo img__sec" style="background-image: url(/mainpage/images/team-1.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -222,7 +222,7 @@
 							<div class="info__beasiswa__content row">
 								<div class="berita__info__beasiswa col-lg-6 col-md-6 mb-5">
 									<div class="info__beasiswa__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__beasiswa__photo img__sec" style="background-image: url(/mainpage/images/news-3.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__beasiswa__card__content">
@@ -240,7 +240,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__beasiswa col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__beasiswa__photo img__sec" style="background-image: url(/mainpage/images/news-3.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -258,7 +258,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__beasiswa col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__beasiswa__photo img__sec" style="background-image: url(/mainpage/images/news-3.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">
@@ -278,7 +278,7 @@
 								</div> <!-- end berita info akademik -->
 								<div class="berita__info__beasiswa col-lg-6 col-md-6 mb-5">
 									<div class="info__akademik__card">
-										<a href="berita.html" class="akademik__card">
+										<a href="/home/berita" class="akademik__card">
 											<div class="info__beasiswa__photo img__sec" style="background-image: url(/mainpage/images/news-3.jpg);"></div>
 											<!-- end info akademik photo -->
 											<div class="info__akademik__card__content">

@@ -23,7 +23,7 @@
 
 			<div class="row">
 				<div class="col-12 col-sm-4">
-					<a href="profil-hmtl.html" class="linkfil__card">
+					<a href="/home/hmtl" class="linkfil__card">
 						<div class="img__linkfil">
 							<div class="img__sec" style="background-image: url(/mainpage/images/jumbotron-profil.jpg);"></div>
 						</div>
@@ -33,7 +33,7 @@
 					</a>
 				</div> <!-- end col -->
 				<div class="col-12 col-sm-4">
-					<a href="profil-biro.html" class="linkfil__card">
+					<a href="/home/biro" class="linkfil__card">
 						<div class="img__linkfil">
 							<div class="img__sec" style="background-image: url(/mainpage/images/jumbotron-profil-biro.jpg);"></div>
 						</div>
@@ -43,7 +43,7 @@
 					</a>
 				</div> <!-- end col -->
 				<div class="col-12 col-sm-4">
-					<a href="profil-ukm.html" class="linkfil__card">
+					<a href="/home/ukm" class="linkfil__card">
 						<div class="img__linkfil">
 							<div class="img__sec" style="background-image: url(/mainpage/images/jumbotron-profil-ukm.jpg);"></div>
 						</div>

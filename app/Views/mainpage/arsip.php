@@ -45,7 +45,7 @@
 						<div class="elibrary__cc row collapse" id="collapse-smt1">
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -63,7 +63,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -81,7 +81,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -99,7 +99,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -117,7 +117,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -135,7 +135,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -153,7 +153,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -171,7 +171,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -189,7 +189,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -207,7 +207,7 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="arsip-matkul.html" class="elibrary__card">
+									<a href="/home/arsip-matkul" class="elibrary__card">
 										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 										<!-- end course photo -->
 										<div class="course__content">
@@ -1174,7 +1174,7 @@
 							berupa eBook dan Bank Soal</p>
 						<hr>
 						<p>Masukkan kritik dan saran tentang e-Library</p>
-						<a href="kontak.html#contact-section" class="link__ks">Kritik &amp; saran</a>
+						<a href="/home/kontak" class="link__ks">Kritik &amp; saran</a>
 					</div> <!-- end aside sticky -->
 				</div> <!-- end elibrary aside -->
 			</div> <!-- end row -->
