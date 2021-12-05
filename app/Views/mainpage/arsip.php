@@ -19,7 +19,8 @@
 			<!-- library header -->
 			<div class="title__section text-center">
 				<h3>eLibrary</h3>
-				<p>Perpustakaan digital Departemen Teknik Lingkungan yang mempunyai koleksi eBook, soal-soal pembahasan maupun referensi buku dalam bentuk digital.</p>
+				<p>Perpustakaan digital Departemen Teknik Lingkungan yang mempunyai koleksi eBook, soal-soal
+					pembahasan maupun referensi buku dalam bentuk digital.</p>
 			</div> <!-- end library header -->
 
 			<!-- mobile search eLibrary -->
@@ -44,8 +45,9 @@
 						<div class="elibrary__cc row collapse" id="collapse-smt1">
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00001</p>
@@ -61,8 +63,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00004</p>
@@ -78,8 +81,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00005</p>
@@ -95,8 +99,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00006</p>
@@ -112,8 +117,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21311</p>
@@ -129,8 +135,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00002</p>
@@ -146,8 +153,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21312</p>
@@ -163,8 +171,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21313</p>
@@ -180,8 +189,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00003</p>
@@ -197,8 +207,9 @@
 
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
-									<a href="/home/arsipmatkul" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+									<a href="arsip-matkul.html" class="elibrary__card">
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21314</p>
@@ -225,7 +236,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21321</p>
@@ -242,7 +254,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21322</p>
@@ -259,7 +272,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21323P</p>
@@ -276,7 +290,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21324</p>
@@ -293,7 +308,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21325P</p>
@@ -310,7 +326,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21326</p>
@@ -327,7 +344,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21327</p>
@@ -344,7 +362,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21328P</p>
@@ -371,7 +390,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21331</p>
@@ -388,7 +408,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21332</p>
@@ -405,7 +426,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21333</p>
@@ -422,7 +444,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21334</p>
@@ -439,7 +462,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21335P</p>
@@ -456,7 +480,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21336</p>
@@ -473,7 +498,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21337</p>
@@ -490,7 +516,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21338</p>
@@ -517,7 +544,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21341</p>
@@ -534,7 +562,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK2134P</p>
@@ -551,7 +580,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21343P</p>
@@ -568,7 +598,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21344</p>
@@ -585,7 +616,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21345</p>
@@ -602,7 +634,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21346</p>
@@ -619,7 +652,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21347</p>
@@ -636,7 +670,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21348</p>
@@ -663,7 +698,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21351</p>
@@ -680,7 +716,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21352P</p>
@@ -697,7 +734,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21353P</p>
@@ -714,7 +752,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21354</p>
@@ -731,7 +770,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21355P</p>
@@ -748,7 +788,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21356</p>
@@ -765,7 +806,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21357P</p>
@@ -782,7 +824,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21358</p>
@@ -809,7 +852,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21361P</p>
@@ -826,7 +870,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21362P</p>
@@ -843,7 +888,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21363P</p>
@@ -860,7 +906,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21364P</p>
@@ -877,7 +924,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21365</p>
@@ -894,7 +942,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21366</p>
@@ -921,7 +970,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>UNW00007</p>
@@ -938,7 +988,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21371</p>
@@ -955,7 +1006,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21373P</p>
@@ -972,7 +1024,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>TLK21374</p>
@@ -999,7 +1052,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>AAA00000</p>
@@ -1026,7 +1080,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>AAA00000</p>
@@ -1053,7 +1108,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>AAA00000</p>
@@ -1080,7 +1136,8 @@
 							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 								<div class="course__card">
 									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
+										<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
+										<!-- end course photo -->
 										<div class="course__content">
 											<div class="cc__left">
 												<p>AAA00000</p>
@@ -1113,7 +1170,8 @@
 								<input type="submit" value class="submit__elibrary">
 							</form>
 						</div>
-						<p>Mohon maaf jika ada keterlambatan atas ketersediaan beberapa database e-Library, baik berupa eBook dan Bank Soal</p>
+						<p>Mohon maaf jika ada keterlambatan atas ketersediaan beberapa database e-Library, baik
+							berupa eBook dan Bank Soal</p>
 						<hr>
 						<p>Masukkan kritik dan saran tentang e-Library</p>
 						<a href="kontak.html#contact-section" class="link__ks">Kritik &amp; saran</a>

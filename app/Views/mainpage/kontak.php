@@ -4,7 +4,7 @@
 
 <!-- header -->
 <!-- FINISH -->
-<header class="headers">
+<header class="headers" style="background-image: url(/mainpage/images/jumbotron-contact.jpg);">
 	<div class="container">
 		<div class="body__section text-center">
 			<h2>KONTAK</h2>
@@ -19,8 +19,8 @@
 	<div class="container">
 		<div class="body__section">
 			<!-- head card -->
-			<div class="head__card text-center">
-				<p class="title__card">How can we help you?</p>
+			<div class="title__section text-center">
+				<h3>How can we help you?</h3>
 				<p>Pilih cara di bawah ini untuk menghubungi kami dan dapatkan apa yang anda butuhkan</p>
 			</div> <!-- end head card -->
 
@@ -36,13 +36,19 @@
 				<div class="body__card">
 					<span class="fi-br-microphone"></span>
 					<h5>Call Us</h5>
-					<p>+62 812-2918-4480 (Faiza)<br>+62 823-1497-2274 (Humas)</p>
+					<p><a href="https://api.whatsapp.com/send/?phone=6281229184480&text&app_absent=0" target="_blank">+62 812-2918-4480 (Faiza)</a>
+						<br>
+						<a href="https://api.whatsapp.com/send/?phone=6282314972274&text&app_absent=0" target="_blank">+62 823-1497-2274 (Humas)</a>
+					</p>
 				</div> <!-- end body card -->
 				<!-- body card -->
 				<div class="body__card">
 					<span class="fi-br-envelope"></span>
 					<h5>Email Us</h5>
-					<p>hmtlundip@student.undip.ac.id<br>himpunanundip@gmail.com</p>
+					<p><a href="mailto:info@hmtlundip.org" target="_blank">info@hmtlundip.org</a>
+						<br>
+						<a href="mailto:hmtlundip@student.undip.ac.id" target="_blank">hmtlundip@student.undip.ac.id</a>
+					</p>
 				</div> <!-- end body card -->
 			</div> <!-- end content card -->
 		</div> <!-- end body section -->
@@ -71,18 +77,18 @@
 
 				<!-- socmed content -->
 				<div class="col-lg-8 col-md-7 ps-lg-5 ps-md-3 d-flex align-items-center">
-					<div id="socmed__content" class="owl-carousel owl-theme">
+					<div id="socmed-content" class="owl-carousel owl-theme">
 						<div class="item">
 							<a class="owl__ilink" href="https://www.instagram.com/hmtlundip/" target="_blank"><img src="/mainpage/images/instagram-color2.svg" alt="alter-igcolor1"></a>
 						</div>
 						<div class="item">
-							<a class="owl__ilink" href="http://bit.ly/LinkedinHMTLUNDIP" target="_blank"><img src="/mainpage/images/linkedin-color1.svg" alt="alter-linkedincolor1"></a>
+							<a class="owl__ilink" href="https://bit.ly/LinkedinHMTLUNDIP"><img src="/mainpage/images/linkedin-color1.svg" alt="alter-linkedincolor1"></a>
 						</div>
 						<div class="item">
 							<a class="owl__ilink" href="https://www.youtube.com/channel/UCTaPUsgMZ7zhE7ppnrI3iAA" target="_blank"><img src="/mainpage/images/youtube-color1.svg" alt="alter-youtubecolor1"></a>
 						</div>
 						<div class="item">
-							<a class="owl__ilink" href="https://lin.ee/1I0669e" target="_blank"><img src="/mainpage/images/line-color.svg" alt="alter-linecolor"></a>
+							<a class="owl__ilink" href="https://lin.ee/1I0669e"><img src="/mainpage/images/line-color.svg" alt="alter-linecolor"></a>
 						</div>
 						<div class="item">
 							<a class="owl__ilink" href="https://open.spotify.com/show/1QYjVqMmu31mIS2T2WY555?si=do6hUAx6RN6pVco9I69kZw" target="_blank"><img src="/mainpage/images/spotify-color.svg" alt="alter-spotifycolor"></a>
@@ -93,5 +99,59 @@
 		</div> <!-- end body section -->
 	</div> <!-- end container -->
 </div> <!-- end socmed section -->
+
+<!-- contact section -->
+<!-- FINISH -->
+<div class="contact__section" id="contact-section">
+	<div class="container">
+		<div class="body__section">
+			<!-- contact header -->
+			<div class="contact__header">
+				<h1>Kontak Kami</h1>
+				<p>Jangan ragu untuk menghubungi kami kapanpun. Kami akan menghubungi anda kembali sesegera mungkin.
+				</p>
+			</div> <!-- end contact header -->
+			<!-- contact form -->
+			<div class="contact__form">
+				<form action="">
+					<!-- name & email -->
+					<div class="row">
+						<div class="col">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" required>
+						</div>
+						<div class="col">
+							<label for="email" class="form-label">Email</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@email.com" required>
+						</div>
+					</div> <!-- end name & email -->
+					<!-- phone & subject -->
+					<div class="row">
+						<div class="col">
+							<label for="phone" class="form-label">Phone</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" required>
+						</div>
+						<div class="col">
+							<label for="subject" class="form-label">Subject</label>
+							<select id="input-subject" class="form-select form__select shadow-none">
+								<option selected value="saran">Saran untuk Website HMTL</option>
+								<option value="pertanyaan">Pertanyaan</option>
+								<option value="partnership">Partnership</option>
+								<option value="lainnya">Lainnya</option>
+							</select>
+						</div>
+					</div> <!-- end phone & subject -->
+					<!-- textarea -->
+					<label for="message" class="form-label">Message</label>
+					<textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" required></textarea> <!-- end textarea -->
+					<!-- submit message -->
+					<div class="send__input">
+						<input type="submit" value="Send Message" class="submit__message">
+					</div> <!-- end submit message -->
+				</form> <!-- end form -->
+			</div> <!-- end contact form -->
+		</div> <!-- end body section -->
+	</div> <!-- end container -->
+</div> <!-- end contact section -->
 
 <?= $this->endSection(); ?>

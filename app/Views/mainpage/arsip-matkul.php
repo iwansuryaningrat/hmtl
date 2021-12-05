@@ -19,39 +19,99 @@
 			<div class="row elibrary__body">
 				<!-- elibrary main -->
 				<div class="elibrary__main col-lg-9 col-md-9 ps-lg-0 pe-lg-5 pe-md-4">
+					<!-- elibrary root -->
 					<div class="elibrary__root">
 						<a href="/home/arsip">eLibrary</a>
 						<i class="icofont-simple-right"></i>
 						<a href="/home/arsipmatkul">Mata Kuliah</a>
-					</div>
+					</div> <!-- end elibrary root -->
 
+					<!-- head book -->
 					<div class="head__eBook">
 						<h3>Pengantar Ilmu dan Rekayasa Lingkungan</h3>
-					</div>
+						<img src="/mainpage/images/fisika_dasar.jpg" alt="buku fisika dasar" class="img__eBook">
+					</div> <!-- end head book -->
 
+					<!-- elibrary content -->
 					<div class="elibrary__content">
-						<a class="elibrary__link" data-bs-toggle="collapse" href="#collapse-smt1" role="button" aria-expanded="false" aria-controls="collapseExample">
-							<div class="smt__title">Semester 1</div>
-							<i class="icofont-simple-down icon-down"></i>
-						</a> <!-- end elibrary link -->
+						<p class="head__item__eBook">Database Soal dan Pembahasan</p>
+						<hr>
 
-						<div class="elibrary__cc row collapse" id="collapse-smt1">
-							<div class="elibrary__course col-lg-4 col-md-6 mb-4">
-								<div class="course__card">
-									<a href="#" class="elibrary__card">
-										<div class="course__photo" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div> <!-- end course photo -->
-										<div class="course__content">
-											<div class="cc__left">
-												<p>UNW00001</p>
-												<h6>Pendidikan Agama</h6>
-											</div>
-											<div class="cc__rigt">
-												<div class="cc__sks">2 SKS</div>
-											</div>
-										</div> <!-- end course content -->
-									</a> <!-- end elibrary card -->
-								</div> <!-- end course card -->
-							</div> <!-- end elibrary course -->
+						<!-- elibrary cc -->
+						<div class="elibrary__cc row">
+							<!-- mb-4 item -->
+							<div class="mb-4">
+								<div class="item__eBook">
+									<img src="/mainpage/images/book-2.jpg" alt="fisika dasar image" class="img__item__eBook">
+									<div class="item__eBook__content">
+										<a href="#" class="item__meta__link">UTS Pengantar Ilmu dan Rekayasa
+											Lingkungan</a>
+										<p>
+											<span class="meta__item">Semester 1</span>
+											<span class="meta__item">May 18, 2021</span>
+											<span class="meta__item">9721 Download</span>
+										</p>
+									</div>
+								</div> <!-- end item book -->
+							</div> <!-- end mb-4 item -->
+
+							<!-- mb-4 item -->
+							<div class="mb-4">
+								<div class="item__eBook">
+									<img src="/mainpage/images/book-2.jpg" alt="fisika dasar image" class="img__item__eBook">
+									<div class="item__eBook__content">
+										<a href="#" class="item__meta__link">UTS Pengantar Ilmu dan Rekayasa
+											Lingkungan</a>
+										<p>
+											<span class="meta__item">Semester 1</span>
+											<span class="meta__item">May 18, 2021</span>
+											<span class="meta__item">9721 Download</span>
+										</p>
+									</div>
+								</div> <!-- end item book -->
+							</div> <!-- end mb-4 item -->
+
+						</div> <!-- end elibrary cc -->
+					</div> <!-- end elibrary content -->
+
+					<!-- elibrary content -->
+					<div class="elibrary__content">
+						<p class="head__item__eBook">eBook</p>
+						<hr>
+
+						<!-- elibrary cc -->
+						<div class="elibrary__cc row">
+							<!-- mb-4 item -->
+							<div class="mb-4">
+								<div class="item__eBook">
+									<img src="/mainpage/images/book-1.png" alt="fisika dasar image" class="img__item__eBook">
+									<div class="item__eBook__content">
+										<a href="#" class="item__meta__link">Modul Pengantar Ilmu dan Rekayasa
+											Lingkungan</a>
+										<p>
+											<span class="meta__item">Semester 1</span>
+											<span class="meta__item">May 18, 2021</span>
+											<span class="meta__item">9721 Download</span>
+										</p>
+									</div>
+								</div> <!-- end item book -->
+							</div> <!-- end mb-4 item -->
+
+							<!-- mb-4 item -->
+							<div class="mb-4">
+								<div class="item__eBook">
+									<img src="/mainpage/images/book-1.png" alt="fisika dasar image" class="img__item__eBook">
+									<div class="item__eBook__content">
+										<a href="#" class="item__meta__link">Materi Lengkap Pengantar Ilmu dan
+											Rekayasa Lingkungan</a>
+										<p>
+											<span class="meta__item">Semester 1</span>
+											<span class="meta__item">May 18, 2021</span>
+											<span class="meta__item">9721 Download</span>
+										</p>
+									</div>
+								</div> <!-- end item book -->
+							</div> <!-- end mb-4 item -->
 
 						</div> <!-- end elibrary cc -->
 					</div> <!-- end elibrary content -->
@@ -72,10 +132,11 @@
 								<input type="submit" value class="submit__elibrary">
 							</form>
 						</div>
-						<p>Mohon maaf jika ada keterlambatan atas ketersediaan beberapa database e-Library, baik berupa eBook dan Bank Soal</p>
+						<p>Mohon maaf jika ada keterlambatan atas ketersediaan beberapa database e-Library, baik
+							berupa eBook dan Bank Soal</p>
 						<hr>
 						<p>Masukkan kritik dan saran tentang e-Library</p>
-						<a href="kontak.html#contact-section" class="link__ks">Kritik &amp; saran</a>
+						<a href="/home/kontak" class="link__ks">Kritik &amp; saran</a>
 					</div> <!-- end aside sticky -->
 				</div> <!-- end elibrary aside -->
 			</div> <!-- end row -->

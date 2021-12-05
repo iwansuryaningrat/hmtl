@@ -159,9 +159,12 @@
                 <div class="contact__us">
                     <h5>Contact Us</h5>
                     <ul>
-                        <li>+62 823 1449 7878 (Humas)<br>+62 823 7878 1414 (Humas)</li>
-                        <li>himpunanundip@gmail.com</li>
-                        <li>hmtlundip@student.undip.ac.id</li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=6282314497878&text&app_absent=0" target="_blank">+62 823 1449
+                                7878 (Humas)</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=6282378781414&text&app_absent=0" target="_blank">+62 823 7878
+                                1414 (Humas)</a></li>
+                        <li><a href="mailto:info@hmtlundip.org" target="_blank">info@hmtlundip.org</a></li>
+                        <li><a href="mailto:hmtlundip@student.undip.ac.id" target="_blank">hmtlundip@student.undip.ac.id</a></li>
                     </ul>
                 </div> <!-- end contact us -->
                 <!-- social connect -->
