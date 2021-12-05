@@ -164,6 +164,6 @@ class Home extends BaseController
 
 		$this->pesanModel->insert($data);
 
-		return redirect('/');
+		return redirect()->to('/home/kontak');
 	}
 }
