@@ -387,11 +387,6 @@
               <div class="collapse" id="profile">
                 <ul class="nav nav-collapse">
                   <li>
-                    <a href="/admin/kabinet">
-                      <span class="sub-item">Kabinet</span>
-                    </a>
-                  </li>
-                  <li>
                     <a href="/admin/bidang">
                       <span class="sub-item">Bidang</span>
                     </a>
@@ -414,20 +409,50 @@
             <!-- Biro -->
             <li class="nav-item <?php if ($tab == 'biro') : echo 'active';
                                 endif; ?>">
-              <a href="/admin/biro">
+              <a data-toggle="collapse" href="#biro">
                 <i class="fas fa-users"></i>
                 <p>Biro</p>
+                <span class="caret"></span>
               </a>
+              <div class="collapse" id="biro">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="/admin/biro">
+                      <span class="sub-item">Daftar Biro</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admin/prokerbiro">
+                      <span class="sub-item">Proker Biro</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <!-- Biro Done -->
 
             <!-- UKM -->
             <li class="nav-item <?php if ($tab == 'ukm') : echo 'active';
                                 endif; ?>">
-              <a href="/admin/ukm">
+              <a data-toggle="collapse" href="#ukm">
                 <i class="fas fa-users"></i>
                 <p>UKM</p>
+                <span class="caret"></span>
               </a>
+              <div class="collapse" id="ukm">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="/admin/ukm">
+                      <span class="sub-item">Daftar UKM</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admin/galeri">
+                      <span class="sub-item">Galeri UKM</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <!-- UKM Done -->
 
@@ -451,13 +476,28 @@
             </li>
             <!-- Kalender Done -->
 
-            <!-- Arsip -->
+            <!-- Arsip NOT FIX -->
             <li class="nav-item <?php if ($tab == 'arsip') : echo 'active';
                                 endif; ?>">
-              <a href="/admin/arsip">
+              <a data-toggle="collapse" href="#arsip">
                 <i class="fas fa-book"></i>
                 <p>Arsip</p>
+                <span class="caret"></span>
               </a>
+              <div class="collapse" id="arsip">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="/admin/#">
+                      <span class="sub-item">Daftar Matkul</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/admin/#">
+                      <span class="sub-item">Daftar Arsip</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <!-- Arsip Done -->
 
