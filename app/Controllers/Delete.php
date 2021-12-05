@@ -52,10 +52,10 @@ class Delete extends BaseController
     }
 
     // Delete Pesan Controller
-    public function deletepesan($id_pesan)
+    public function deletepesan($id)
     {
 
-        $this->pesanModel->delete($id_pesan);
+        $this->pesanModel->delete($id);
 
         // session()->setFlashdata('delete-msg-barang', 'Data Barang berhasil dihapus.');
 

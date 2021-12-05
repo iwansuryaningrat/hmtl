@@ -102,7 +102,7 @@ class Edit extends BaseController
     }
 
     // Read Pesan Controller
-    public function readpesan($id_pesan)
+    public function readpesan($id)
     {
         // Menampilkan Jumlah pesan yang belum terbaca
         $pesan = $this->pesanModel->findAll();
@@ -114,8 +114,8 @@ class Edit extends BaseController
             }
         }
 
-        $datapesan = $this->pesanModel->getPesan($id_pesan);
-        // dd($datapesan['id_pesan']);
+        $datapesan = $this->pesanModel->getPesan($id);
+        // dd($datapesan['id']);
 
         $data = [
             'title' => 'Pesan - HMTL | Universitas Diponegoro',
@@ -129,10 +129,10 @@ class Edit extends BaseController
     }
 
     // Update Pesan Controller (Masih Error)
-    public function updatepesan($id_pesan)
+    public function updatepesan($id)
     {
         $reply = $this->request->getVar('reply');
-        $datapesan = $this->pesanModel->getPesan($id_pesan);
+        $datapesan = $this->pesanModel->getPesan($id);
         $nama = $datapesan['nama'];
         $email = $datapesan['email'];
         $telp = $datapesan['telp'];
@@ -147,7 +147,7 @@ class Edit extends BaseController
         }
 
         $data = [
-            'id_pesan' => $id_pesan,
+            'id' => $id,
             'nama' => $nama,
             'email' => $email,
             'telp' => $telp,
@@ -156,7 +156,7 @@ class Edit extends BaseController
             'status' => $status
         ];
 
-        $this->pesanModel->update($id_pesan, $data);
+        $this->pesanModel->update($id, $data);
 
         // return redirect()->to('/admin/pesan');
     }

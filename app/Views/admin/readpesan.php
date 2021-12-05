@@ -542,7 +542,7 @@
                                 <div class="card-header">
                                     <h4 class="card-title">Pesan Masuk dari <?= $pesan['nama']; ?></h4>
                                 </div>
-                                <form action="/edit/updatepesan/<?= $pesan['id_pesan']; ?>" method="post">
+                                <form action="/edit/updatepesan/<?= $pesan['id']; ?>" method="post">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-md-6 col-lg-6">
