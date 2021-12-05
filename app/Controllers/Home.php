@@ -150,4 +150,20 @@ class Home extends BaseController
 
 		return view('mainpage/profil-ukm', $data);
 	}
+
+	public function pesan()
+	{
+		$data = [
+			'nama' => $this->request->getVar('nama'),
+			'email' => $this->request->getVar('email'),
+			'telp' => $this->request->getVar('telp'),
+			'subject' => $this->request->getVar('subject'),
+			'pesan' => $this->request->getVar('pesan'),
+			'readed' => 'Unread'
+		];
+
+		$this->pesanModel->insert($data);
+
+		return redirect('/');
+	}
 }
