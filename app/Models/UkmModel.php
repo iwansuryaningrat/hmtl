@@ -9,5 +9,5 @@ class UkmModel extends Model
     protected $table = 'ukm';
     protected $primarykey = 'id_ukm';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'kategori', 'deskripsi', 'logo', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nama', 'deskripsi', 'kategori', 'logo', 'jadwal', 'tempat', 'ketua', 'angkatan_ketua', 'wakil', 'angkatan_wakil', 'pencapaian', 'created_at', 'updated_at'];
 }

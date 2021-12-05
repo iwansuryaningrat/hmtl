@@ -9,5 +9,5 @@ class PengurusModel extends Model
     protected $table = 'pengurus';
     protected $primarykey = 'nim';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nim', 'id_bidang', 'nama', 'id_kabinet', 'jabatan', 'angkatan', 'foto', 'ig', 'linkedin', 'twitter', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nim', 'nama', 'id_bidang', 'jabatan', 'angkatan', 'foto', 'ig', 'linkedin', 'twitter', 'isActive', 'created_at', 'updated_at'];
 }

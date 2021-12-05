@@ -9,5 +9,5 @@ class KalenderModel extends Model
     protected $table = 'kalender';
     protected $primarykey = 'id_kalender';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'kategori', 'keterangan', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nama', 'kategori', 'tanggal', 'kegiatan', 'keterangan', 'created_at', 'updated_at'];
 }

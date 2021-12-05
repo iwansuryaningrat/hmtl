@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Models;
 
@@ -9,6 +9,5 @@ class ArsipModel extends Model
     protected $table = 'arsip';
     protected $primarykey = 'id_arsip';
     protected $useTimestamps = true;
-    protected $allowedFields = ['id_library', 'judul', 'kategori', 'foto', 'link', 'created_at'];
-
+    protected $allowedFields = ['id_library', 'judul', 'kategori', 'foto', 'link', 'created_at', 'download', 'updated_at'];
 }

@@ -9,5 +9,5 @@ class BiroModel extends Model
     protected $table = 'biro';
     protected $primarykey = 'id_biro';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'logo', 'deskripsi', 'ketua', 'wakil', 'proker', 'ig', 'yt', 'line', 'twitter', 'fb', 'web', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nama', 'logo', 'deskripsi', 'ketua', 'angkatan_ketua', 'wakil', 'angkatan_wakil', 'ig', 'yt', 'line', 'twitter', 'fb', 'web', 'created_at', 'updated_at'];
 }
