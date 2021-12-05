@@ -16,8 +16,6 @@ use App\Models\ProkerModel;
 use App\Models\UkmModel;
 use App\Models\VisitorsModel;
 
-use function PHPUnit\Framework\throwException;
-
 class Admin extends BaseController
 {
     protected $arsipModel;
@@ -62,6 +60,8 @@ class Admin extends BaseController
                 $jumlahpesan++;
             }
         }
+
+        // dd("Test");
 
         $data = [
             'title' => 'Admin Dashboard - HMTL | Universitas Diponegoro',
