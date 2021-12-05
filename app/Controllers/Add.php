@@ -58,19 +58,18 @@ class Add extends BaseController
 		if ($image->getError() == 4) {
 			$namaImage = 'news-1.jpg';
 		} else {
-			$namaImage = $image->getName();
-			$image->move('/admin/assets/img');
+			$namaImage = $image->getRandomName();
+			$image->move('/img/berita/');
 		}
 
-		$this->newsModel->save([
+		$this->newsModel->insert([
 			'judul' => $this->request->getVar('judul'),
 			'highlight' => $this->request->getVar('highlight'),
 			'preview' => $this->request->getVar('preview'),
 			'kategori' => $this->request->getVar('kategori'),
-			'isi' => $this->request->getVar('berat'),
+			'isi' => $this->request->getVar('isi'),
 			'tag' => '',
 			'foto' => $namaImage
-
 		]);
 
 		$session = \Config\Services::session();
@@ -78,5 +77,28 @@ class Add extends BaseController
 
 		// session()->setFlashdata('add-msg-barang', 'Data Barang berhasil ditambahkan.');
 		return redirect()->to('/admin/news');
+	}
+
+	// Add News Controller
+	public function addnewsform()
+	{
+		// Menampilkan Jumlah pesan yang belum terbaca
+		$pesan = $this->pesanModel->findAll();
+
+		$jumlahpesan = 0;
+		foreach ($pesan as $pesan) {
+			if ($pesan['status'] == 'Unread') {
+				$jumlahpesan++;
+			}
+		}
+
+		$data = [
+			'title' => 'Tambah Berita - HMTL | Universitas Diponegoro',
+			'tab' => 'berita',
+			'jumlahpesan' => $jumlahpesan
+		];
+		// dd($data['pesan']['nama']);
+
+		return view('admin/addberita', $data);
 	}
 }

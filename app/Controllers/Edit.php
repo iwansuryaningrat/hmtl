@@ -51,18 +51,54 @@ class Edit extends BaseController
         $this->visitorsModel = new VisitorsModel();
     }
 
-    public function news()
+    // Edit News Controller
+    public function editnews($id)
     {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $databerita = $this->newsModel->getNews($id);
+
         $data = [
-            'title' => 'Tambah Berita - HMTL | Universitas Diponegoro'
+            'title' => 'Tambah Berita - HMTL | Universitas Diponegoro',
+            'tab' => 'berita',
+            'news' => $databerita,
+            'jumlahpesan' => $jumlahpesan
         ];
 
-        return view('admin/formadd-news', $data);
+        return view('admin/editberita', $data);
     }
 
-    public function addnews()
+    public function editberita($id)
     {
-        # code...
+        $image = $this->request->getFile('image');
+        if ($image->getError() == 4) {
+            $namaImage = 'news-1.jpg';
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('/img/berita/');
+        }
+
+        $data = [
+            'judul' => $this->request->getVar('judul'),
+            'highlight' => $this->request->getVar('highlight'),
+            'preview' => $this->request->getVar('preview'),
+            'kategori' => $this->request->getVar('kategori'),
+            'isi' => $this->request->getVar('isi'),
+            'tag' => '',
+            'foto' => $namaImage
+        ];
+
+        $this->newsModel->update($id, $data);
+
+        return redirect()->to('/admin/news');
     }
 
     // Read Pesan Controller

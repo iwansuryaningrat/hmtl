@@ -542,7 +542,7 @@
                                 <div class="card-header">
                                     <div class="d-flex align-items-center">
                                         <h4 class="card-title"> </h4>
-                                        <a href="/admin/addnews" class="ml-auto">
+                                        <a href="/add/addnewsform" class="ml-auto">
                                             <button class="btn btn-primary btn-round ml-auto">
                                                 <i class="fa fa-plus"></i>
                                                 Tambah Berita
@@ -580,12 +580,12 @@
                                                         <td><?= $news['preview']; ?></td>
                                                         <td>
                                                             <div class="form-button-action">
-                                                                <a href="/admin/editnews/<?= $news['id_news']; ?>">
+                                                                <a href="/edit/editnews/<?= $news['id']; ?>">
                                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
                                                                         <i class="fa fa-edit"></i>
                                                                     </button>
                                                                 </a>
-                                                                <a href="#">
+                                                                <a href="/delete/deletenews/<?= $news['id']; ?>">
                                                                     <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                         <i class="fa fa-times"></i>
                                                                     </button>

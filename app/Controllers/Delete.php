@@ -51,24 +51,22 @@ class Delete extends BaseController
         $this->visitorsModel = new VisitorsModel();
     }
 
-    public function index()
+    // Delete Pesan Controller
+    public function deletepesan($id_pesan)
     {
-        $data = [
-            'title' => 'Admin Dashboard - HMTL | Universitas Diponegoro',
-            'tab' => 'dashboard'
-        ];
 
-        return view('admin/index', $data);
+        $this->pesanModel->delete($id_pesan);
+
+        // session()->setFlashdata('delete-msg-barang', 'Data Barang berhasil dihapus.');
+
+        return redirect()->to('/admin/pesan');
     }
 
-    // Delete Pesan Controller
-    public function deletepesan($idbarang)
+    // Delete Berita Controller
+    public function deletenews($id)
     {
+        $this->newsModel->delete($id);
 
-        $this->barangModel->delete($idbarang);
-
-        session()->setFlashdata('delete-msg-barang', 'Data Barang berhasil dihapus.');
-
-        return redirect()->to('/admin/barang');
+        return redirect()->to('/admin/news');
     }
 }

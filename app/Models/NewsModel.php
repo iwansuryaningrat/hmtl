@@ -7,12 +7,12 @@ use CodeIgniter\Model;
 class NewsModel extends Model
 {
     protected $table = 'news';
-    protected $primarykey = 'id_news';
+    protected $primarykey = 'id';
     protected $useTimestamps = true;
     protected $allowedFields = ['judul', 'highlight', 'preview', 'kategori', 'isi', 'foto', 'tag', 'created_at', 'updated_at'];
 
-    public function getNews($id_news)
+    public function getNews($id)
     {
-        return $this->where(['id_news' => $id_news])->first();
+        return $this->where(['id' => $id])->first();
     }
 }

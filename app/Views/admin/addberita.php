@@ -537,7 +537,7 @@
                                 <i class="flaticon-right-arrow"></i>
                             </li>
                             <li class="nav-item">
-                                <a href="/admin/addnews">Formulir Tambah Berita</a>
+                                <a href="/add/addnewsform">Formulir Tambah Berita</a>
                             </li>
                         </ul>
                     </div>
