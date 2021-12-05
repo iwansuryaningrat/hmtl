@@ -13,8 +13,10 @@
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
     <meta property="og:site_name" content="HMTL UNDIP" /> <!-- website name -->
     <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="Arsip-Mata Kuliah Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." /> <!-- description shown in the actual shared post -->
+    <meta property="og:title" content="Kontak Himpunan Mahasiswa Teknik Lingkungan UNDIP" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." />
+    <!-- description shown in the actual shared post -->
     <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
@@ -34,10 +36,14 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/mainpage/css/bootstrap.css"> <!-- bootstrap styles -->
     <link rel="stylesheet" href="/mainpage/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- animate animation styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css">
+    <!-- fontawesome icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <!-- flaticon bold rounded icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css">
+    <!-- flaticon regular straight icon styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate animation styles -->
     <link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
     <link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
 
@@ -203,11 +209,12 @@
         </div> <!-- end of offcanvas-body -->
     </div> <!-- end of search section offcanvas -->
 
-
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jquery 3.5.1 Gcdn scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery 3.5.1 Gcdn scripts -->
     <script src="/mainpage/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
     <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- medium scripts -->
 
     <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
