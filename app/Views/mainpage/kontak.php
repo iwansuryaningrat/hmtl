@@ -102,7 +102,7 @@
 
 <!-- contact section -->
 <!-- FINISH -->
-<div class="contact__section" id="contact-section">
+<div class="contact__section">
 	<div class="container">
 		<div class="body__section">
 			<!-- contact header -->
@@ -113,27 +113,27 @@
 			</div> <!-- end contact header -->
 			<!-- contact form -->
 			<div class="contact__form">
-				<form action="">
+				<form action="/home/pesan">
 					<!-- name & email -->
 					<div class="row">
 						<div class="col">
-							<label for="name" class="form-label">Name</label>
-							<input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" required>
+							<label for="name" name="nama" id="nama" class="form-label">Name</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" name="nama" id="nama" required>
 						</div>
 						<div class="col">
-							<label for="email" class="form-label">Email</label>
-							<input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@email.com" required>
+							<label for="email" name="email" id="email" class="form-label">Email</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@mail.com" name="email" id="email" required>
 						</div>
 					</div> <!-- end name & email -->
 					<!-- phone & subject -->
 					<div class="row">
 						<div class="col">
-							<label for="phone" class="form-label">Phone</label>
-							<input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" required>
+							<label for="phone" name="telp" id="telp" class="form-label">Phone</label>
+							<input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" name="telp" id="telp" required>
 						</div>
 						<div class="col">
-							<label for="subject" class="form-label">Subject</label>
-							<select id="input-subject" class="form-select form__select shadow-none">
+							<label for="subject" name="subject" id="subject" class="form-label">Subject</label>
+							<select id="input-subject" class="form-select form__select shadow-none" name="subject" id="subject">
 								<option selected value="saran">Saran untuk Website HMTL</option>
 								<option value="pertanyaan">Pertanyaan</option>
 								<option value="partnership">Partnership</option>
@@ -142,8 +142,8 @@
 						</div>
 					</div> <!-- end phone & subject -->
 					<!-- textarea -->
-					<label for="message" class="form-label">Message</label>
-					<textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" required></textarea> <!-- end textarea -->
+					<label for="message" name="pesan" id="pesan" class="form-label">Message</label>
+					<textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" name="pesan" id="pesan" required></textarea> <!-- end textarea -->
 					<!-- submit message -->
 					<div class="send__input">
 						<input type="submit" value="Send Message" class="submit__message">
