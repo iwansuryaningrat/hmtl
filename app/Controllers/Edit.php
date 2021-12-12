@@ -128,7 +128,7 @@ class Edit extends BaseController
         return view('admin/readpesan', $data);
     }
 
-    // Update Pesan Controller (Masih Error)
+    // Update Pesan Controller
     public function updatepesan($id)
     {
         $reply = $this->request->getVar('reply');
