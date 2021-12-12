@@ -1,6 +1,6 @@
-<?= $this->endSection(); ?>
+<?= $this->extend('admin/template/layout'); ?>
 
-<?= $this->section('script'); ?>
+<?= $this->section('admin'); ?>
 
 <!-- Main Panel -->
 <div class="main-panel">

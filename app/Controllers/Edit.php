@@ -158,6 +158,6 @@ class Edit extends BaseController
 
         $this->pesanModel->update($id, $data);
 
-        // return redirect()->to('/admin/pesan');
+        return redirect()->to('/admin/pesan');
     }
 }

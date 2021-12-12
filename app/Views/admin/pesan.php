@@ -1,6 +1,6 @@
-<?= $this->endSection(); ?>
+<?= $this->extend('admin/template/layout'); ?>
 
-<?= $this->section('script'); ?>
+<?= $this->section('admin'); ?>
 
 <!-- Main Panel -->
 <div class="main-panel">
@@ -71,7 +71,7 @@
                                                 <td>
                                                     <div class="form-button-action">
                                                         <a href="/edit/readpesan/<?= $pesan['id']; ?>">
-                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Read">
+                                                            <button type="button" data-toggle="tooltip" title="Read" class="btn btn-link btn-primary btn-lg" data-original-title="Read">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
