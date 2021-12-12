@@ -54,6 +54,10 @@ class Add extends BaseController
 	// Add News Controller
 	public function addnews()
 	{
+		if ($this->request->getPost()) {
+			$data = $this->request->getPost();
+		}
+		dd($data['isi']);
 		$image = $this->request->getFile('image');
 		if ($image->getError() == 4) {
 			$namaImage = 'news-1.jpg';

@@ -653,6 +653,8 @@
         <script src="/admin/assets/js/plugin/select2/select2.full.min.js"></script>
         <!-- jQuery Validation -->
         <script src="/admin/assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+        <!-- Summernote -->
+        <script src="/admin/assets/js/plugin/summernote/summernote-bs4.min.js"></script>
         <!-- Atlantis JS -->
         <script src="/admin/assets/js/atlantis.min.js"></script>
         <!-- Atlantis DEMO methods, don't include it in your project! -->
@@ -700,6 +702,14 @@
                 success: function(element) {
                     $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
                 },
+            });
+        </script>
+        <script>
+            $('#isi').summernote({
+                placeholder: 'Tambahkan Berita',
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
+                tabsize: 2,
+                height: 300
             });
         </script>
 </body>
