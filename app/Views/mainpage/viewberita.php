@@ -17,16 +17,16 @@
 	<div class="container">
 		<div class="body__section">
 			<div class="isi__berita__body row">
-			<!-- info isi__berita main -->
+				<!-- info isi__berita main -->
 				<div class="isi__berita__main col-lg- col-md-9 ps-lg-0">
 					<div class="title__section title__isi__berita text-left">
-						<h3>Prediksi Terbaru Menkes	Kapan RI Capai Puncak Corona</h3>
+						<h3>Prediksi Terbaru Menkes Kapan RI Capai Puncak Corona</h3>
 						<div class="keterangan__berita">
 							<i class="far fa-calendar-alt"></i> Kamis, 2/12/2021
 						</div>
 					</div> <!-- end Info isi__berita title-->
 					<div class="isi__berita__image mb-4">
-						<img class="img-fluid rounded-3 isi__berita__image__sec" src="/mainpage/images/news-3.jpg" alt="">
+						<img class="img-fluid rounded-3 isi__berita__image__sec" src="/img/berita/news-1.jpg" alt="">
 					</div>
 					<div class="isi__berita__content">
 						<p>
