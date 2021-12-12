@@ -44,7 +44,7 @@ Folder Structure:
 
 ## UI Design
 
-https://www.figma.com/file/4WTx2c8GIjcirXbxgXEnvh/HMTI-Web-Layout?node-id=0%3A1
+[Figma](https://www.figma.com/file/4WTx2c8GIjcirXbxgXEnvh/HMTI-Web-Layout?node-id=0%3A1)
 
 ## Authors
 
