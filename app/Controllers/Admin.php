@@ -235,6 +235,7 @@ class Admin extends BaseController
     // Kalender Controller
     public function kalender()
     {
+        $kalender = $this->kalenderModel->findAll();
         // Menampilkan Jumlah pesan yang belum terbaca
         $pesan = $this->pesanModel->findAll();
 
@@ -248,7 +249,8 @@ class Admin extends BaseController
         $data = [
             'title' => 'Kalender - HMTL | Universitas Diponegoro',
             'tab' => 'kalender',
-            'jumlahpesan' => $jumlahpesan
+            'jumlahpesan' => $jumlahpesan,
+            'kalender' => $kalender
         ];
 
         return view('admin/kalender', $data);

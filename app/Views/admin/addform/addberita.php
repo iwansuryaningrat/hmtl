@@ -1,6 +1,6 @@
-<?= $this->endSection(); ?>
+<?= $this->extend('admin/template/layout'); ?>
 
-<?= $this->section('script'); ?>
+<?= $this->section('admin'); ?>
 
 <!-- Formulir disini -->
 <div class="main-panel">
@@ -10,7 +10,7 @@
                 <h4 class="page-title">Formulir Tambah Berita</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
-                        <a href="/admin/index">
+                        <a href="/admin-page">
                             <i class="flaticon-home"></i>
                         </a>
                     </li>
@@ -33,7 +33,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="card-title">Tambah Berita</div>
-                            <div class="card-category">Masukkan data barang dengan sebenar-benarnya</div>
+                            <div class="card-category">Masukkan data berita dengan sebenar-benarnya</div>
                         </div>
                         <form action="/add/addnews" method="POST" enctype="multipart/form-data">
                             <?= csrf_field(); ?>

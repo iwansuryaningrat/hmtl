@@ -160,4 +160,41 @@ class Edit extends BaseController
 
         return redirect()->to('/admin/pesan');
     }
+
+    public function editKalenderForm($id)
+    {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $dataKegiatan = $this->kalenderModel->getKalender($id);
+        // dd($dataKegiatan);
+
+        $data = [
+            'title' => 'Edit Kegiatan - HMTL | Universitas Diponegoro',
+            'tab' => 'kalender',
+            'jumlahpesan' => $jumlahpesan,
+            'data' => $dataKegiatan
+        ];
+
+        return view('/admin/editform/editkalender', $data);
+    }
+
+    public function editKegiatan($id)
+    {
+        $this->kalenderModel->update($id, [
+            'kategori' => $this->request->getVar('kategori'),
+            'tanggal' => $this->request->getVar('tanggal'),
+            'kegiatan' => $this->request->getVar('kegiatan'),
+            'keterangan' => $this->request->getVar('keterangan'),
+        ]);
+
+        return redirect()->to('/admin/kalender');
+    }
 }

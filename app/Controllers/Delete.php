@@ -69,4 +69,12 @@ class Delete extends BaseController
 
         return redirect()->to('/admin/news');
     }
+
+    // Delete Kalender Controller
+    public function deletekalender($id)
+    {
+        $this->kalenderModel->delete($id);
+
+        return redirect()->to('/admin/kalender');
+    }
 }

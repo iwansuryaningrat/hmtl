@@ -7,7 +7,7 @@
     <div class="container">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title">Daftar UKM</h4>
+                <h4 class="page-title">Kalender</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
                         <a href="/admin/index">
@@ -18,22 +18,22 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/ukm">UKM</a>
+                        <a href="/admin/kalender">Daftar Kegiatan</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- UKM Table -->
+            <!-- Kalender Table -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h4 class="card-title"> </h4>
-                                <a href="" class="ml-auto">
+                                <h4 class="card-title">Daftar Kegiatan</h4>
+                                <a href="/add/addkalenderform" class="ml-auto">
                                     <button class="btn btn-primary btn-round ml-auto">
                                         <i class="fa fa-plus"></i>
-                                        Tambah UKM
+                                        Tambah Kegiatan
                                     </button>
                                 </a>
                             </div>
@@ -43,34 +43,37 @@
                                 <table id="add-row" class="display table table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Nama</th>
+                                            <th>Kegiatan</th>
                                             <th>Kategori</th>
+                                            <th>Tanggal</th>
                                             <th>Deskripsi</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Nama</th>
+                                            <th>Kegiatan</th>
                                             <th>Kategori</th>
+                                            <th>Tanggal</th>
                                             <th>Deskripsi</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php foreach ($ukm as $ukm) : ?>
+                                        <?php foreach ($kalender as $data) : ?>
                                             <tr>
-                                                <td><?= $ukm['nama']; ?></td>
-                                                <td><?= $ukm['kategori']; ?></td>
-                                                <td><?= $ukm['deskripsi']; ?></td>
+                                                <td><?= $data['kegiatan']; ?></td>
+                                                <td><?= $data['kategori']; ?></td>
+                                                <td><?= $data['tanggal']; ?></td>
+                                                <td><?= $data['keterangan']; ?></td>
                                                 <td>
                                                     <div class="form-button-action">
-                                                        <a href="#">
-                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                                        <a href="/edit/editkalenderform/<?= $data['id']; ?>">
+                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="/delete/deletekalender/<?= $data['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                 <i class="fa fa-times"></i>
                                                             </button>

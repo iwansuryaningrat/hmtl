@@ -103,6 +103,40 @@ class Add extends BaseController
 		];
 		// dd($data['pesan']['nama']);
 
-		return view('admin/addberita', $data);
+		return view('admin/addform/addberita', $data);
+	}
+
+	// Add Kalender Controller
+	public function addkalenderform()
+	{
+		// Menampilkan Jumlah pesan yang belum terbaca
+		$pesan = $this->pesanModel->findAll();
+
+		$jumlahpesan = 0;
+		foreach ($pesan as $pesan) {
+			if ($pesan['status'] == 'Unread') {
+				$jumlahpesan++;
+			}
+		}
+
+		$data = [
+			'title' => 'Tambah Kegiatan - HMTL | Universitas Diponegoro',
+			'tab' => 'kalender',
+			'jumlahpesan' => $jumlahpesan
+		];
+
+		return view('admin/addform/addkalender', $data);
+	}
+
+	public function addKegiatan()
+	{
+		$this->kalenderModel->insert([
+			'kategori' => $this->request->getVar('kategori'),
+			'tanggal' => $this->request->getVar('tanggal'),
+			'kegiatan' => $this->request->getVar('kegiatan'),
+			'keterangan' => $this->request->getVar('keterangan'),
+		]);
+
+		return redirect()->to('/admin/kalender');
 	}
 }
