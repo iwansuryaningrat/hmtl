@@ -73,9 +73,13 @@ class Home extends BaseController
 
 	public function kalender()
 	{
+		$kegiatan = $this->kalenderModel->findAll();
+		// dd($kegiatan[1]['tanggal']);
+
 		$data = [
 			'title' => 'Kalender - HMTL | Universitas Diponegoro',
-			'tab' => 'kalender'
+			'tab' => 'kalender',
+			'kegiatan' => $kegiatan
 		];
 
 		return view('mainpage/kalender', $data);

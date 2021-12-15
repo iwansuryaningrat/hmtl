@@ -53,104 +53,13 @@
 				center: 'title',
 				right: 'dayGridMonth,timeGridWeek,timeGridDay'
 			},
-			events: [{
-					title: 'All Day Event',
-					description: 'description for All Day Event',
-					start: '2021-11-01'
-				},
-				{
-					title: 'Long Event',
-					description: 'description for All Day Event',
-					start: '2021-11-07',
-					end: '2021-11-10'
-				},
-				{
-					groupId: '999',
-					title: 'Repeating Event',
-					description: 'description for All Day Event',
-					start: '2021-11-09T16:00:00'
-				},
-				{
-					groupId: '999',
-					title: 'Repeating Event',
-					description: 'description for All Day Event',
-					start: '2021-11-16T16:00:00'
-				},
-				{
-					title: 'Conference',
-					description: 'description for All Day Event',
-					start: '2021-11-11',
-					end: '2021-11-13'
-				},
-				{
-					title: 'Conference meja bundar',
-					description: 'description for All Day Event',
-					start: '2021-12-13T11:00:00',
-					end: '2021-12-15T11:00:00'
-				},
-				{
-					title: 'Meeting',
-					description: 'description for All Day Event',
-					start: '2021-11-12T10:30:00',
-					end: '2021-11-12T12:30:00'
-				},
-				{
-					title: 'Lunch',
-					start: '2021-11-12T12:00:00'
-				},
-				{
-					title: 'Meeting',
-					start: '2021-11-12T14:30:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-11-13T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2021-12-14T07:00:00'
-				},
-				{
-					title: 'Click for Google',
-					url: 'http://google.com/',
-					start: '2021-11-28'
-				}
+			events: [
+				<?php foreach ($kegiatan as $cal) : ?> {
+						title: '<?= $cal['kegiatan']; ?>',
+						description: "<?= $cal['kategori']; ?>",
+						start: "<?= $cal['tanggal']; ?>"
+					},
+				<?php endforeach; ?>
 			]
 		});
 
