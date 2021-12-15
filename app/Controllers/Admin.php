@@ -94,7 +94,7 @@ class Admin extends BaseController
         return view('admin/hmtl', $data);
     }
 
-    // Bidang Controller
+    // Bidang Controller (Done)
     public function bidang()
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -107,10 +107,12 @@ class Admin extends BaseController
             }
         }
 
+        $bidang = $this->bidangModel->findAll();
         $data = [
             'title' => 'Profile Bidang - HMTL | Universitas Diponegoro',
             'tab' => 'hmtl',
-            'jumlahpesan' => $jumlahpesan
+            'jumlahpesan' => $jumlahpesan,
+            'data' => $bidang
         ];
 
         return view('admin/bidang', $data);

@@ -89,4 +89,14 @@ class Delete extends BaseController
 
         return redirect()->to('/admin/biro');
     }
+
+    // Delete Bidang Controller (Done)
+    public function deletebidang($id)
+    {
+        $this->bidangModel->delete($id);
+
+        session()->setFlashdata('bidang', 'Data bidang berhasil dihapus.');
+
+        return redirect()->to('/admin/bidang');
+    }
 }

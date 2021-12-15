@@ -140,7 +140,8 @@ class Add extends BaseController
 
 		return redirect()->to('/admin/kalender');
 	}
-	// Add Biro Controller
+
+	// Add Biro Controller (Done)
 	public function addbiroform()
 	{
 		// Menampilkan Jumlah pesan yang belum terbaca
@@ -191,5 +192,45 @@ class Add extends BaseController
 		session()->setFlashdata('biro', 'Data biro berhasil ditambahkan.');
 
 		return redirect()->to('/admin/biro');
+	}
+
+	// Add Bidang Controller (done)
+	public function addbidangform()
+	{
+		// Menampilkan Jumlah pesan yang belum terbaca
+		$pesan = $this->pesanModel->findAll();
+
+		$jumlahpesan = 0;
+		foreach ($pesan as $pesan) {
+			if ($pesan['status'] == 'Unread') {
+				$jumlahpesan++;
+			}
+		}
+
+		$data = [
+			'title' => 'Tambah Bidang - HMTL | Universitas Diponegoro',
+			'tab' => 'hmtl',
+			'jumlahpesan' => $jumlahpesan
+		];
+
+		return view('admin/addform/addbidang', $data);
+	}
+
+	public function addBidang()
+	{
+		if ($this->request->getPost()) {
+			$data = $this->request->getPost();
+		}
+
+		$this->bidangModel->insert([
+			'nama' => $this->request->getVar('nama'),
+			'profil' => $this->request->getVar('profil'),
+			'deskripsi' => $this->request->getVar('deskripsi'),
+			'tujuan' => $data['tujuan']
+		]);
+
+		session()->setFlashdata('bidang', 'Data bidang berhasil ditambahkan.');
+
+		return redirect()->to('/admin/bidang');
 	}
 }

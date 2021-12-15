@@ -260,4 +260,49 @@ class Edit extends BaseController
 
         return redirect()->to('/admin/biro');
     }
+
+    // Edit Bidang Controller (Done)
+    public function editBidangForm($id)
+    {
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $databidang = $this->bidangModel->getBidang($id);
+        // dd($databidang);
+
+        $data = [
+            'title' => 'Edit Bidang - HMTL | Universitas Diponegoro',
+            'tab' => 'hmtl',
+            'jumlahpesan' => $jumlahpesan,
+            'data' => $databidang
+        ];
+
+        return view('/admin/editform/editbidang', $data);
+    }
+
+    public function editbidang($id)
+    {
+        if ($this->request->getPost()) {
+            $data = $this->request->getPost();
+        }
+
+        $this->bidangModel->update($id, [
+            'id' => $id,
+            'nama' => $this->request->getVar('nama'),
+            'profil' => $this->request->getVar('profil'),
+            'deskripsi' => $this->request->getVar('deskripsi'),
+            'tujuan' => $data['tujuan']
+        ]);
+
+        session()->setFlashdata('bidang', 'Data bidang berhasil diupdate.');
+
+        return redirect()->to('/admin/bidang');
+    }
 }
