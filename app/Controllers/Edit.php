@@ -158,6 +158,8 @@ class Edit extends BaseController
 
         $this->pesanModel->update($id, $data);
 
+        session()->setFlashdata('pesan', 'Pesan berhasil diupdate.');
+
         return redirect()->to('/admin/pesan');
     }
 

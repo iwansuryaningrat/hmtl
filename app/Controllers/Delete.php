@@ -57,7 +57,7 @@ class Delete extends BaseController
 
         $this->pesanModel->delete($id);
 
-        // session()->setFlashdata('delete-msg-barang', 'Data Barang berhasil dihapus.');
+        session()->setFlashdata('pesan', 'Pesan berhasil dihapus.');
 
         return redirect()->to('/admin/pesan');
     }

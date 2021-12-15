@@ -152,20 +152,21 @@
     });
 </script>
 
-
-<script>
-    $.notify({
-        icon: "flaticon-alarm-1",
-        title: "Congratulation!!",
-        message: "Premium Bootstrap 4 Admin Dashboard",
-    }, {
-        type: "secondary",
-        placement: {
-            from: "bottom",
-            align: "right",
-        },
-        time: 1000,
-    });
-</script>
+<?php if (session()->getFlashdata('pesan')) : ?>
+    <script>
+        $.notify({
+            icon: "flaticon-alarm-1",
+            title: "Congratulation!!",
+            message: "<?= session()->getFlashdata('pesan'); ?>",
+        }, {
+            type: "success",
+            placement: {
+                from: "bottom",
+                align: "right",
+            },
+            time: 1000,
+        });
+    </script>
+<?php endif; ?>
 
 <?= $this->endSection(); ?>
