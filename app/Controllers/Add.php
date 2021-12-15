@@ -136,6 +136,8 @@ class Add extends BaseController
 			'keterangan' => $this->request->getVar('keterangan'),
 		]);
 
+		session()->setFlashdata('kalender', 'Data kegiatan berhasil ditambahkan.');
+
 		return redirect()->to('/admin/kalender');
 	}
 	// Add Biro Controller

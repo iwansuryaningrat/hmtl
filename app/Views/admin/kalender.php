@@ -148,4 +148,21 @@
     });
 </script>
 
+<?php if (session()->getFlashdata('kalender')) : ?>
+    <script>
+        $.notify({
+            icon: "flaticon-alarm-1",
+            title: "Congratulation!!",
+            message: "<?= session()->getFlashdata('kalender'); ?>",
+        }, {
+            type: "success",
+            placement: {
+                from: "bottom",
+                align: "right",
+            },
+            time: 1000,
+        });
+    </script>
+<?php endif; ?>
+
 <?= $this->endSection(); ?>

@@ -75,6 +75,8 @@ class Delete extends BaseController
     {
         $this->kalenderModel->delete($id);
 
+        session()->setFlashdata('kalender', 'Data kegiatan berhasil dihapus.');
+
         return redirect()->to('/admin/kalender');
     }
 

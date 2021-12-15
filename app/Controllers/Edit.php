@@ -198,6 +198,8 @@ class Edit extends BaseController
             'keterangan' => $this->request->getVar('keterangan'),
         ]);
 
+        session()->setFlashdata('kalender', 'Data kegiatan berhasil diupdate.');
+
         return redirect()->to('/admin/kalender');
     }
 
