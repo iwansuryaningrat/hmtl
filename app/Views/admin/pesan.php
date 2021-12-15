@@ -76,6 +76,12 @@
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
+
+                                                        <a href="/delete/deletepesan/<?= $pesan['id']; ?>">
+                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -143,6 +149,22 @@
             $('#addRowModal').modal('hide');
 
         });
+    });
+</script>
+
+
+<script>
+    $.notify({
+        icon: "flaticon-alarm-1",
+        title: "Congratulation!!",
+        message: "Premium Bootstrap 4 Admin Dashboard",
+    }, {
+        type: "secondary",
+        placement: {
+            from: "bottom",
+            align: "right",
+        },
+        time: 1000,
     });
 </script>
 
