@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ProkerbiroModel extends Model
 {
     protected $table = 'prokerbiro';
-    protected $primarykey = 'id_prokerbiro';
+    protected $primarykey = 'id';
     protected $useTimestamps = true;
     protected $allowedFields = ['id_biro', 'nama', 'deskripsi', 'created_at', 'updated_at'];
 }
