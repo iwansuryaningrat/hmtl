@@ -46,6 +46,7 @@
     <!-- animate animation styles -->
     <link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
     <link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" integrity="sha256-zsz1FbyNCtIE2gIB+IyWV7GbCLyKJDTBRz0qQaBSLxM=" crossorigin="anonymous"> <!-- fullcalendar styles -->
 
     <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- custom styles -->
 
@@ -216,11 +217,12 @@
     <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
     <script src="https://unpkg.com/akar-icons-fonts"></script> <!-- akar icon -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- medium scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js" integrity="sha256-XOMgUu4lWKSn8CFoJoBoGd9Q/OET+xrfGYSo+AKpFhE=" crossorigin="anonymous"></script> <!-- fullcalendar scripts -->
 
     <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
 
-    <?= $this->renderSection('mainpage'); ?>
-
+    <!-- Custom Script at Page -->
+    <?= $this->renderSection('script'); ?>
 </body>
 
 </html>
