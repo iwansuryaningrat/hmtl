@@ -79,9 +79,9 @@ class Delete extends BaseController
     }
 
     // Delete Biro Controller
-    public function deletebiro($idbiro)
+    public function deletebiro($id)
     {
-        $this->biroModel->delete($idbiro);
+        $this->biroModel->delete($id);
 
         return redirect()->to('/admin/biro');
     }

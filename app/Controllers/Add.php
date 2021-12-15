@@ -63,7 +63,7 @@ class Add extends BaseController
 			$namaImage = 'news-1.jpg';
 		} else {
 			$namaImage = $image->getRandomName();
-			$image->move('/img/berita/', $namaImage);
+			$image->move('img/berita/', $namaImage);
 		}
 
 		$this->newsModel->insert([
@@ -168,7 +168,7 @@ class Add extends BaseController
 			$namaImage = 'default.jpg';
 		} else {
 			$namaImage = $image->getRandomName();
-			$image->move('/img/biro/', $namaImage);
+			$image->move('img/biro/', $namaImage);
 		}
 
 		$this->biroModel->insert([

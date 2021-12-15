@@ -44,7 +44,7 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>Deskripsi</th>
+                                            <th>Logo</th>
                                             <th>Ketua</th>
                                             <th>Wakil</th>
                                             <th style="width: 10%">Action</th>
@@ -53,27 +53,27 @@
                                     <tfoot>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>Deskripsi</th>
+                                            <th>Logo</th>
                                             <th>Ketua</th>
                                             <th>Wakil</th>
-                                            <th>Action</th>
+                                            <th style="width: 10%">Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php foreach ($biro as $biro) : ?>
                                             <tr>
                                                 <td><?= $biro['nama']; ?></td>
-                                                <td><?= $biro['deskripsi']; ?></td>
+                                                <td><img src="/img/biro/<?= $biro['logo']; ?>" style="width: 50px;"></td>
                                                 <td><?= $biro['ketua']; ?></td>
                                                 <td><?= $biro['wakil']; ?></td>
-                                                <td>
+                                                <td style="width: 10%">
                                                     <div class="form-button-action">
-                                                        <a href="#">
+                                                        <a href="/edit/editbiroform/<?= $biro['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
-                                                        <a href="/delete/deletebiro/<?= $biro['idbiro']; ?>">
+                                                        <a href="/delete/deletebiro/<?= $biro['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
