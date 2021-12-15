@@ -217,6 +217,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- medium scripts -->
 
     <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
+
+    <?= $this->renderSection('mainpage'); ?>
+    
 </body>
 
 </html>

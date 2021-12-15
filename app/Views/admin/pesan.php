@@ -67,7 +67,8 @@
                                                                         } else {
                                                                             echo 'badge-success';
                                                                         }
-                                                                        ?>"><?= $pesan['status']; ?></span></td>
+                                                                        ?>"><?= $pesan['status']; ?></span>
+                                                </td>
                                                 <td>
                                                     <div class="form-button-action">
                                                         <a href="/edit/readpesan/<?= $pesan['id']; ?>">
