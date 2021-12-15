@@ -184,7 +184,7 @@ class Admin extends BaseController
         return view('admin/biro', $data);
     }
 
-    // UKM Controller (Done)
+    // UKM Controller 
     public function ukm()
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -208,7 +208,7 @@ class Admin extends BaseController
         return view('admin/ukm', $data);
     }
 
-    // News Controller
+    // News Controller (Not Fix)
     public function news()
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -232,7 +232,7 @@ class Admin extends BaseController
         return view('admin/news', $data);
     }
 
-    // Kalender Controller
+    // Kalender Controller (Done)
     public function kalender()
     {
         $kalender = $this->kalenderModel->findAll();
@@ -278,7 +278,7 @@ class Admin extends BaseController
         return view('admin/arsip', $data);
     }
 
-    // Pesan Controller
+    // Pesan Controller (Done)
     public function pesan()
     {
         // Menampilkan Jumlah pesan yang belum terbaca

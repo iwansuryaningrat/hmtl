@@ -51,7 +51,7 @@ class Add extends BaseController
 		$this->visitorsModel = new VisitorsModel();
 	}
 
-	// Add News Controller
+	// Add News Controller (Not Fix)
 	public function addnews()
 	{
 		if ($this->request->getPost()) {
@@ -83,7 +83,6 @@ class Add extends BaseController
 		return redirect()->to('/admin/news');
 	}
 
-	// Add News Controller
 	public function addnewsform()
 	{
 		// Menampilkan Jumlah pesan yang belum terbaca

@@ -62,7 +62,7 @@ class Delete extends BaseController
         return redirect()->to('/admin/pesan');
     }
 
-    // Delete Berita Controller
+    // Delete Berita Controller (Done)
     public function deletenews($id)
     {
         $this->newsModel->delete($id);
@@ -70,7 +70,7 @@ class Delete extends BaseController
         return redirect()->to('/admin/news');
     }
 
-    // Delete Kalender Controller
+    // Delete Kalender Controller (Done)
     public function deletekalender($id)
     {
         $this->kalenderModel->delete($id);
@@ -78,7 +78,7 @@ class Delete extends BaseController
         return redirect()->to('/admin/kalender');
     }
 
-    // Delete Biro Controller
+    // Delete Biro Controller (Done)
     public function deletebiro($id)
     {
         $this->biroModel->delete($id);

@@ -51,7 +51,7 @@ class Edit extends BaseController
         $this->visitorsModel = new VisitorsModel();
     }
 
-    // Edit News Controller
+    // Edit News Controller (Not Fix)
     public function editnews($id)
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -101,7 +101,7 @@ class Edit extends BaseController
         return redirect()->to('/admin/news');
     }
 
-    // Read Pesan Controller
+    // Read Pesan Controller (Done)
     public function readpesan($id)
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -128,7 +128,7 @@ class Edit extends BaseController
         return view('admin/readpesan', $data);
     }
 
-    // Update Pesan Controller
+    // Update Pesan Controller (Done)
     public function updatepesan($id)
     {
         $reply = $this->request->getVar('reply');
@@ -161,7 +161,7 @@ class Edit extends BaseController
         return redirect()->to('/admin/pesan');
     }
 
-    // Edit Kalender Controller
+    // Edit Kalender Controller (Done)
     public function editKalenderForm($id)
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -199,7 +199,7 @@ class Edit extends BaseController
         return redirect()->to('/admin/kalender');
     }
 
-    // Edit Biro Controller
+    // Edit Biro Controller (Done)
     public function editbiroForm($id)
     {
         // Menampilkan Jumlah pesan yang belum terbaca
