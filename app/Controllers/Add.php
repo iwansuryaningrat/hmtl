@@ -57,7 +57,7 @@ class Add extends BaseController
 		if ($this->request->getPost()) {
 			$data = $this->request->getPost();
 		}
-		dd($data['isi']);
+		// dd($data['isi']);
 		$image = $this->request->getFile('image');
 		if ($image->getError() == 4) {
 			$namaImage = 'news-1.jpg';
@@ -71,7 +71,7 @@ class Add extends BaseController
 			'highlight' => $this->request->getVar('highlight'),
 			'preview' => $this->request->getVar('preview'),
 			'kategori' => $this->request->getVar('kategori'),
-			'isi' => $this->request->getVar('isi'),
+			'isi' => $data['isi'],
 			'tag' => '',
 			'foto' => $namaImage
 		]);

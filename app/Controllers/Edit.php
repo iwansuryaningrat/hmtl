@@ -73,7 +73,7 @@ class Edit extends BaseController
             'jumlahpesan' => $jumlahpesan
         ];
 
-        return view('admin/editberita', $data);
+        return view('admin/editform/editberita', $data);
     }
 
     public function editberita($id)

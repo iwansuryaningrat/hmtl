@@ -1,6 +1,6 @@
-<?= $this->endSection(); ?>
+<?= $this->extend('admin/template/layout'); ?>
 
-<?= $this->section('script'); ?>
+<?= $this->section('admin'); ?>
 
 <!-- Formulir disini -->
 <div class="main-panel">
@@ -24,7 +24,7 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/news">Formulir Edit Berita</a>
+                        <a href="/edit/editnews/<?= $news['id']; ?>">Formulir Edit Berita</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                                 <div class="form-group form-show-validation row">
                                     <label for="judul" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Judul <span class="required-label">*</span></label>
                                     <div class="col-lg-7 col-md-9 col-sm-8">
-                                        <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Berita..." value="<?= $news['judul']; ?>p" required autofocus>
+                                        <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Berita..." value="<?= $news['judul']; ?>" required autofocus>
                                         <!--  -->
                                     </div>
                                 </div> <!-- end judul -->
@@ -51,9 +51,9 @@
                                     <div class="col-lg-7 col-md-9 col-sm-8">
                                         <select id="highlight" required class="form-control" name="highlight" required>
                                             <option hidden> -- Pilih Highlight --</option>
-                                            <option value="yes" <?php if ($news['highlight'] == 'yes') : echo 'active';
+                                            <option value="yes" <?php if ($news['highlight'] == 'yes') : echo 'selected';
                                                                 endif; ?>>Yes</option>
-                                            <option value="no" <?php if ($news['highlight'] == 'no') : echo 'active';
+                                            <option value="no" <?php if ($news['highlight'] == 'no') : echo 'selected';
                                                                 endif;  ?>>No</option>
                                         </select>
                                     </div>
@@ -64,13 +64,13 @@
                                     <div class="col-lg-7 col-md-9 col-sm-8">
                                         <select id="kategori" required class="form-control" name="kategori" required>
                                             <option hidden> -- Pilih Kategori --</option>
-                                            <option value="berita terkini" <?php if ($news['kategori'] == 'berita terkini') : echo 'active';
+                                            <option value="berita terkini" <?php if ($news['kategori'] == 'berita terkini') : echo 'selected';
                                                                             endif; ?>>Berita Terkini</option>
-                                            <option value="info akademik" <?php if ($news['kategori'] == 'info akademik') : echo 'active';
+                                            <option value="info akademik" <?php if ($news['kategori'] == 'info akademik') : echo 'selected';
                                                                             endif; ?>>Info Akademik</option>
-                                            <option value="info beasiswa" <?php if ($news['kategori'] == 'info beasiswa') : echo 'active';
+                                            <option value="info beasiswa" <?php if ($news['kategori'] == 'info beasiswa') : echo 'selected';
                                                                             endif; ?>>Info Beasiswa</option>
-                                            <option value="press release" <?php if ($news['kategori'] == 'press release') : echo 'active';
+                                            <option value="press release" <?php if ($news['kategori'] == 'press release') : echo 'selected';
                                                                             endif; ?>>Press Release</option>
                                         </select>
                                     </div>
@@ -80,8 +80,7 @@
                                     <label for="preview" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Preview <span class="required-label">*</span></label>
                                     <br>
                                     <div class="col-lg-7 col-md-9 col-sm-8">
-                                        <textarea class="form-control" name="preview" id="preview" cols="30" rows="10" value="<?= $news['preview']; ?>" placeholder="<?= $news['preview']; ?>">
-												</textarea>
+                                        <textarea class="form-control" name="preview" id="preview" cols="30" rows="10"><?= $news['preview']; ?></textarea>
                                     </div>
                                 </div> <!-- end preview -->
 
@@ -89,8 +88,7 @@
                                     <label for="isi" class="col-lg-3 col-md-3 col-sm-4 mt-sm-2 text-right">Isi <span class="required-label">*</span></label>
                                     <br>
                                     <div class="col-lg-7 col-md-9 col-sm-8">
-                                        <textarea class="form-control" name="isi" id="isi" cols="30" rows="10" value="<?= $news['isi']; ?>" placeholder="<?= $news['isi']; ?>">
-												</textarea>
+                                        <textarea class="form-control" name="isi" id="isi" cols="30" rows="10"><?= $news['isi']; ?></textarea>
                                     </div>
                                 </div> <!-- end isi -->
 
@@ -174,6 +172,14 @@
         success: function(element) {
             $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
         },
+    });
+</script>
+<script>
+    $('#isi').summernote({
+        placeholder: 'Tambahkan Berita',
+        fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New'],
+        tabsize: 2,
+        height: 300
     });
 </script>
 
