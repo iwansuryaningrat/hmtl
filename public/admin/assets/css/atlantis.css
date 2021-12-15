@@ -3880,7 +3880,7 @@ label.error {
 .table > tbody > tr > td, .table > tbody > tr > th {
   padding: 8px; }
 .table > tfoot > tr > td, .table > tfoot > tr > th {
-  padding: 8px; }
+  padding: 8px; text-align: center;}
 .table thead th {
   border-bottom-width: 2px;
   font-weight: 600; }
@@ -10872,7 +10872,7 @@ div.dataTables_wrapper div.dataTables_processing {
   padding: 1em 0; }
 
 table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > td.sorting_asc, table.dataTable thead > tr > td.sorting_desc, table.dataTable thead > tr > td.sorting {
-  padding-right: 30px; }
+  padding-right: 30px; text-align: center; }
 table.dataTable thead > tr > th:active, table.dataTable thead > tr > td:active {
   outline: none; }
 table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {

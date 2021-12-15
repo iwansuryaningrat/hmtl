@@ -63,7 +63,7 @@ class Add extends BaseController
 			$namaImage = 'news-1.jpg';
 		} else {
 			$namaImage = $image->getRandomName();
-			$image->move('/img/berita/');
+			$image->move('/img/berita/', $namaImage);
 		}
 
 		$this->newsModel->insert([
@@ -138,5 +138,55 @@ class Add extends BaseController
 		]);
 
 		return redirect()->to('/admin/kalender');
+	}
+	// Add Biro Controller
+	public function addbiroform()
+	{
+		// Menampilkan Jumlah pesan yang belum terbaca
+		$pesan = $this->pesanModel->findAll();
+
+		$jumlahpesan = 0;
+		foreach ($pesan as $pesan) {
+			if ($pesan['status'] == 'Unread') {
+				$jumlahpesan++;
+			}
+		}
+
+		$data = [
+			'title' => 'Tambah Biro - HMTL | Universitas Diponegoro',
+			'tab' => 'biro',
+			'jumlahpesan' => $jumlahpesan
+		];
+
+		return view('admin/addform/addbiro', $data);
+	}
+
+	public function addbiro()
+	{
+		$image = $this->request->getFile('image');
+		if ($image->getError() == 4) {
+			$namaImage = 'default.jpg';
+		} else {
+			$namaImage = $image->getRandomName();
+			$image->move('/img/biro/', $namaImage);
+		}
+
+		$this->biroModel->insert([
+			'nama' => $this->request->getVar('nama'),
+			'logo' => $namaImage,
+			'deskripsi' => $this->request->getVar('deskripsi'),
+			'ketua' => $this->request->getVar('ketua'),
+			'angkatan_ketua' => $this->request->getVar('angkatan_ketua'),
+			'wakil' => $this->request->getVar('wakil'),
+			'angkatan_wakil' => $this->request->getVar('angkatan_wakil'),
+			'ig' => $this->request->getVar('ig'),
+			'yt' => $this->request->getVar('yt'),
+			'line' => $this->request->getVar('line'),
+			'twitter' => $this->request->getVar('twitter'),
+			'fb' => $this->request->getVar('fb'),
+			'web' => $this->request->getVar('web'),
+		]);
+
+		return redirect()->to('/admin/biro');
 	}
 }

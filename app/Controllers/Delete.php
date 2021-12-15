@@ -77,4 +77,12 @@ class Delete extends BaseController
 
         return redirect()->to('/admin/kalender');
     }
+
+    // Delete Biro Controller
+    public function deletebiro($idbiro)
+    {
+        $this->biroModel->delete($idbiro);
+
+        return redirect()->to('/admin/biro');
+    }
 }

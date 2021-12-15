@@ -7,7 +7,7 @@
     <div class="container">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title">Daftar Biro</h4>
+                <h4 class="page-title">Biro</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
                         <a href="/admin/index">
@@ -18,7 +18,7 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/biro">Biro</a>
+                        <a href="/admin/biro">Daftar Biro</a>
                     </li>
                 </ul>
             </div>
@@ -29,8 +29,8 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h4 class="card-title"> </h4>
-                                <a href="" class="ml-auto">
+                                <h4 class="card-title">Daftar Biro</h4>
+                                <a href="/add/addbiroform" class="ml-auto">
                                     <button class="btn btn-primary btn-round ml-auto">
                                         <i class="fa fa-plus"></i>
                                         Tambah Biro
@@ -47,7 +47,6 @@
                                             <th>Deskripsi</th>
                                             <th>Ketua</th>
                                             <th>Wakil</th>
-                                            <th>Proker</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </thead>
@@ -57,7 +56,6 @@
                                             <th>Deskripsi</th>
                                             <th>Ketua</th>
                                             <th>Wakil</th>
-                                            <th>Proker</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -68,15 +66,14 @@
                                                 <td><?= $biro['deskripsi']; ?></td>
                                                 <td><?= $biro['ketua']; ?></td>
                                                 <td><?= $biro['wakil']; ?></td>
-                                                <td><?= $biro['proker']; ?></td>
                                                 <td>
                                                     <div class="form-button-action">
                                                         <a href="#">
-                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="/delete/deletebiro/<?= $biro['idbiro']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
