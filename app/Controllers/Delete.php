@@ -85,6 +85,8 @@ class Delete extends BaseController
     {
         $this->biroModel->delete($id);
 
+        session()->setFlashdata('biro', 'Data biro berhasil dihapus.');
+
         return redirect()->to('/admin/biro');
     }
 }

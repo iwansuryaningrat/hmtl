@@ -256,6 +256,8 @@ class Edit extends BaseController
             'web' => $this->request->getVar('web'),
         ]);
 
+        session()->setFlashdata('biro', 'Data biro berhasil diupdate.');
+
         return redirect()->to('/admin/biro');
     }
 }

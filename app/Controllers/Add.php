@@ -188,6 +188,8 @@ class Add extends BaseController
 			'web' => $this->request->getVar('web'),
 		]);
 
+		session()->setFlashdata('biro', 'Data biro berhasil ditambahkan.');
+
 		return redirect()->to('/admin/biro');
 	}
 }
