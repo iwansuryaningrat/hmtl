@@ -281,7 +281,7 @@
   $.notify({
     icon: 'flaticon-alarm-1',
     title: 'Wellcome Back!!',
-    message: 'Wellcome back to Skyx Admin Dashboard',
+    message: 'Wellcome back to HMTL Admin Dashboard',
   }, {
     type: 'secondary',
     placement: {
