@@ -7,7 +7,7 @@
     <div class="container">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title">Daftar UKM</h4>
+                <h4 class="page-title">Data Pengurus</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
                         <a href="/admin/index">
@@ -18,22 +18,22 @@
                         <i class="flaticon-right-arrow"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="/admin/ukm">UKM</a>
+                        <a href="/admin/pengurus">Daftar Pengurus</a>
                     </li>
                 </ul>
             </div>
 
-            <!-- UKM Table -->
+            <!-- Pengurus Table -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex align-items-center">
-                                <h4 class="card-title"> </h4>
-                                <a href="" class="ml-auto">
+                                <h4 class="card-title">Daftar Pengurus</h4>
+                                <a href="/add/addpengurusform" class="ml-auto">
                                     <button class="btn btn-primary btn-round ml-auto">
                                         <i class="fa fa-plus"></i>
-                                        Tambah UKM
+                                        Tambah Pengurus
                                     </button>
                                 </a>
                             </div>
@@ -44,33 +44,40 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>Kategori</th>
-                                            <th>Deskripsi</th>
+                                            <th>nim</th>
+                                            <th>Bidang</th>
+                                            <th>Jabatan</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>Kategori</th>
-                                            <th>Deskripsi</th>
+                                            <th>nim</th>
+                                            <th>Bidang</th>
+                                            <th>Jabatan</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php foreach ($ukm as $ukm) : ?>
+                                        <?php foreach ($data as $data) : ?>
                                             <tr>
-                                                <td><?= $ukm['nama']; ?></td>
-                                                <td><?= $ukm['kategori']; ?></td>
-                                                <td><?= $ukm['deskripsi']; ?></td>
+                                                <td><?= $data['pengurus']; ?></td>
+                                                <td><?= $data['nim']; ?></td>
+                                                <td><?= $data['jabatan']; ?></td>
+                                                <?php foreach ($bidang as $row) : ?>
+                                                    <?php if ($row['id'] == $data['bidangid']) : ?>
+                                                        <td><?= $row['nama']; ?></td>
+                                                    <?php endif; ?>
+                                                <?php endforeach; ?>
                                                 <td>
                                                     <div class="form-button-action">
-                                                        <a href="#">
-                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task">
+                                                        <a href="/edit/editpengurusform/<?= $data['id']; ?>">
+                                                            <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </a>
-                                                        <a href="#">
+                                                        <a href="/delete/deletepengurus/<?= $data['id']; ?>">
                                                             <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
@@ -144,5 +151,22 @@
         });
     });
 </script>
+
+<?php if (session()->getFlashdata('pengurus')) : ?>
+    <script>
+        $.notify({
+            icon: "flaticon-alarm-1",
+            title: "Congratulation!!",
+            message: "<?= session()->getFlashdata('pengurus'); ?>",
+        }, {
+            type: "success",
+            placement: {
+                from: "bottom",
+                align: "right",
+            },
+            time: 1000,
+        });
+    </script>
+<?php endif; ?>
 
 <?= $this->endSection(); ?>

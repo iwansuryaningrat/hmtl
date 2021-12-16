@@ -16,8 +16,6 @@ use App\Models\ProkerModel;
 use App\Models\UkmModel;
 use App\Models\VisitorsModel;
 
-use function PHPUnit\Framework\throwException;
-
 class Add extends BaseController
 {
 	protected $arsipModel;
@@ -232,5 +230,59 @@ class Add extends BaseController
 		session()->setFlashdata('bidang', 'Data bidang berhasil ditambahkan.');
 
 		return redirect()->to('/admin/bidang');
+	}
+
+	// Add Pengurus Controller (done)
+	public function addPengurusform()
+	{
+		// Menampilkan Jumlah pesan yang belum terbaca
+		$pesan = $this->pesanModel->findAll();
+
+		$jumlahpesan = 0;
+		foreach ($pesan as $pesan) {
+			if ($pesan['status'] == 'Unread') {
+				$jumlahpesan++;
+			}
+		}
+
+		// Data Bidang
+		$bidang = $this->bidangModel->findAll();
+
+		$data = [
+			'title' => 'Tambah Pengurus - HMTL | Universitas Diponegoro',
+			'tab' => 'hmtl',
+			'jumlahpesan' => $jumlahpesan,
+			'bidang' => $bidang
+		];
+
+		return view('admin/addform/addpengurus', $data);
+	}
+
+	public function addPengurus()
+	{
+		$image = $this->request->getFile('image');
+		if ($image->getError() == 4) {
+			$namaImage = 'default.jpg';
+		} else {
+			$namaImage = $image->getRandomName();
+			$image->move('img/pengurus/', $namaImage);
+		}
+
+		$this->pengurusModel->insert([
+			'nim' => $this->request->getVar('nim'),
+			'pengurus' => $this->request->getVar('pengurus'),
+			'bidangid' => $this->request->getVar('bidangid'),
+			'jabatan' => $this->request->getVar('jabatan'),
+			'angkatan' => $this->request->getVar('angkatan'),
+			'foto' => $namaImage,
+			'ig' => $this->request->getVar('ig'),
+			'linkedin' => $this->request->getVar('linkedin'),
+			'twitter' => $this->request->getVar('twitter'),
+			'isActive' => $this->request->getVar('isActive'),
+		]);
+
+		session()->setFlashdata('pengurus', 'Data pengurus berhasil ditambahkan.');
+
+		return redirect()->to('/admin/pengurus');
 	}
 }

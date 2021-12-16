@@ -118,7 +118,7 @@ class Admin extends BaseController
         return view('admin/bidang', $data);
     }
 
-    // Pengurus Controller
+    // Pengurus Controller (Done)
     public function pengurus()
     {
         // Menampilkan Jumlah pesan yang belum terbaca
@@ -131,10 +131,15 @@ class Admin extends BaseController
             }
         }
 
+        $pengurus = $this->pengurusModel->findAll();
+        $bidang = $this->bidangModel->findAll();
+        // dd($pengurus);
         $data = [
             'title' => 'Profile Pengurus - HMTL | Universitas Diponegoro',
             'tab' => 'hmtl',
-            'jumlahpesan' => $jumlahpesan
+            'jumlahpesan' => $jumlahpesan,
+            'data' => $pengurus,
+            'bidang' => $bidang
         ];
 
         return view('admin/pengurus', $data);

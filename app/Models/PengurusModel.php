@@ -7,7 +7,24 @@ use CodeIgniter\Model;
 class PengurusModel extends Model
 {
     protected $table = 'pengurus';
-    protected $primarykey = 'nim';
+    protected $primarykey = 'id';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nim', 'nama', 'id_bidang', 'jabatan', 'angkatan', 'foto', 'ig', 'linkedin', 'twitter', 'isActive', 'created_at', 'updated_at'];
+    protected $allowedFields = ['nim', 'pengurus', 'bidangid', 'jabatan', 'angkatan', 'foto', 'ig', 'linkedin', 'twitter', 'isActive', 'created_at', 'updated_at'];
+
+    public function getPengurus()
+    {
+        $db      = \Config\Database::connect();
+        $builder = $db->table('pengurus');
+        $builder->select('*');
+        $builder->join('bidang', 'bidang.id = pengurus.bidangid');
+        $query = $builder->get();
+        $query = $query->getResultArray();
+
+        return $query;
+    }
+
+    public function getPengurusID($id)
+    {
+        return $this->where(['id' => $id])->first();
+    }
 }

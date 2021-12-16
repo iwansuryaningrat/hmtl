@@ -305,4 +305,64 @@ class Edit extends BaseController
 
         return redirect()->to('/admin/bidang');
     }
+
+    // Edit Pengurus Controller
+    public function editPengurusForm($id)
+    {
+        $data = $this->pengurusModel->getPengurusID($id);
+
+        // Menampilkan Jumlah pesan yang belum terbaca
+        $pesan = $this->pesanModel->findAll();
+
+        $jumlahpesan = 0;
+        foreach ($pesan as $pesan) {
+            if ($pesan['status'] == 'Unread') {
+                $jumlahpesan++;
+            }
+        }
+
+        $databidang = $this->bidangModel->findAll();
+        // dd($databidang);
+
+        $data = [
+            'title' => 'Edit Bidang - HMTL | Universitas Diponegoro',
+            'tab' => 'hmtl',
+            'jumlahpesan' => $jumlahpesan,
+            'data' => $data,
+            'bidang' => $databidang
+        ];
+
+        return view('/admin/editform/editpengurus', $data);
+    }
+
+    public function editpengurus($id)
+    {
+        $data = $this->pengurusModel->getPengurusID($id);
+
+        $image = $this->request->getFile('image');
+        if ($image->getError() == 4) {
+            $namaImage = $data['foto'];
+        } else {
+            $namaImage = $image->getRandomName();
+            $image->move('img/pengurus/', $namaImage);
+        }
+
+        $this->pengurusModel->update($id, [
+            'id' => $id,
+            'nim' => $this->request->getVar('nim'),
+            'pengurus' => $this->request->getVar('pengurus'),
+            'bidangid' => $this->request->getVar('bidangid'),
+            'jabatan' => $this->request->getVar('jabatan'),
+            'angkatan' => $this->request->getVar('angkatan'),
+            'foto' => $namaImage,
+            'ig' => $this->request->getVar('ig'),
+            'linkedin' => $this->request->getVar('linkedin'),
+            'twitter' => $this->request->getVar('twitter'),
+            'isActive' => $this->request->getVar('isActive'),
+        ]);
+
+        session()->setFlashdata('pengurus', 'Data pengurus berhasil diupdate.');
+
+        return redirect()->to('/admin/pengurus');
+    }
 }

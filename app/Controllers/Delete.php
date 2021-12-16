@@ -99,4 +99,14 @@ class Delete extends BaseController
 
         return redirect()->to('/admin/bidang');
     }
+
+    // Delete Pengurus Controller (Done)
+    public function deletepengurus($id)
+    {
+        $this->pengurusModel->delete($id);
+
+        session()->setFlashdata('pengurus', 'Data pengurus berhasil dihapus.');
+
+        return redirect()->to('/admin/pengurus');
+    }
 }
