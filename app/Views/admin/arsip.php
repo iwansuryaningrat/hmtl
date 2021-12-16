@@ -13,7 +13,7 @@
                 <h4 class="page-title">Daftar UKM</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
-                        <a href="/admin/index">
+                        <a href="/admin-page">
                             <i class="flaticon-home"></i>
                         </a>
                     </li>

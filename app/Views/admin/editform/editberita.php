@@ -10,7 +10,7 @@
                 <h4 class="page-title">Formulir Edit Berita</h4>
                 <ul class="breadcrumbs">
                     <li class="nav-home">
-                        <a href="/admin/index">
+                        <a href="/admin-page">
                             <i class="flaticon-home"></i>
                         </a>
                     </li>

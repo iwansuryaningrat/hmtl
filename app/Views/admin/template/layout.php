@@ -43,8 +43,8 @@
         <div class="main-header">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="blue">
-                <a href="/admin/index" class="logo">
-                    <img src="/admin/assets/img/logo-title-hmtl.svg" alt="navbar brand" class="navbar-brand" />
+                <a href="/admin-page" class="logo">
+                    <img src="/img/logo-title-hmtl.png" style="width: 150px;" alt="navbar brand" class="navbar-brand" />
                 </a>
                 <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
