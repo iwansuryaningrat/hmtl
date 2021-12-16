@@ -51,6 +51,15 @@ class Admin extends BaseController
 
     public function index()
     {
+        // Mengambil jumlah visitors hari ini
+        $visitors = $this->visitorsModel->getTodayVisitors();
+
+        // Mengambil data visitors bulanan
+        $visitorsMonthly = $this->visitorsModel->getBulanan();
+
+        // Mengambil data visitors bulanan
+        $visitorsKumulatif = $this->visitorsModel->getBulananKumulatif();
+
         // Menampilkan Jumlah pesan yang belum terbaca
         $pesan = $this->pesanModel->findAll();
 
