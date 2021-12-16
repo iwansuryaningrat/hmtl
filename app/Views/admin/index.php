@@ -10,7 +10,7 @@
         <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
           <div>
             <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
-            <h5 class="text-white op-7 mb-2">Admin Dashboard for Skyx Landing Page</h5>
+            <h5 class="text-white op-7 mb-2">Admin Dashboard for HMTL Universitas Diponegoro</h5>
           </div>
         </div>
       </div>
@@ -27,9 +27,9 @@
               <div class="card-category">Daily information about statistics in system</div>
               <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
                 <div class="px-2 pb-2 pb-md-0 text-center">
-                  <div id="new-subscribers"></div>
-                  <!-- Todays Subscribers -->
-                  <h6 class="fw-bold mt-3 mb-0">New Subscribers</h6>
+                  <div id="new-messages"></div>
+                  <!-- Todays Messages -->
+                  <h6 class="fw-bold mt-3 mb-0">New Messages</h6>
                 </div>
                 <div class="px-2 pb-2 pb-md-0 text-center">
                   <div id="today-visitors"></div>
@@ -37,9 +37,9 @@
                   <h6 class="fw-bold mt-3 mb-0">Today Visitors</h6>
                 </div>
                 <div class="px-2 pb-2 pb-md-0 text-center">
-                  <div id="total-subscribers"></div>
-                  <!-- Total Subscribers -->
-                  <h6 class="fw-bold mt-3 mb-0">Total Subscribers</h6>
+                  <div id="monthly-visitors"></div>
+                  <!-- Monthly Visitors -->
+                  <h6 class="fw-bold mt-3 mb-0">Monthly Visitors</h6>
                 </div>
               </div>
             </div>
@@ -96,12 +96,12 @@
 <!-- Circle Chart Script -->
 <script>
   Circles.create({
-    id: 'new-subscribers',
+    id: 'new-messages',
     radius: 45,
-    value: <?= $newSubscribers; ?>,
-    maxValue: 10000,
+    value: <?= $messages; ?>,
+    maxValue: 1000,
     width: 7,
-    text: <?= $newSubscribers; ?>,
+    text: <?= $messages; ?>,
     colors: ['#f1f1f1', '#FF9E27'],
     duration: 400,
     wrpClass: 'circles-wrp',
@@ -126,12 +126,12 @@
   })
 
   Circles.create({
-    id: 'total-subscribers',
+    id: 'monthly-visitors',
     radius: 45,
-    value: <?= $jumlah; ?>,
+    value: <?= $visitorsmonthly; ?>,
     maxValue: 10000,
     width: 7,
-    text: <?= $jumlah; ?>,
+    text: <?= $visitorsmonthly; ?>,
     colors: ['#f1f1f1', '#F25961'],
     duration: 400,
     wrpClass: 'circles-wrp',
@@ -150,9 +150,9 @@
   var statisticsChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       datasets: [{
-        label: "New Subscribers",
+        label: "New Messages",
         borderColor: '#f3545d',
         pointBackgroundColor: 'rgba(243, 84, 93, 0.6)',
         pointRadius: 0,
@@ -161,7 +161,7 @@
         fill: true,
         borderWidth: 2,
         data: [<?php for ($i = 0; $i < 12; $i++) {
-                  echo $databulan[$i] . ',';
+                  echo $messagesMonthly[$i] . ',';
                 } ?>]
       }, {
         label: "Visitors",
@@ -173,10 +173,10 @@
         fill: true,
         borderWidth: 2,
         data: [<?php for ($i = 0; $i < 12; $i++) {
-                  echo $visitorsMonthly[$i] . ',';
+                  echo $visitorsbulanan[$i] . ',';
                 } ?>]
       }, {
-        label: "Total Subscribers",
+        label: "Total Messages",
         borderColor: '#177dff',
         pointBackgroundColor: 'rgba(23, 125, 255, 0.6)',
         pointRadius: 0,
@@ -185,7 +185,7 @@
         fill: true,
         borderWidth: 2,
         data: [<?php for ($i = 0; $i < 12; $i++) {
-                  echo $kumulatif[$i] . ',';
+                  echo $messagesMonthlyKumulatif[$i] . ',';
                 } ?>]
       }, {
         label: "Total Visitors",

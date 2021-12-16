@@ -53,12 +53,31 @@ class Admin extends BaseController
     {
         // Mengambil jumlah visitors hari ini
         $visitors = $this->visitorsModel->getTodayVisitors();
+        // dd($visitors);
 
         // Mengambil data visitors bulanan
-        $visitorsMonthly = $this->visitorsModel->getBulanan();
+        $visitorsbulanan = $this->visitorsModel->getBulanan();
+        // dd($visitorsbulanan);
 
-        // Mengambil data visitors bulanan
+        // Mengambil data visitors bulanan kumulatif
         $visitorsKumulatif = $this->visitorsModel->getBulananKumulatif();
+        // dd($visitorsKumulatif);
+
+        // Mengambil data visitors monthly
+        $visitorsMonthly = $this->visitorsModel->getMonthly();
+        // dd($visitorsMonthly);
+
+        // Mengambil jumlah pesan hari ini
+        $messages = $this->pesanModel->getTodayMessages();
+        // dd($messages);
+
+        // Mengambil jumlah pesan hari ini
+        $messagesMonthly = $this->pesanModel->getBulanan();
+        // dd($messagesMonthly);
+
+        // Mengambil jumlah pesan hari ini
+        $messagesMonthlyKumulatif = $this->pesanModel->getBulananKumulatif();
+        // dd($messagesMonthlyKumulatif);
 
         // Menampilkan Jumlah pesan yang belum terbaca
         $pesan = $this->pesanModel->findAll();
@@ -75,7 +94,14 @@ class Admin extends BaseController
         $data = [
             'title' => 'Admin Dashboard - HMTL | Universitas Diponegoro',
             'tab' => 'dashboard',
-            'jumlahpesan' => $jumlahpesan
+            'jumlahpesan' => $jumlahpesan,
+            'visitors' => $visitors,
+            'visitorsmonthly' => $visitorsMonthly,
+            'messages' => $messages,
+            'visitorsbulanan' => $visitorsbulanan,
+            'visitorsKumulatif' => $visitorsKumulatif,
+            'messagesMonthly' => $messagesMonthly,
+            'messagesMonthlyKumulatif' => $messagesMonthlyKumulatif
         ];
 
         return view('admin/index', $data);
