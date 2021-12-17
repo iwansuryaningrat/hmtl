@@ -93,6 +93,7 @@ class Edit extends BaseController
             'kategori' => $this->request->getVar('kategori'),
             'isi' => $this->request->getVar('isi'),
             'tag' => '',
+            'tanggal' => date("j M Y"),
             'foto' => $namaImage
         ];
 

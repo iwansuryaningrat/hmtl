@@ -102,104 +102,60 @@
 </div> <!-- end about section -->
 
 
-<!-- news section -->
-<!-- FINISH -->
-<div class="news__section">
-	<div class="container">
-		<div class="body__section">
-			<!-- news header -->
-			<div class="title__section text-center">
-				<h3>Berita Terkini</h3>
-				<p>Temukan berbagai berita maupun artikel terbaik dan terkini</p>
-			</div> <!-- end news header -->
+<?php if ($news != null) : ?>
+	<!-- news section -->
+	<!-- FINISH -->
+	<div class="news__section">
+		<div class="container">
+			<div class="body__section">
+				<!-- news header -->
+				<div class="title__section text-center">
+					<h3>Berita Terkini</h3>
+					<p>Temukan berbagai berita maupun artikel terbaik dan terkini</p>
+				</div> <!-- end news header -->
 
-			<!-- news body -->
-			<div class="news__body">
-				<!-- news content -->
-				<div class="news__content">
-					<div id="news-content" class="owl-carousel owl-theme">
-						<div class="mt-2 mb-4">
-							<div class="news__card mx-2 mx-md-3">
-								<div class="news__card__img">
-									<div class="img__sec" style="background-image: url(/mainpage/images/news-1.jpg);">
-									</div> <!-- end img sec -->
-								</div> <!-- end news card img -->
-								<div class="news__card__body">
-									<div class="news__date">
-										<i class="far fa-calendar-alt"></i>15/07/2021
-									</div> <!-- end news date -->
-									<div class="news__title">
-										Rekor Positif Covid-19 Meroket, Tembus 54.517 Kasus
-									</div> <!-- end news title -->
-									<div class="news__desc">
-										Positif Covid-19 kembali memecahkan rekor dengan tambahan sebesar 54.517
-										kasus.
-									</div> <!-- news desc -->
-									<a href="#" class="news__link">
-										<i class="ai-circle-chevron-right"></i>Selengkapnya
-									</a> <!-- end news link -->
-								</div> <!-- end news card body -->
-							</div> <!-- end news card -->
-						</div> <!-- end m -->
+				<!-- news body -->
+				<div class="news__body">
+					<!-- news content -->
+					<div class="news__content">
+						<div id="news-content" class="owl-carousel owl-theme">
+							<?php foreach ($news as $berita) : ?>
+								<div class="mt-2 mb-4">
+									<div class="news__card mx-2 mx-md-3">
+										<div class="news__card__img">
+											<div class="img__sec" style="background-image: url(/img/berita/<?= $berita['foto']; ?>);">
+											</div> <!-- end img sec -->
+										</div> <!-- end news card img -->
+										<div class="news__card__body">
+											<div class="news__date">
+												<i class="far fa-calendar-alt"></i><?= $berita['tanggal']; ?>
+											</div> <!-- end news date -->
+											<div class="news__title">
+												<?= $berita['judul']; ?>
+											</div> <!-- end news title -->
+											<div class="news__desc">
+												<?= $berita['preview']; ?>
+											</div> <!-- news desc -->
+											<a href="#" class="news__link">
+												<i class="ai-circle-chevron-right"></i>Selengkapnya
+											</a> <!-- end news link -->
+										</div> <!-- end news card body -->
+									</div> <!-- end news card -->
+								</div> <!-- end m -->
+							<?php endforeach; ?>
 
-						<div class="mt-2 mb-4">
-							<div class="news__card mx-2 mx-md-3">
-								<div class="news__card__img">
-									<div class="img__sec" style="background-image: url(/mainpage/images/news-2.jpg);">
-									</div> <!-- end img sec -->
-								</div> <!-- end news card img -->
-								<div class="news__card__body">
-									<div class="news__date">
-										<i class="far fa-calendar-alt"></i>20/07/2021
-									</div> <!-- end news date -->
-									<div class="news__title">
-										Fitur Pengukur Suhu Tubuh iPhone Terbaru Bakal Hadir
-									</div> <!-- end news title -->
-									<div class="news__desc">
-										Bahkan Apple telah membuat paten kamera serta pemrosesan data citra. Hal ini
-										demi pengukuran suhu.
-									</div> <!-- news desc -->
-									<a href="#" class="news__link">
-										<i class="ai-circle-chevron-right"></i>Selengkapnya
-									</a> <!-- end news link -->
-								</div> <!-- end news card body -->
-							</div> <!-- end news card -->
-						</div> <!-- end m -->
+						</div> <!-- end news content owl carousel -->
+					</div> <!-- end news content -->
 
-						<div class="mt-2 mb-4">
-							<div class="news__card mx-2 mx-md-3">
-								<div class="news__card__img">
-									<div class="img__sec" style="background-image: url(/mainpage/images/news-3.jpg);">
-									</div> <!-- end img sec -->
-								</div> <!-- end news card img -->
-								<div class="news__card__body">
-									<div class="news__date">
-										<i class="far fa-calendar-alt"></i>01/08/2021
-									</div> <!-- end news date -->
-									<div class="news__title">
-										Prediksi Terbaru Menkes Kapan RI Capai Puncak Corona
-									</div> <!-- end news title -->
-									<div class="news__desc">
-										Menteri Kesehatan Budi Gunadi Sadikin menyebut kemungkinan puncak lonjakan
-										kasus COVID-19.
-									</div> <!-- news desc -->
-									<a href="#" class="news__link">
-										<i class="ai-circle-chevron-right"></i>Selengkapnya
-									</a> <!-- end news link -->
-								</div> <!-- end news card body -->
-							</div> <!-- end news card -->
-						</div> <!-- end m -->
-					</div> <!-- end news content owl carousel -->
-				</div> <!-- end news content -->
-
-				<!-- button selengkapnya -->
-				<div class="btn__section">
-					<a href="/home/berita" class="next__btn d-flex align-items-center">Lebih Banyak<i class="fi fi-rs-angle-small-right" style="top: 2.8px;"></i></a>
-				</div> <!-- end button selengkapnya -->
-			</div> <!-- end news body -->
-		</div> <!-- end body section -->
-	</div> <!-- end container -->
-</div> <!-- end news section -->
+					<!-- button selengkapnya -->
+					<div class="btn__section">
+						<a href="/home/berita" class="next__btn d-flex align-items-center">Lebih Banyak<i class="fi fi-rs-angle-small-right" style="top: 2.8px;"></i></a>
+					</div> <!-- end button selengkapnya -->
+				</div> <!-- end news body -->
+			</div> <!-- end body section -->
+		</div> <!-- end container -->
+	</div> <!-- end news section -->
+<?php endif; ?>
 
 <!-- hr -->
 <div class="container-fluid">

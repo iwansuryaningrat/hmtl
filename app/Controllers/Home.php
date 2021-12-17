@@ -105,6 +105,9 @@ class Home extends BaseController
 		$proker = $this->prokerModel->countAllResults();
 		// dd($proker);
 
+		$news = $this->newsModel->where('highlight', 'yes')->findAll();
+		// dd($news);
+
 		$data = [
 			'title' => 'HMTL | Universitas Diponegoro',
 			'tab' => 'index',
@@ -112,6 +115,7 @@ class Home extends BaseController
 			'bidang' => $bidang,
 			'pengurus' => $pengurus,
 			'proker' => $proker,
+			'news' => $news,
 		];
 
 		return view('mainpage/index', $data);
