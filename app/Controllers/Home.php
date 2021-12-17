@@ -87,9 +87,30 @@ class Home extends BaseController
 			}
 		}
 
+		$biro = $this->biroModel->countAllResults();
+		// dd($biro);
+
+		$ukm = $this->ukmModel->countAllResults();
+		// dd($ukm);
+
+		$birounit = $biro + $ukm;
+
+		$bidang = $this->bidangModel->countAllResults();
+		// dd($bidang);
+
+		$pengurus = $this->pengurusModel->countAllResults();
+		// dd($pengurus);
+
+		$proker = $this->prokerModel->countAllResults();
+		// dd($proker);
+
 		$data = [
 			'title' => 'HMTL | Universitas Diponegoro',
-			'tab' => 'index'
+			'tab' => 'index',
+			'birounit' => $birounit,
+			'bidang' => $bidang,
+			'pengurus' => $pengurus,
+			'proker' => $proker,
 		];
 
 		return view('mainpage/index', $data);
@@ -105,6 +126,7 @@ class Home extends BaseController
 		return view('mainpage/berita', $data);
 	}
 
+	// Kalender Method (Done)
 	public function kalender()
 	{
 		$kegiatan = $this->kalenderModel->findAll();
@@ -139,6 +161,7 @@ class Home extends BaseController
 		return view('mainpage/arsip-matkul', $data);
 	}
 
+	// Kontak Method (Done)
 	public function kontak()
 	{
 		$data = [
@@ -149,6 +172,7 @@ class Home extends BaseController
 		return view('mainpage/kontak', $data);
 	}
 
+	// Profil Method (Done)
 	public function profil()
 	{
 		$data = [
@@ -189,6 +213,7 @@ class Home extends BaseController
 		return view('mainpage/profil-ukm', $data);
 	}
 
+	// Pesan Method (Done)
 	public function pesan()
 	{
 		$data = [

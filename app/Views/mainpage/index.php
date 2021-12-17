@@ -57,7 +57,7 @@
 					<div class="row">
 						<div class="col-12 col-md-6 mb-md-3 mb-4">
 							<div class="about__card">
-								<div class="about__count text-dark2">10</div>
+								<div class="about__count text-dark2"><?= $bidang; ?></div>
 								<div class="about__subtitle text-dark2">Badan Pengurus</div>
 								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 									Eu egestas magna et eu.</p>
@@ -66,7 +66,7 @@
 
 						<div class="col-12 col-md-6 mb-md-3 mb-4">
 							<div class="about__card">
-								<div class="about__count text-dark2">73</div>
+								<div class="about__count text-dark2"><?= $pengurus; ?></div>
 								<div class="about__subtitle text-dark2">Pengurus</div>
 								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 									Eu egestas magna et eu.</p>
@@ -75,7 +75,7 @@
 
 						<div class="col-12 col-md-6 mb-md-3 mb-4">
 							<div class="about__card">
-								<div class="about__count text-dark2">47+</div>
+								<div class="about__count text-dark2"><?= $proker; ?></div>
 								<div class="about__subtitle text-dark2">Program Kerja</div>
 								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 									Eu egestas magna et eu.</p>
@@ -84,7 +84,7 @@
 
 						<div class="col-12 col-md-6 mb-md-3 mb-4">
 							<div class="about__card">
-								<div class="about__count text-dark2">6+</div>
+								<div class="about__count text-dark2"><?= $birounit; ?></div>
 								<div class="about__subtitle text-dark2">Biro dan Unit</div>
 								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 									Eu egestas magna et eu.</p>
