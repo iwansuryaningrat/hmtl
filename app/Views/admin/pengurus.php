@@ -44,18 +44,20 @@
                                     <thead>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>nim</th>
+                                            <th>Nim</th>
                                             <th>Bidang</th>
                                             <th>Jabatan</th>
+                                            <th>Status</th>
                                             <th style="width: 10%">Action</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nama</th>
-                                            <th>nim</th>
+                                            <th>Nim</th>
                                             <th>Bidang</th>
                                             <th>Jabatan</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </tfoot>
@@ -65,11 +67,25 @@
                                                 <td><?= $data['pengurus']; ?></td>
                                                 <td><?= $data['nim']; ?></td>
                                                 <td><?= $data['jabatan']; ?></td>
+
                                                 <?php foreach ($bidang as $row) : ?>
                                                     <?php if ($row['id'] == $data['bidangid']) : ?>
                                                         <td><?= $row['nama']; ?></td>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
+
+                                                <td><span class="badge <?php if ($data['isActive'] == 'Ya') {
+                                                                            echo 'badge-success';
+                                                                        } else {
+                                                                            echo 'badge-warning';
+                                                                        }
+                                                                        ?>"><?php if ($data['isActive'] == 'Ya') {
+                                                                                echo 'Aktif';
+                                                                            } else {
+                                                                                echo 'Non-Aktif';
+                                                                            }
+                                                                            ?></span>
+                                                </td>
                                                 <td>
                                                     <div class="form-button-action">
                                                         <a href="/edit/editpengurusform/<?= $data['id']; ?>">
