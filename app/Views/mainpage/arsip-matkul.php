@@ -49,7 +49,7 @@
 										<p>
 											<span class="meta__item">Semester 1</span>
 											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Download</span>
+											<span class="meta__item">9721 Downloads</span>
 										</p>
 									</div>
 								</div> <!-- end item book -->
@@ -65,7 +65,7 @@
 										<p>
 											<span class="meta__item">Semester 1</span>
 											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Download</span>
+											<span class="meta__item">9721 Downloads</span>
 										</p>
 									</div>
 								</div> <!-- end item book -->
@@ -91,7 +91,7 @@
 										<p>
 											<span class="meta__item">Semester 1</span>
 											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Download</span>
+											<span class="meta__item">9721 Downloads</span>
 										</p>
 									</div>
 								</div> <!-- end item book -->
@@ -107,7 +107,7 @@
 										<p>
 											<span class="meta__item">Semester 1</span>
 											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Download</span>
+											<span class="meta__item">9721 Downloads</span>
 										</p>
 									</div>
 								</div> <!-- end item book -->
