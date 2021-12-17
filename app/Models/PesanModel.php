@@ -30,10 +30,10 @@ class PesanModel extends Model
         $today = $time->getDay();
         $sum = 0;
         foreach ($datapesan as $pesan) {
-            $time = Time::parse($pesan['time']);
+            $time = Time::parse($pesan['created_at']);
             $day = $time->getDay();
             if ($day == $today) {
-                $sum += $pesan['hits'];
+                $sum++;
             }
         }
 
@@ -50,32 +50,12 @@ class PesanModel extends Model
         $datapesan = $result;
         $databulan = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         foreach ($datapesan as $pesan) {
-            $time = Time::parse($pesan['time']);
+            $time = Time::parse($pesan['created_at']);
             $month = $time->getMonth();
-            if ($month == '1') {
-                $databulan[0] += $pesan['hits'];
-            } else if ($month == '2') {
-                $databulan[1] += $pesan['hits'];
-            } else if ($month == '3') {
-                $databulan[2] += $pesan['hits'];
-            } else if ($month == '4') {
-                $databulan[3] += $pesan['hits'];
-            } else if ($month == '5') {
-                $databulan[4] += $pesan['hits'];
-            } else if ($month == '6') {
-                $databulan[5] += $pesan['hits'];
-            } else if ($month == '7') {
-                $databulan[6] += $pesan['hits'];
-            } else if ($month == '8') {
-                $databulan[7] += $pesan['hits'];
-            } else if ($month == '9') {
-                $databulan[8] += $pesan['hits'];
-            } else if ($month == '10') {
-                $databulan[9] += $pesan['hits'];
-            } else if ($month == '11') {
-                $databulan[10] += $pesan['hits'];
-            } else if ($month == '12') {
-                $databulan[11] += $pesan['hits'];
+            for ($i = 1; $i < 13; $i++) {
+                if ($month == $i) {
+                    $databulan[$i - 1]++;
+                }
             }
         }
 
@@ -95,32 +75,12 @@ class PesanModel extends Model
         $databulankumulatif = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
         foreach ($datapesan as $pesan) {
-            $time = Time::parse($pesan['time']);
+            $time = Time::parse($pesan['created_at']);
             $month = $time->getMonth();
-            if ($month == '1') {
-                $databulan[0] += $pesan['hits'];
-            } else if ($month == '2') {
-                $databulan[1] += $pesan['hits'];
-            } else if ($month == '3') {
-                $databulan[2] += $pesan['hits'];
-            } else if ($month == '4') {
-                $databulan[3] += $pesan['hits'];
-            } else if ($month == '5') {
-                $databulan[4] += $pesan['hits'];
-            } else if ($month == '6') {
-                $databulan[5] += $pesan['hits'];
-            } else if ($month == '7') {
-                $databulan[6] += $pesan['hits'];
-            } else if ($month == '8') {
-                $databulan[7] += $pesan['hits'];
-            } else if ($month == '9') {
-                $databulan[8] += $pesan['hits'];
-            } else if ($month == '10') {
-                $databulan[9] += $pesan['hits'];
-            } else if ($month == '11') {
-                $databulan[10] += $pesan['hits'];
-            } else if ($month == '12') {
-                $databulan[11] += $pesan['hits'];
+            for ($i = 1; $i < 13; $i++) {
+                if ($month == $i) {
+                    $databulan[$i - 1]++;
+                }
             }
         }
 

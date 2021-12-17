@@ -69,30 +69,10 @@ class VisitorsModel extends Model
         foreach ($datavisitors as $visitors) {
             $time = Time::parse($visitors['time']);
             $month = $time->getMonth();
-            if ($month == '1') {
-                $databulan[0] += $visitors['hits'];
-            } else if ($month == '2') {
-                $databulan[1] += $visitors['hits'];
-            } else if ($month == '3') {
-                $databulan[2] += $visitors['hits'];
-            } else if ($month == '4') {
-                $databulan[3] += $visitors['hits'];
-            } else if ($month == '5') {
-                $databulan[4] += $visitors['hits'];
-            } else if ($month == '6') {
-                $databulan[5] += $visitors['hits'];
-            } else if ($month == '7') {
-                $databulan[6] += $visitors['hits'];
-            } else if ($month == '8') {
-                $databulan[7] += $visitors['hits'];
-            } else if ($month == '9') {
-                $databulan[8] += $visitors['hits'];
-            } else if ($month == '10') {
-                $databulan[9] += $visitors['hits'];
-            } else if ($month == '11') {
-                $databulan[10] += $visitors['hits'];
-            } else if ($month == '12') {
-                $databulan[11] += $visitors['hits'];
+            for ($i = 1; $i < 13; $i++) {
+                if ($month == $i) {
+                    $databulan[$i - 1] += $visitors['hits'];
+                }
             }
         }
 
@@ -114,30 +94,10 @@ class VisitorsModel extends Model
         foreach ($datavisitors as $visitors) {
             $time = Time::parse($visitors['time']);
             $month = $time->getMonth();
-            if ($month == '1') {
-                $databulan[0] += $visitors['hits'];
-            } else if ($month == '2') {
-                $databulan[1] += $visitors['hits'];
-            } else if ($month == '3') {
-                $databulan[2] += $visitors['hits'];
-            } else if ($month == '4') {
-                $databulan[3] += $visitors['hits'];
-            } else if ($month == '5') {
-                $databulan[4] += $visitors['hits'];
-            } else if ($month == '6') {
-                $databulan[5] += $visitors['hits'];
-            } else if ($month == '7') {
-                $databulan[6] += $visitors['hits'];
-            } else if ($month == '8') {
-                $databulan[7] += $visitors['hits'];
-            } else if ($month == '9') {
-                $databulan[8] += $visitors['hits'];
-            } else if ($month == '10') {
-                $databulan[9] += $visitors['hits'];
-            } else if ($month == '11') {
-                $databulan[10] += $visitors['hits'];
-            } else if ($month == '12') {
-                $databulan[11] += $visitors['hits'];
+            for ($i = 1; $i < 13; $i++) {
+                if ($month == $i) {
+                    $databulan[$i - 1] += $visitors['hits'];
+                }
             }
         }
 
