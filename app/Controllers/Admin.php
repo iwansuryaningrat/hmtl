@@ -49,6 +49,7 @@ class Admin extends BaseController
         $this->visitorsModel = new VisitorsModel();
     }
 
+    // Dashboard Controller (Done)
     public function index()
     {
         // Mengambil jumlah visitors hari ini
@@ -105,28 +106,6 @@ class Admin extends BaseController
         ];
 
         return view('admin/index', $data);
-    }
-
-    // Profil HMTL Controller
-    public function hmtl()
-    {
-        // Menampilkan Jumlah pesan yang belum terbaca
-        $pesan = $this->pesanModel->findAll();
-
-        $jumlahpesan = 0;
-        foreach ($pesan as $pesan) {
-            if ($pesan['status'] == 'Unread') {
-                $jumlahpesan++;
-            }
-        }
-
-        $data = [
-            'title' => 'Profile HMTL - HMTL | Universitas Diponegoro',
-            'tab' => 'hmtl',
-            'jumlahpesan' => $jumlahpesan
-        ];
-
-        return view('admin/hmtl', $data);
     }
 
     // Bidang Controller (Done)
