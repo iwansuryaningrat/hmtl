@@ -51,6 +51,7 @@ class Home extends BaseController
 		$this->visitorsModel = new VisitorsModel();
 	}
 
+	//  Index Method (kurang berita & proker)
 	public function index()
 	{
 		$ip    = $this->request->getIPAddress(); // Mendapatkan IP user
@@ -98,7 +99,7 @@ class Home extends BaseController
 		$bidang = $this->bidangModel->countAllResults();
 		// dd($bidang);
 
-		$pengurus = $this->pengurusModel->countAllResults();
+		$pengurus = $this->pengurusModel->where('isActive', 'Ya')->countAllResults();
 		// dd($pengurus);
 
 		$proker = $this->prokerModel->countAllResults();

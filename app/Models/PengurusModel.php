@@ -27,4 +27,18 @@ class PengurusModel extends Model
     {
         return $this->where(['id' => $id])->first();
     }
+
+    // public function getActivePengurus()
+    // {
+    //     $db      = \Config\Database::connect();
+    //     $builder = $db->table('pengurus');
+    //     $builder->select('*');
+    //     $builder->where('isActive', 'Ya');
+    //     $query = $builder->get();
+    //     $query = $query->countAllResults();
+
+    //     foreach($query as )
+
+    //     return $sum;
+    // }
 }
