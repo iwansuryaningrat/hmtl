@@ -54,6 +54,14 @@
             <div class="card-header">
               <div class="card-head-row">
                 <div class="card-title">User Statistics</div>
+                <div class="card-tools">
+                  <a href="/download/printpdf" class="btn btn-info btn-border btn-round btn-sm">
+                    <span class="btn-label">
+                      <i class="fa fa-print"></i>
+                    </span>
+                    Print
+                  </a>
+                </div>
               </div>
             </div>
             <div class="card-body">
@@ -66,25 +74,8 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container-fluid">
-        <nav class="pull-left">
-          <ul class="nav">
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-
-            </li>
-          </ul>
-        </nav>
-        <div class="copyright ml-auto">
-          Skyx © 2021 Copyright. All right reserved
-        </div>
-      </div>
+    <footer class="footer text-center">
+      <p>Copyright &copy; 2021 | Himpunan Mahasiswa Teknik Lingkungan Universitas Diponegoro</p>
     </footer>
   </div>
 </div>
