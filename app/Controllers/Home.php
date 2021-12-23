@@ -148,15 +148,17 @@ class Home extends BaseController
 
 	public function arsip()
 	{
+		$matkul = $this->libraryModel->findAll();
 		$data = [
 			'title' => 'Arsip - HMTL | Universitas Diponegoro',
-			'tab' => 'arsip'
+			'tab' => 'arsip',
+			'data' => $matkul
 		];
 
 		return view('mainpage/arsip', $data);
 	}
 
-	public function arsipmatkul()
+	public function arsipmatkul($id)
 	{
 		$data = [
 			'title' => 'Arsip Mata Kuliah - HMTL | Universitas Diponegoro',
