@@ -19,9 +19,7 @@
 	<div class="container">
 		<div class="title__section text-center">
 			<h3>Bidang Seni</h3>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa earum deleniti veniam
-				quibusdam odit accusamus inventore nulla, suscipit labore eaque quisquam maxime qui voluptas
-				distinctio fugiat quae velit aut.</p>
+			<p>Wadah penyaluran minat, bakat, dan kegemaran mahasiswa Teknik Lingkungan dalam bidang seni seperti saman, envoice, dan akustik.</p>
 		</div> <!-- end Seni header -->
 	</div>
 	<!-- Seni 1 -->
@@ -263,7 +261,7 @@
 <div class="olahraga__section">
 	<div class="title__section text-center">
 		<h3>Bidang olahraga</h3>
-		<p>Temukan berbagai berita maupun artikel terbaik dan terkini</p>
+		<p>Wadah penyaluran minat, bakat, dan kegemaran mahasiswa Teknik Lingkungan dalam bidang olahraga seperti futsal, voli, badminton, basket, dan e-sport.</p>
 	</div> <!-- end Seni header -->
 	<!-- Olahraga 1 -->
 	<div class="olahraga">
