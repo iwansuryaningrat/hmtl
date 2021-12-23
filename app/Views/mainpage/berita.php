@@ -19,9 +19,7 @@
 			<!-- berita terkini title -->
 			<div class="title__section text-center">
 				<h3>Berita Terkini</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa earum deleniti veniam
-					quibusdam odit accusamus inventore nulla, suscipit labore eaque quisquam maxime qui voluptas
-					distinctio fugiat quae velit aut.</p>
+				<p>Abad 21 diasosiasikan dengan penyebaran informasi yang luas, beragam, dan serba cepat. Berita terkini hadir untuk mensuplai pengetahuanmu akan isu yang sedang berkembang di tengah masyarakat.</p>
 			</div> <!-- end berita terkini title-->
 			<!-- Berita terkini carousel -->
 			<div id="berita-terkini-content" class="owl-carousel owl-theme">
@@ -112,13 +110,7 @@
 				<div class="info__akademik__main col-lg-9 col-md-8 ps-lg-0">
 					<div class="title__section title__info__akademik text-left">
 						<h3>Info Akademik</h3>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa
-							earum deleniti
-							veniam
-							quibusdam odit accusamus inventore nulla, suscipit labore eaque quisquam
-							maxime qui
-							voluptas
-							distinctio fugiat quae velit aut.</p>
+						<p>Informasi akademik yang silih berganti terkadang bisa membuatmu hilang fokus dalam belajar. Info Akademik hadir untuk mempermudahmu dalam menemukan informasi seputar perkuliahan.</p>
 					</div> <!-- end Info akademik title-->
 					<div class="info__akademik__content row">
 						<!-- berita info 1-->
@@ -435,13 +427,7 @@
 				<div class="info__beasiswa__main col-lg-12 col-md-12 ps-lg-0 pe-lg-4 pe-md-4">
 					<div class="title__section title__info__beasiswa text-left">
 						<h3>Info Beasiswa</h3>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa
-							earum deleniti
-							veniam
-							quibusdam odit accusamus inventore nulla, suscipit labore eaque quisquam
-							maxime qui
-							voluptas
-							distinctio fugiat quae velit aut.</p>
+						<p>Temukan info beasiswa yang sesuai dengan kebutuhanmu di sini!</p>
 					</div> <!-- end Info akademik title-->
 					<div class="info__beasiswa__content row">
 						<div class="berita__info__beasiswa col-lg-4 col-md-4 mb-5">
@@ -570,13 +556,7 @@
 				<div class="info__akademik__main col-lg-9 col-md-8 ps-lg-0">
 					<div class="title__section title__info__akademik text-left">
 						<h3>PRESS RELEASE</h3>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ipsa
-							earum deleniti
-							veniam
-							quibusdam odit accusamus inventore nulla, suscipit labore eaque quisquam
-							maxime qui
-							voluptas
-							distinctio fugiat quae velit aut.</p>
+						<p>Dokumentasi keseruan event dan program kerja HMTL.</p>
 					</div> <!-- end Info akademik title-->
 					<div class="info__akademik__content row">
 						<!-- berita info 1-->

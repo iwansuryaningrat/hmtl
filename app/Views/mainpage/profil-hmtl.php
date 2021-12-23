@@ -20,11 +20,11 @@
 		<div class="body__section">
 			<img class="d-block mx-auto" src="/mainpage/images/kabinet-askara-cite.svg" alt="...">
 			<h3 class="text-center mb-4">Kabinet Askara Cita</h3>
-			<p class="text-center mx-auto" style="max-width: 900px;">Lorem ipsum dolor sit amet, consectetur
-				adipiscing elit. Gravida metus, accumsan morbi euismod pellentesque sollicitudin augue. Sit id in
-				nisi laoreet. Ipsum egestas volutpat, pulvinar id in erat. Ultrices consequat nunc aliquam tincidunt
-				dolor. Molestie enim purus, gravida at vitae, in viverra urna. A, ut auctor massa quis. Proin
-				egestas elementum id porta. Facilisis lectus quis eget et luctus. Eu viverra sed aliquet nam.</p>
+			<p class="text-center mx-auto" style="max-width: 900px;">Berdiri pada tahun 1999, bersamaan dengan hadirnya Program Studi Teknik Lingkungan Universitas Diponegoro. Himpunan Mahasiswa Teknik Lingkungan Universitas Diponegoro (HMTL Undip) menjadi wadah bagi masyarakatnya dalam menuangkan aspirasi serta media pengembangan minat, bakat, dan kreativitas dalam mendukung cita-cita Tri Dharma Perguruan Tinggi.
+				<br>
+				<br>
+				Kali ini, HMTL Undip hadir dengan Kabinet Askara Cita yang merupakan simbolisasi harapan dan resiliensi, yang berupaya terus hadir dan mempertahankan esensi, serta berkembang dan berotasi dengan semangat pembelajar. Memberikan asa baru bagi warga Teknik Lingkungan Universitas Diponegoro.
+			</p>
 		</div> <!-- end body section -->
 	</div> <!-- end container -->
 </div> <!-- end askara section -->

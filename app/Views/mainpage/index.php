@@ -36,10 +36,7 @@
 				</div>
 				<div class="right__kabinet">
 					<h4>Kabinet Askara Cita</h4>
-					<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, non semper
-						vulputate risus, ac sed eu risus placerat. Neque, ornare elementum pellentesque in tempor,
-						sapien. Condimentum placerat sem vulputate massa pellentesque tincidunt sapien nisl
-						ullamcorper.</p>
+					<p class="mb-0">Simbol harapan dan resiliensi yang berupaya terus hadir dan mempertahankan esensi. Berkembang dan berotasi dengan semangat pembelajar.</p>
 				</div>
 			</div> <!-- end kabinet body -->
 		</div> <!-- end body section -->
@@ -59,8 +56,7 @@
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $bidang; ?></div>
 								<div class="about__subtitle text-dark2">Badan Pengurus</div>
-								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Eu egestas magna et eu.</p>
+								<p style="font-size: 14px;">Terdiri dari BPH, 2 Unit dan 8 Bidang yang bersinergi untuk HMTL yang lebih baik.</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
 
@@ -77,8 +73,7 @@
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $proker; ?></div>
 								<div class="about__subtitle text-dark2">Program Kerja</div>
-								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Eu egestas magna et eu.</p>
+								<p style="font-size: 14px;">Askara Cita menuangkan karya-karyanya dalam 15 Jobdesc, 82 Program Kerja, dan 29 kegiatan non Program Kerja.</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
 
@@ -86,8 +81,7 @@
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $birounit; ?></div>
 								<div class="about__subtitle text-dark2">Biro dan Unit</div>
-								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Eu egestas magna et eu.</p>
+								<p style="font-size: 14px;">Dalam keberjalanannya, HMTL dibersamai oleh 3 Biro: Ikatan Pecinta Alam Lingkungan (IPAL), Hayatun Nufus, serta Kelompok Studi Lingkungan (KSL).</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
 					</div> <!-- end row -->
