@@ -66,13 +66,14 @@
                                             <tr>
                                                 <td><?= $data['pengurus']; ?></td>
                                                 <td><?= $data['nim']; ?></td>
-                                                <td><?= $data['jabatan']; ?></td>
 
                                                 <?php foreach ($bidang as $row) : ?>
                                                     <?php if ($row['id'] == $data['bidangid']) : ?>
                                                         <td><?= $row['nama']; ?></td>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
+
+                                                <td><?= $data['jabatan']; ?></td>
 
                                                 <td><span class="badge <?php if ($data['isActive'] == 'Ya') {
                                                                             echo 'badge-success';

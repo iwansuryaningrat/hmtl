@@ -261,6 +261,10 @@ class Add extends BaseController
 
 	public function addPengurus()
 	{
+		// $validation = [
+		// 	'image' => 'required|ext_in[pengurus.foto,png,jpg]|mime_in[pengurus.foto,image/png,image/jpg]|max_size[pengurus.foto,5000]'
+		// ];
+
 		$image = $this->request->getFile('image');
 		if ($image->getError() == 4) {
 			$namaImage = 'default.jpg';
