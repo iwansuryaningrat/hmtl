@@ -571,9 +571,7 @@
 											<h6>Prediksi Terbaru Menkes
 												Kapan RI Capai Puncak Corona</h6>
 										</div>
-										<p class="card-text">Menteri Kesehatan Budi Gunadi Sadikin
-											menyebut
-											kemungkinan puncak lonjakan kasus COVID-19.</p>
+										<p class="card-text">Menteri Kesehatan Budi Gunadi Sadikin menyebut kemungkinan puncak lonjakan kasus COVID-19.</p>
 									</div> <!-- end info akademik content -->
 								</a> <!-- end info akademik card -->
 							</div> <!-- end info akademik card -->
