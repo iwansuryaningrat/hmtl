@@ -47,7 +47,7 @@
 								if ($row['kategori'] == 'Semester 1') : ?>
 									<div class="elibrary__course col-lg-4 col-md-6 mb-4">
 										<div class="course__card">
-											<a href="/home/arsip-matkul/<?= $row['id'] ?>" class="elibrary__card">
+											<a href="/home/arsipmatkul/<?= $row['id'] ?>" class="elibrary__card">
 												<div class="course__photo img__sec" style="background-image: url(/mainpage/images/fisika_dasar.jpg);"></div>
 												<!-- end course photo -->
 												<div class="course__content">

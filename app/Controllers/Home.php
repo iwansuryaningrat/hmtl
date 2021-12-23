@@ -146,6 +146,7 @@ class Home extends BaseController
 		return view('mainpage/kalender', $data);
 	}
 
+	// Arsip Method (Done)
 	public function arsip()
 	{
 		$matkul = $this->libraryModel->findAll();
@@ -158,11 +159,22 @@ class Home extends BaseController
 		return view('mainpage/arsip', $data);
 	}
 
+	// Arsip Matkul Method (Done)
 	public function arsipmatkul($id)
 	{
+		$arsip = $this->arsipModel->getArsip($id);
+		$matkul = $this->libraryModel->getLibrary($id);
+		$semester = $matkul[0]['kategori'];
+		$judul = $matkul[0]['matkul'];
+		$foto = $matkul[0]['foto'];
+		// dd($arsip, $semester);
 		$data = [
 			'title' => 'Arsip Mata Kuliah - HMTL | Universitas Diponegoro',
-			'tab' => 'arsip'
+			'tab' => 'arsip',
+			'arsip' => $arsip,
+			'semester' => $semester,
+			'judul' => $judul,
+			'foto' => $foto
 		];
 
 		return view('mainpage/arsip-matkul', $data);

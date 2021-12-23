@@ -28,7 +28,7 @@
 
 					<!-- head book -->
 					<div class="head__eBook">
-						<h3>Pengantar Ilmu dan Rekayasa Lingkungan</h3>
+						<h3><?= $judul ?></h3>
 						<img src="/mainpage/images/fisika_dasar.jpg" alt="buku fisika dasar" class="img__eBook">
 					</div> <!-- end head book -->
 
@@ -39,37 +39,24 @@
 
 						<!-- elibrary cc -->
 						<div class="elibrary__cc row">
-							<!-- mb-4 item -->
-							<div class="mb-4">
-								<div class="item__eBook">
-									<img src="/mainpage/images/book-2.jpg" alt="fisika dasar image" class="img__item__eBook">
-									<div class="item__eBook__content">
-										<a href="#" class="item__meta__link">UTS Pengantar Ilmu dan Rekayasa
-											Lingkungan</a>
-										<p>
-											<span class="meta__item">Semester 1</span>
-											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Downloads</span>
-										</p>
-									</div>
-								</div> <!-- end item book -->
-							</div> <!-- end mb-4 item -->
-
-							<!-- mb-4 item -->
-							<div class="mb-4">
-								<div class="item__eBook">
-									<img src="/mainpage/images/book-2.jpg" alt="fisika dasar image" class="img__item__eBook">
-									<div class="item__eBook__content">
-										<a href="#" class="item__meta__link">UTS Pengantar Ilmu dan Rekayasa
-											Lingkungan</a>
-										<p>
-											<span class="meta__item">Semester 1</span>
-											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Downloads</span>
-										</p>
-									</div>
-								</div> <!-- end item book -->
-							</div> <!-- end mb-4 item -->
+							<?php foreach ($arsip as $data) :
+								if ($data['kategori'] == 'Database Soal dan Pembahasan') : ?>
+									<!-- mb-4 item -->
+									<div class="mb-4">
+										<div class="item__eBook">
+											<img src="/mainpage/images/book-2.jpg" alt="fisika dasar image" class="img__item__eBook">
+											<div class="item__eBook__content">
+												<a href="#" class="item__meta__link"><?= $data['judul'] ?></a>
+												<p>
+													<span class="meta__item"><?= $semester ?></span>
+													<span class="meta__item"><?= date("F j, Y", strtotime($data['created_at'])) ?></span>
+													<span class="meta__item"><?= $data['downloads'] ?> Downloads</span>
+												</p>
+											</div>
+										</div> <!-- end item book -->
+									</div> <!-- end mb-4 item -->
+							<?php endif;
+							endforeach; ?>
 
 						</div> <!-- end elibrary cc -->
 					</div> <!-- end elibrary content -->
@@ -81,37 +68,24 @@
 
 						<!-- elibrary cc -->
 						<div class="elibrary__cc row">
-							<!-- mb-4 item -->
-							<div class="mb-4">
-								<div class="item__eBook">
-									<img src="/mainpage/images/book-1.png" alt="fisika dasar image" class="img__item__eBook">
-									<div class="item__eBook__content">
-										<a href="#" class="item__meta__link">Modul Pengantar Ilmu dan Rekayasa
-											Lingkungan</a>
-										<p>
-											<span class="meta__item">Semester 1</span>
-											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Downloads</span>
-										</p>
-									</div>
-								</div> <!-- end item book -->
-							</div> <!-- end mb-4 item -->
-
-							<!-- mb-4 item -->
-							<div class="mb-4">
-								<div class="item__eBook">
-									<img src="/mainpage/images/book-1.png" alt="fisika dasar image" class="img__item__eBook">
-									<div class="item__eBook__content">
-										<a href="#" class="item__meta__link">Materi Lengkap Pengantar Ilmu dan
-											Rekayasa Lingkungan</a>
-										<p>
-											<span class="meta__item">Semester 1</span>
-											<span class="meta__item">May 18, 2021</span>
-											<span class="meta__item">9721 Downloads</span>
-										</p>
-									</div>
-								</div> <!-- end item book -->
-							</div> <!-- end mb-4 item -->
+							<?php foreach ($arsip as $data) :
+								if ($data['kategori'] == 'eBook') : ?>
+									<!-- mb-4 item -->
+									<div class="mb-4">
+										<div class="item__eBook">
+											<img src="/mainpage/images/book-1.png" alt="fisika dasar image" class="img__item__eBook">
+											<div class="item__eBook__content">
+												<a href="#" class="item__meta__link"><?= $data['judul'] ?></a>
+												<p>
+													<span class="meta__item"><?= $semester ?></span>
+													<span class="meta__item"><?= date("F j, Y", strtotime($data['created_at'])) ?></span>
+													<span class="meta__item"><?= $data['downloads'] ?> Downloads</span>
+												</p>
+											</div>
+										</div> <!-- end item book -->
+									</div> <!-- end mb-4 item -->
+							<?php endif;
+							endforeach; ?>
 
 						</div> <!-- end elibrary cc -->
 					</div> <!-- end elibrary content -->
