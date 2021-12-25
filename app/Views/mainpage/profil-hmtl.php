@@ -283,7 +283,7 @@
 												<div class="member__card">
 													<div class="img__sec" style="background: url(/mainpage/images/member-1.png);">
 													</div>
-													<div id="ketua-bidang" class="content__memcard">
+													<div <?php if ($member['jabatan'] == 'Ketua Himpunan' || $member['jabatan'] == 'Kepala Unit' || $member['jabatan'] == 'Kepala Bidang') echo 'id = "ketua-bidang"'; ?> class="content__memcard">
 														<p class="fw-bold"><?= $member['pengurus'] ?></p>
 														<p><?= $member['angkatan'] ?></p>
 														<p><?= $member['jabatan'] ?></p>
