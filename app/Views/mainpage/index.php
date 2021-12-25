@@ -64,8 +64,7 @@
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $pengurus; ?></div>
 								<div class="about__subtitle text-dark2">Pengurus</div>
-								<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Eu egestas magna et eu.</p>
+								<p style="font-size: 14px;">Terdapat <?= $pengurus; ?> pengurus yang melayani warga Teknik Lingkungan dan mewarnai perjalanan Askara Cita dalam semangat pembelajar.</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
 
@@ -73,7 +72,7 @@
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $proker; ?></div>
 								<div class="about__subtitle text-dark2">Program Kerja</div>
-								<p style="font-size: 14px;">Askara Cita menuangkan karya-karyanya dalam 15 Jobdesc, 82 Program Kerja, dan 29 kegiatan non Program Kerja.</p>
+								<p style="font-size: 14px;">Askara Cita menuangkan karya-karyanya dalam 15 Jobdesc, <?= $proker; ?> Program Kerja, dan 29 kegiatan non Program Kerja.</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
 
