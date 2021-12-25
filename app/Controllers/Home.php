@@ -214,9 +214,16 @@ class Home extends BaseController
 
 	public function hmtl()
 	{
+		$bidang = $this->bidangModel->findAll();
+		// dd($bidang);
+		$pengurus = $this->pengurusModel->findAll();
+		// dd($pengurus);
+
 		$data = [
 			'title' => 'Himpunan Mahasiswa Teknik Lingkungan - HMTL | Universitas Diponegoro',
-			'tab' => 'profil'
+			'tab' => 'profil',
+			'bidang' => $bidang,
+			'pengurus' => $pengurus
 		];
 
 		return view('mainpage/profil-hmtl', $data);

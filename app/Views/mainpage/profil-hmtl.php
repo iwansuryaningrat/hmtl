@@ -147,8 +147,7 @@
 		<div class="body__section">
 			<div class="title__section text-center">
 				<h3>Struktur Organisasi HMTL</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint suscipit totam molestiae neque ab
-					sed quos, quo cum soluta rerum corporis provident laboriosam perferendis, laudantium quam.</p>
+				<p>Memuat peran, arah layanan, dan pola komunikasi yang ada dalam HMTL.</p>
 			</div>
 			<div class="struktur__img">
 				<img class="med__zoom" src="/mainpage/images/struktur-organisasi-resize.png" alt="...">
@@ -164,309 +163,140 @@
 			<!-- unit bidang header -->
 			<div class="title__section text-center">
 				<h3>Unit dan Bidang</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint suscipit totam molestiae neque ab
-					sed quos, quo cum soluta rerum corporis provident laboriosam perferendis, laudantium quam.</p>
+				<p>Bidang memiliki tugas untuk melayani seluruh warga Teknik Lingkungan serta eksternal dalam arah layanan yang beragam. Unit membersamai Bidang dalam melaksanakan layanannya.</p>
 			</div>
 
 			<!-- unit bidang body -->
 			<div class="ubid__body pt-4">
-				<!-- ubid content 1 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid1" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Unit Kantor Media dan Informasi</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
+				<?php foreach ($bidang as $data) : ?>
+					<!-- ubid content -->
+					<div class="ubid__content">
+						<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid<?= $data['id']; ?>" role="button" aria-expanded="false" aria-controls="collapseExample">
+							<p><?= $data['nama'] ?></p>
+							<i class="fi fi-rs-angle-small-down"></i>
+						</a> <!-- end unit bidang header -->
 
-					<div class="ubid__point__body collapse" id="collapse-ubid1">
-						<div class="point__body pt-3 pb-4">
-							<p class="fw-bold subtitle__point pt-3">Profil</p>
-							<p>Layanan pendukung yang berfungsi sebagai pusat perwajahan HMTL dengan memanfaatkan
-								teknologi informasi dalam menunjang sistem data yang mudah diakses oleh semua pihal
-								serta sarana dalam membangun relasi.</p>
+						<div class="ubid__point__body collapse" id="collapse-ubid<?= $data['id']; ?>">
+							<div class="point__body pt-3 pb-4">
+								<p class="fw-bold subtitle__point pt-3">Profil</p>
+								<p><?= $data['profil'] ?></p>
 
-							<p class="fw-bold subtitle__point pt-3">Deskripsi</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam odit facilis
-								nam consequuntur recusandae necessitatibus, labore nisi, non doloremque quas dicta
-								quod aspernatur rem sapiente tempore ipsa quaerat alias.</p>
+								<p class="fw-bold subtitle__point pt-3">Deskripsi</p>
+								<p><?= $data['deskripsi'] ?></p>
 
-							<p class="fw-bold subtitle__point pt-3">Tujuan Pelayanan</p>
-							<ol>
-								<li>Membangun perwajahan HMTL</li>
-								<li>Membuat database yang terintegrasi dan mudah diakses</li>
-								<li>Menyampaikan informasi secara lengkap dan aktual</li>
-							</ol>
+								<p class="fw-bold subtitle__point pt-3">Tujuan Pelayanan</p>
+								<ol>
+									<li>Membangun perwajahan HMTL</li>
+									<li>Membuat database yang terintegrasi dan mudah diakses</li>
+									<li>Menyampaikan informasi secara lengkap dan aktual</li>
+								</ol>
 
-							<p class="fw-bold subtitle__point pt-3">Program Kerja</p>
-							<div id="proker-content" class="owl-carousel owl-theme">
-								<!-- proker1 -->
-								<div class="mb-3">
-									<div class="card__proker">
-										<div class="title__proker">
-											<a class="ttl" data-bs-toggle="collapse" href="#proker1" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<span class="text-white">Program Kerja 1</span>
-												<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
-											</a> <!-- end ttl -->
-										</div> <!-- ttle proker -->
-										<div class="collapse" id="proker1">
-											<div class="main__proker">
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-													non quibusdam autem nobis, vitae temporibus error pariatur
-													reprehenderit sed est. Odio natus, dicta at enim quo mollitia
-													excepturi minima voluptatem!</p>
-											</div> <!-- end main proker -->
-										</div> <!-- collapse -->
-									</div> <!-- end card proker -->
-								</div>
+								<p class="fw-bold subtitle__point pt-3">Program Kerja</p>
+								<div id="proker-content" class="owl-carousel owl-theme">
+									<!-- proker1 -->
+									<div class="mb-3">
+										<div class="card__proker">
+											<div class="title__proker">
+												<a class="ttl" data-bs-toggle="collapse" href="#proker1" role="button" aria-expanded="false" aria-controls="collapseExample">
+													<span class="text-white">Program Kerja 1</span>
+													<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
+												</a> <!-- end ttl -->
+											</div> <!-- ttle proker -->
+											<div class="collapse" id="proker1">
+												<div class="main__proker">
+													<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+														non quibusdam autem nobis, vitae temporibus error pariatur
+														reprehenderit sed est. Odio natus, dicta at enim quo mollitia
+														excepturi minima voluptatem!</p>
+												</div> <!-- end main proker -->
+											</div> <!-- collapse -->
+										</div> <!-- end card proker -->
+									</div>
 
-								<!-- proker2 -->
-								<div class="mb-3">
-									<div class="card__proker">
-										<div class="title__proker">
-											<a class="ttl" data-bs-toggle="collapse" href="#proker2" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<span class="text-white">Program Kerja 2</span>
-												<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
-											</a> <!-- end ttl -->
-										</div> <!-- ttle proker -->
-										<div class="collapse" id="proker2">
-											<div class="main__proker">
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-													non quibusdam autem nobis, vitae temporibus error pariatur
-													reprehenderit sed est. Odio natus, dicta at enim quo mollitia
-													excepturi minima voluptatem!</p>
-											</div> <!-- end main proker -->
-										</div> <!-- collapse -->
-									</div> <!-- end card proker -->
-								</div>
+									<!-- proker2 -->
+									<div class="mb-3">
+										<div class="card__proker">
+											<div class="title__proker">
+												<a class="ttl" data-bs-toggle="collapse" href="#proker2" role="button" aria-expanded="false" aria-controls="collapseExample">
+													<span class="text-white">Program Kerja 2</span>
+													<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
+												</a> <!-- end ttl -->
+											</div> <!-- ttle proker -->
+											<div class="collapse" id="proker2">
+												<div class="main__proker">
+													<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+														non quibusdam autem nobis, vitae temporibus error pariatur
+														reprehenderit sed est. Odio natus, dicta at enim quo mollitia
+														excepturi minima voluptatem!</p>
+												</div> <!-- end main proker -->
+											</div> <!-- collapse -->
+										</div> <!-- end card proker -->
+									</div>
 
-								<!-- proker3 -->
-								<div class="mb-3">
-									<div class="card__proker">
-										<div class="title__proker">
-											<a class="ttl" data-bs-toggle="collapse" href="#proker3" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<span class="text-white">Program Kerja 3</span>
-												<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
-											</a> <!-- end ttl -->
-										</div> <!-- ttle proker -->
-										<div class="collapse" id="proker3">
-											<div class="main__proker">
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-													non quibusdam autem nobis, vitae temporibus error pariatur
-													reprehenderit sed est. Odio natus, dicta at enim quo mollitia
-													excepturi minima voluptatem!</p>
-											</div> <!-- end main proker -->
-										</div> <!-- collapse -->
-									</div> <!-- end card proker -->
-								</div>
+									<!-- proker3 -->
+									<div class="mb-3">
+										<div class="card__proker">
+											<div class="title__proker">
+												<a class="ttl" data-bs-toggle="collapse" href="#proker3" role="button" aria-expanded="false" aria-controls="collapseExample">
+													<span class="text-white">Program Kerja 3</span>
+													<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
+												</a> <!-- end ttl -->
+											</div> <!-- ttle proker -->
+											<div class="collapse" id="proker3">
+												<div class="main__proker">
+													<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+														non quibusdam autem nobis, vitae temporibus error pariatur
+														reprehenderit sed est. Odio natus, dicta at enim quo mollitia
+														excepturi minima voluptatem!</p>
+												</div> <!-- end main proker -->
+											</div> <!-- collapse -->
+										</div> <!-- end card proker -->
+									</div>
 
-								<!-- proker4 -->
-								<div class="mb-3">
-									<div class="card__proker">
-										<div class="title__proker">
-											<a class="ttl" data-bs-toggle="collapse" href="#proker4" role="button" aria-expanded="false" aria-controls="collapseExample">
-												<span class="text-white">Program Kerja 4</span>
-												<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
-											</a> <!-- end ttl -->
-										</div> <!-- ttle proker -->
-										<div class="collapse" id="proker4">
-											<div class="main__proker">
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-													non quibusdam autem nobis, vitae temporibus error pariatur
-													reprehenderit sed est. Odio natus, dicta at enim quo mollitia
-													excepturi minima voluptatem!</p>
-											</div> <!-- end main proker -->
-										</div> <!-- collapse -->
-									</div> <!-- end card proker -->
-								</div>
-							</div>
-
-							<p class="fw-bold subtitle__point pt-3">Pengurus</p>
-							<div id="member-content" class="owl-carousel owl-theme">
-								<!-- member 1 -->
-								<div class="my-4">
-									<div class="member__card">
-										<div class="img__sec" style="background: url(/mainpage/images/member-1.png);">
-										</div>
-										<div id="ketua-bidang" class="content__memcard">
-											<p class="fw-bold">Iwan Suryawan Setiawan</p>
-											<p>2019</p>
-											<p>Ketua Bidang</p>
-										</div>
+									<!-- proker4 -->
+									<div class="mb-3">
+										<div class="card__proker">
+											<div class="title__proker">
+												<a class="ttl" data-bs-toggle="collapse" href="#proker4" role="button" aria-expanded="false" aria-controls="collapseExample">
+													<span class="text-white">Program Kerja 4</span>
+													<i class="fi fi-br-plus-small text-white d-flex align-items-center"></i>
+												</a> <!-- end ttl -->
+											</div> <!-- ttle proker -->
+											<div class="collapse" id="proker4">
+												<div class="main__proker">
+													<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+														non quibusdam autem nobis, vitae temporibus error pariatur
+														reprehenderit sed est. Odio natus, dicta at enim quo mollitia
+														excepturi minima voluptatem!</p>
+												</div> <!-- end main proker -->
+											</div> <!-- collapse -->
+										</div> <!-- end card proker -->
 									</div>
 								</div>
 
-								<!-- member 2 -->
-								<div class="my-4">
-									<div class="member__card">
-										<div class="img__sec" style="background: url(/mainpage/images/member-2.png);">
-										</div>
-										<div class="content__memcard">
-											<p class="fw-bold">Rafli Ferdinan Sinaga</p>
-											<p>2019</p>
-											<p>Sekretaris</p>
-										</div>
-									</div>
+								<p class="fw-bold subtitle__point pt-3">Pengurus</p>
+								<div id="member-content" class="owl-carousel owl-theme">
+									<?php foreach ($pengurus as $member) :
+										if ($member['bidangid'] == $data['id']) : ?>
+											<!-- member -->
+											<div class="my-4">
+												<div class="member__card">
+													<div class="img__sec" style="background: url(/mainpage/images/member-1.png);">
+													</div>
+													<div id="ketua-bidang" class="content__memcard">
+														<p class="fw-bold"><?= $member['pengurus'] ?></p>
+														<p><?= $member['angkatan'] ?></p>
+														<p><?= $member['jabatan'] ?></p>
+													</div>
+												</div>
+											</div>
+									<?php endif;
+									endforeach; ?>
 								</div>
-
-								<!-- member 3 -->
-								<div class="my-4">
-									<div class="member__card">
-										<div class="img__sec" style="background: url(/mainpage/images/member-3.png);">
-										</div>
-										<div class="content__memcard">
-											<p class="fw-bold">Lutfia Rahma Marta</p>
-											<p>2019</p>
-											<p>Bendahara</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> <!-- end point body -->
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 2 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid2" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Unit Pengembangan dan Manajemen Organisasi</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid2">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 3 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid3" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Riset dan Inovasi</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid3">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 4 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid4" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Pendidikan dan Penalaran</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid4">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 5 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid5" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Pengembangan Sumber Daya Mahasiswa</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid5">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 6 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid6" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Kesejahteraan Mahasiswa</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid6">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 7 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid7" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Pengabdian Masyarakat</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid7">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 8 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid8" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Hubungan Masyarakat</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid8">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 9 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid9" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Minat, Bakat, dan Kegemaran</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid9">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
-
-				<!-- ubid content 10 -->
-				<div class="ubid__content">
-					<a class="ubid__point__head" data-bs-toggle="collapse" href="#collapse-ubid10" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<p>Bidang Ekonomi dan Bisnis</p>
-						<i class="fi fi-rs-angle-small-down"></i>
-					</a> <!-- end unit bidang header -->
-
-					<div class="ubid__point__body collapse" id="collapse-ubid10">
-						<div class="point__body pt-3 pb-4">
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id laudantium placeat culpa
-								iste, repellendus fugiat nisi commodi magnam, harum provident corporis libero ipsa
-								excepturi modi? Soluta aut tenetur ducimus earum.</p>
-						</div>
-					</div> <!-- end unit bidang body -->
-				</div> <!-- end ubid content -->
+							</div> <!-- end point body -->
+						</div> <!-- end unit bidang body -->
+					</div> <!-- end ubid content -->
+				<?php endforeach; ?>
 
 			</div> <!-- end ubid body -->
 		</div> <!-- end body section -->
