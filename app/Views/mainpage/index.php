@@ -79,7 +79,7 @@
 						<div class="col-12 col-md-6 mb-md-3 mb-4">
 							<div class="about__card">
 								<div class="about__count text-dark2"><?= $birounit; ?></div>
-								<div class="about__subtitle text-dark2">Biro dan Unit</div>
+								<div class="about__subtitle text-dark2">Biro</div>
 								<p style="font-size: 14px;">Dalam keberjalanannya, HMTL dibersamai oleh 3 Biro: Ikatan Pecinta Alam Lingkungan (IPAL), Hayatun Nufus, serta Kelompok Studi Lingkungan (KSL).</p>
 							</div> <!-- end about card -->
 						</div> <!-- end col -->
