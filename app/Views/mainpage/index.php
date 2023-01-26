@@ -121,7 +121,7 @@
 										</div> <!-- end news card img -->
 										<div class="news__card__body">
 											<div class="news__date">
-												<i class="far fa-calendar-alt"></i><?= $berita['tanggal']; ?>
+												<i class="far fa-calendar-alt"></i><?= $berita['created_at']; ?>
 											</div> <!-- end news date -->
 											<div class="news__title">
 												<?= $berita['judul']; ?>
