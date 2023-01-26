@@ -1,0 +1,115 @@
+/*******************************************/
+/*               GOOGLE FONT               */
+/*******************************************/
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+/****************************************/
+/*               VARIABLE               */
+/****************************************/
+:root {
+  /*height and width*/
+
+  /*color*/
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --light: rgba(247, 247, 247, 1);
+  --footer: rgba(245, 243, 238, 1);
+  --orange: rgba(239, 132, 81, 1);
+  --green1: rgba(61, 165, 99, 1);
+  --green2: rgba(137, 176, 146, 1);
+  --dark: rgba(16, 44, 47, 1);
+  --dark2: rgba(1, 37, 36, 1);
+
+  /*font and typography*/
+  --reg-size: 16px;
+  --medium-size: 18px;
+  --big-size: 24px;
+  /*--body-font: 'Maven Pro', sans-serif;*/
+  --body-font: "Raleway", sans-serif;
+  --head-font: "Oswald", sans-serif;
+
+  /*padding and margin*/
+  --m-lg: 112px 0;
+  --mb-lg: 112px;
+
+  /*utility-radius*/
+  --sm-rad: 3px;
+  --md-rad: 6px;
+  --lg-rad: 16px;
+}
+
+/*********************************************/
+/*               GENERAL STYLE               */
+/*********************************************/
+* {
+  font-family: var(--body-font);
+  font-weight: 400;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--head-font);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--head-font);
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 18px !important;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.card {
+  margin: 14px;
+}
+
+thead > tr > th,
+tbody > tr > td {
+  width: auto;
+}
+
+table {
+  text-align: center;
+}
+
+.matkul,
+.judul {
+  text-align: left;
+}

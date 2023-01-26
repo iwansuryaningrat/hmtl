@@ -14,18 +14,28 @@ HMTL Diponegoro University Official Website project. Contains information about 
 Folder Structure:
 
 ```
-📦hmtl-main
+📦HMTL
+ ┣ 📂.phpintel
+ ┃ ┗ 📜...
  ┣ 📂app
  ┃ ┗ 📂...
  ┣ 📂public
  ┃ ┗ 📂...
- ┣ 📂test 
+ ┣ 📂test
+ ┃ ┗ 📂...
+ ┣ 📂vendor
  ┃ ┗ 📂...
  ┣ 📂writable
  ┃ ┗ 📂...
  ┣ 📜README.md
- ┗ 📂...
-   ┗ 📂...
+ ┣ 📜spark
+ ┣ 📜.env
+ ┣ 📜.gitignore
+ ┣ 📜builds
+ ┣ 📜composer.lock
+ ┣ 📜composer.json
+ ┣ 📜LICENSE
+ ┗ 📜phpunit.xml.dist
 ```
 
 ## Features
@@ -34,7 +44,7 @@ Folder Structure:
 
 ## UI Design
 
-https://www.figma.com/file/4WTx2c8GIjcirXbxgXEnvh/HMTI-Web-Layout?node-id=0%3A1
+[Figma](https://www.figma.com/file/4WTx2c8GIjcirXbxgXEnvh/HMTI-Web-Layout?node-id=0%3A1)
 
 ## Authors
 

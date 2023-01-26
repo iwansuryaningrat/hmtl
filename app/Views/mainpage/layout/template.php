@@ -13,8 +13,10 @@
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
     <meta property="og:site_name" content="HMTL UNDIP" /> <!-- website name -->
     <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="Arsip-Mata Kuliah Himpunan Mahasiswa Teknik Lingkungan UNDIP" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." /> <!-- description shown in the actual shared post -->
+    <meta property="og:title" content="Kontak Himpunan Mahasiswa Teknik Lingkungan UNDIP" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Website Himpunan Mahasiswa Teknik Lingkungan Fakultas Tenik Universitas Diponegoro. Menyajikan informasi seputar HMTL, berita aktual, organisasi, biro, kegiatan, maupun prestasi dari mahasiswa." />
+    <!-- description shown in the actual shared post -->
     <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
@@ -34,12 +36,17 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/mainpage/css/bootstrap.css"> <!-- bootstrap styles -->
     <link rel="stylesheet" href="/mainpage/vendor/icofont/icofont.css"> <!-- icofont icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css"> <!-- fontawesome icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css"> <!-- flaticon bold rounded icon styles -->
-    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css"> <!-- flaticon regular straight icon styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- animate animation styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/fontawesome-free-5.15.3-web/css/all.css">
+    <!-- fontawesome icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-bold-rounded/css/uicons-bold-rounded.css">
+    <!-- flaticon bold rounded icon styles -->
+    <link rel="stylesheet" href="/mainpage/vendor/uicons-regular-straight/css/uicons-regular-straight.css">
+    <!-- flaticon regular straight icon styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- animate animation styles -->
     <link rel="stylesheet" href="/mainpage/css/owl.carousel.min.css"> <!-- owl carousel min -->
     <link rel="stylesheet" href="/mainpage/css/owl.theme.default.min.css"> <!-- owl carousel theme default min -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" integrity="sha256-zsz1FbyNCtIE2gIB+IyWV7GbCLyKJDTBRz0qQaBSLxM=" crossorigin="anonymous"> <!-- fullcalendar styles -->
 
     <link rel="stylesheet" href="/mainpage/css/styles.css"> <!-- custom styles -->
 
@@ -74,12 +81,12 @@
             <div class="collapse navbar-collapse" id="navbarWithDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav__font" aria-current="page" href="/">
+                        <a class="nav-link nav__font <?php if ($tab == 'index') echo 'active'; ?> " aria-current="page" href="/">
                             <span>Beranda</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="/home/profil" class="nav-link nav__font dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="/home/profil" class="nav-link nav__font dropdown-toggle <?php if ($tab == 'profil') echo 'active'; ?> " id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span>Profil</span>
                             <i class="icofont-simple-down"></i>
                         </a>
@@ -90,22 +97,22 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/berita">
+                        <a class="nav-link nav__font <?php if ($tab == 'berita') echo 'active'; ?> " href="/home/berita">
                             <span>Berita</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/kalender">
+                        <a class="nav-link nav__font <?php if ($tab == 'kalender') echo 'active'; ?> " href="/home/kalender">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font active" href="/home/arsip">
+                        <a class="nav-link nav__font <?php if ($tab == 'arsip') echo 'active'; ?> " href="/home/arsip">
                             <span>Arsip</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav__font" href="/home/kontak">
+                        <a class="nav-link nav__font <?php if ($tab == 'kontak') echo 'active'; ?> " href="/home/kontak">
                             <span>Kontak</span>
                         </a>
                     </li>
@@ -121,60 +128,6 @@
 
 
     <?= $this->renderSection('mainpage'); ?>
-
-
-    <!-- contact section -->
-    <!-- FINISH -->
-    <div class="contact__section">
-        <div class="container">
-            <div class="body__section">
-                <!-- contact header -->
-                <div class="contact__header">
-                    <h1>Kontak Kami</h1>
-                    <p>Jangan ragu untuk menghubungi kami kapanpun. Kami akan menghubungi anda kembali sesegera mungkin.</p>
-                </div> <!-- end contact header -->
-                <!-- contact form -->
-                <div class="contact__form">
-                    <form action="">
-                        <!-- name & email -->
-                        <div class="row">
-                            <div class="col">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control form__control shadow-none" placeholder="Muhammad Ikhsan" required>
-                            </div>
-                            <div class="col">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="text" class="form-control form__control shadow-none" placeholder="ikhsanmuhammad@mail.com" required>
-                            </div>
-                        </div> <!-- end name & email -->
-                        <!-- phone & subject -->
-                        <div class="row">
-                            <div class="col">
-                                <label for="phone" class="form-label">Phone</label>
-                                <input type="text" class="form-control form__control shadow-none" placeholder="+62 823 8823 8223" required>
-                            </div>
-                            <div class="col">
-                                <label for="subject" class="form-label">Subject</label>
-                                <select id="input-subject" class="form-select form__select shadow-none">
-                                    <option selected value="saran">Saran untuk Website HMTL</option>
-                                    <option value="pertanyaan">Pertanyaan</option>
-                                    <option value="partnership">Partnership</option>
-                                    <option value="lainnya">Lainnya</option>
-                                </select>
-                            </div>
-                        </div> <!-- end phone & subject -->
-                        <!-- textarea -->
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control form__control shadow-none" placeholder="I have a great idea..." style="height: 100px" required></textarea> <!-- end textarea -->
-                        <!-- submit message -->
-                        <div class="send__input">
-                            <input type="submit" value="Send Message" class="submit-message">
-                        </div> <!-- end submit message -->
-                    </form> <!-- end form -->
-                </div> <!-- end contact form -->
-            </div> <!-- end body section -->
-        </div> <!-- end container -->
-    </div> <!-- end contact section -->
 
 
     <!-- footer -->
@@ -213,9 +166,12 @@
                 <div class="contact__us">
                     <h5>Contact Us</h5>
                     <ul>
-                        <li>+62 823 1449 7878 (Humas)<br>+62 823 7878 1414 (Humas)</li>
-                        <li>himpunanundip@gmail.com</li>
-                        <li>hmtlundip@student.undip.ac.id</li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=6282314497878&text&app_absent=0" target="_blank">+62 823 1449
+                                7878 (Humas)</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=6282378781414&text&app_absent=0" target="_blank">+62 823 7878
+                                1414 (Humas)</a></li>
+                        <li><a href="mailto:info@hmtlundip.org" target="_blank">info@hmtlundip.org</a></li>
+                        <li><a href="mailto:hmtlundip@student.undip.ac.id" target="_blank">hmtlundip@student.undip.ac.id</a></li>
                     </ul>
                 </div> <!-- end contact us -->
                 <!-- social connect -->
@@ -254,13 +210,19 @@
         </div> <!-- end of offcanvas-body -->
     </div> <!-- end of search section offcanvas -->
 
-
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jquery 3.5.1 Gcdn scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery 3.5.1 Gcdn scripts -->
     <script src="/mainpage/js/bootstrap.bundle.js"></script> <!-- bootstrap scripts -->
     <script src="/mainpage/js/owl.carousel.min.js"></script> <!-- owl carousel min scripts -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script> <!-- akar icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- medium scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js" integrity="sha256-XOMgUu4lWKSn8CFoJoBoGd9Q/OET+xrfGYSo+AKpFhE=" crossorigin="anonymous"></script> <!-- fullcalendar scripts -->
 
     <script src="/mainpage/js/scripts.js"></script> <!-- Custom scripts -->
+
+    <!-- Custom Script at Page -->
+    <?= $this->renderSection('script'); ?>
 </body>
 
 </html>
